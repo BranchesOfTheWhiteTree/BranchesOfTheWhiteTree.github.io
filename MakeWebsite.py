@@ -15,10 +15,7 @@ def pandoc2html(title, fname, temp_file, output_file):
 		
 			data = {
 				'content': p.read(),
-				'title': title,
-				'L0':False,
-				'L1':False,
-				'L2':True,
+				'title': title
 				}
 
 			template = env.get_template('main_pages/blogpost_template.html')

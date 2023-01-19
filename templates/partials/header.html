@@ -17,19 +17,8 @@
         onload="renderMathInElement(document.body);">
     </script>
 
-    {% if post.L1 %}
-	<link rel="stylesheet" href="../assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
-
-    {% elif post.L2 %}
-	<link rel="stylesheet" href="../../assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
-
-    {% else %}
-	<link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
-    {% endif %}
+	<link rel="stylesheet" href="/assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
 
     <title>{{post.title}} | Adventurers' Guild</title>
 
