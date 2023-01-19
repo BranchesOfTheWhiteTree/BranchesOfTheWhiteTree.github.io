@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Meta additions to hold no cache in github. This makes the website reload fresh. -->
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+
+    <!-- KaTeX CSS and JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);">
+    </script>
+
+	<link rel="stylesheet" href="/assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+
+    <title>template | WeaponMatrices | CharacterBuilds | Adventurers' Guild</title>
+
+    </head>
+    
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+<header id="header" class="alt">
+
+	<a href="/index.html" class="logo"><strong>Adventurers' Guild</strong>  <span>by Arun</span></a>
+	
+	<nav>
+		<a href="#menu">Menu</a>
+	</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+	<ul class="links">
+		<li><a href="/index.html">Home</a></li>
+		<li><a href="/CharacterBuilds.html">Character Builds</a></li>
+		<li><a href="/CharacterLore.html">Character Lore</a></li>
+		<li><a href="/HonkaiImpact.html">Honkai Impact</a></li>
+		<li><a href="/About.html">About</a></li>
+	</ul>
+</nav>
+        
+        <section>
+            <div class="inner align-justify">
+
+                <h1 id="calculations-page---for-kaedehara-kazuha">Calculations Page - For Kaedehara Kazuha</h1>
+<div class="row">
+<div class="col-4 col-12-medium">
+<h3>
+Pick a Weapon
+</h3>
+<p><select name="weapons" id="weapons"> </select></p>
+</div>
+</div>
+</form>
+<script type="text/javascript" language="javascript">
+
+    let WeaponSetName = "./../SupportFiles/weapon-list.json";
+    let WeaponSetIndex = 1;
+    let WeaponList = {};
+
+    window.onload = (event) =>
+    {
+        SetupPage()
+    };
+
+    async function SetupPage()
+    {
+        await FetchWeapons(WeaponSetName, WeaponSetIndex);
+        InitializeWeaponList();
+
+        console.log("Load Button Ready!");
+        // InitializeForms();
+    }
+
+    async function FetchWeapons(fname, index)
+    {
+        let MatrixInitializer = {
+            method:'GET',
+            headers: {
+                'Accept': 'application/json',
+            },
+        }
+        await fetch(fname, MatrixInitializer)
+        .then(response => response.json())
+        .then(response => TransferWeapons(response, index))
+        .catch(error => console.error("Something went wrong in fetching " + fname + " " + error));
+    }
+
+    function TransferWeapons(WeaponJSON, index)
+    {
+        WeaponList = JSON.parse(JSON.stringify(WeaponJSON))[index];
+        console.log("Got the Weapons!")
+        // console.log(WeaponList)
+    }
+
+    function InitializeWeaponList()
+    {
+        let tempWeaponList = JSON.parse(JSON.stringify(WeaponList));
+        delete tempWeaponList["000"];
+
+        let htmlTags = "";
+
+        for(weaponID in tempWeaponList)
+        {
+            htmlTags += `<option value=${weaponID} id="weapon-${weaponID}">`
+            htmlTags += tempWeaponList[weaponID];
+            htmlTags += '</option>'
+        }
+        
+        document.getElementById('weapons').innerHTML = htmlTags;
+    }
+</script>
+
+                
+            </div>
+        </section>
+		
+        <!-- Footer -->
+<footer id="footer" class="">
+	<div class="inner">
+		<ul class="icons">
+			<li><a href="https://www.quora.com/profile/Arun-Prasaad-Gunasekaran" target="_blank" class="icon alt fa-quora"><span class="label">Quora</span></a></li>
+			<li><a href="https://www.youtube.com/channel/UCUJFj-PXuWLRfFFHA44ZGYw" target="_blank" class="icon alt fa-youtube-play"><span class="label">YouTube</span></a></li>
+			<li><a href="https://github.com/arunprasaad2711" target="_blank" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+			<li><a href="https://www.instagram.com/fluidiccolours/" target="_blank" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+			<li><a href="mailto:arunprasaad2711@gmail.com" target="_blank" class="icon alt fa-envelope-o"><span class="label">Mail</span></a></li>
+		</ul>
+		<p>
+			All rights reserved to their respective owners | Arun Prasaad Gunasekaran | Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a>
+		</p>
+	</div>
+</footer>
+        
+    </div>
+
+    <script type="text/javascript" language="javascript">
+const copyButtonLabel = "Copy Code";
+
+// use a class selector if available
+let blocks = document.querySelectorAll("pre");
+
+blocks.forEach((block) => {
+    // only add button if browser supports Clipboard API
+    if (navigator.clipboard) {
+    let button = document.createElement("a");
+    button.className = "button small"
+
+    button.innerText = copyButtonLabel;
+    button.style.cssText = "align:right;"
+    block.appendChild(button);
+
+    button.addEventListener("click", async () => {
+        await copyCode(block);
+    });
+    }
+});
+
+async function copyCode(block) {
+    let code = block.querySelector("code");
+    let text = code.innerText;
+
+    await navigator.clipboard.writeText(text);
+}
+</script>
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.scrolly.min.js"></script>
+    <script src="/assets/js/jquery.scrollex.min.js"></script>
+    <script src="/assets/js/browser.min.js"></script>
+    <script src="/assets/js/breakpoints.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/main.js"></script>
+
+
+</body>
+</html>
