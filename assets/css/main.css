@@ -1490,6 +1490,7 @@ input[type=email],
 input[type=tel],
 input[type=search],
 input[type=url],
+input[type=number],
 select,
 textarea {
   -moz-appearance: none;
@@ -1511,6 +1512,7 @@ input[type=email]:invalid,
 input[type=tel]:invalid,
 input[type=search]:invalid,
 input[type=url]:invalid,
+input[type=number]:invalid,
 select:invalid,
 textarea:invalid {
   box-shadow: none;
@@ -1521,6 +1523,7 @@ input[type=email]:focus,
 input[type=tel]:focus,
 input[type=search]:focus,
 input[type=url]:focus,
+input[type=number]:focus,
 select:focus,
 textarea:focus {
   border-color: #9bf1ff;
@@ -1553,6 +1556,7 @@ input[type=email],
 input[type=tel],
 input[type=search],
 input[type=url],
+input[type=number],
 select {
   height: 2.75em;
 }

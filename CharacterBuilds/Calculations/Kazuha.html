@@ -63,7 +63,7 @@
 <section>
     
 <div class="inner align-justify">
-    <h1 id="calculations-page---for-kaedehara-kazuha">Calculations Page - For Kaedehara Kazuha</h1>
+    <h1 id="calculations-page-for-kaedehara-kazuha">Calculations Page - For Kaedehara Kazuha</h1>
     <div class="row">
 
         <div class="col-4 col-12-medium" id="CharacterIcon">
@@ -73,9 +73,27 @@
         <div class="col-4 col-12-medium">
             <h3>Pick a Weapon</h3>
             <select name="weapons" id="WeaponList" onmousedown="this.value='';" onchange="ChangeSword(this.value);"> </select>
+            <br>
+            <p id="WeaponRefinement">Refinement: R1</p>
+            <div class="slidecontainer">
+                <input type="range" min="1" max="5" value="1" class="slider" id="weaponRefiner" onchange="WeaponRefinementSlider(this.value)">
+            </div>
+            <br>
+            <!-- <div id="weapon-comment">
+                Ready!
+            </div> -->
+            <br>
+            <label for="WeaponATK">Base Attack</label>
+            <input type="number" name="WeaponATK" id="WeaponATK" min="0" step="1" value="40" max="742">
+            <br>
+            <label for="SecStat" id="weapon-sec-stat-label">Secondary Stat</label>
+            <div id="weapon-sec-stat-div">
+            </div>
+            <br>
+            <!-- <label for="SecStat" id="SecStatLabel">Sec. Stat</label>
+            <input type="text" name="SecStat" id="SecStat" min="0" step="1" value="40" max="742"> -->
         </div>
         <div class="col-4 col-12-medium" id="WeaponIcon">
-            <img src="/images/characters/icon/Kaedehara_Kazuha.png" alt="">
         </div>
         
     </div>
@@ -85,11 +103,29 @@
         
 <script type="text/javascript" language="javascript">
 
+    const CombatStats = [
+                        "None",
+                        "Base Attack","Attack Percent","Flat Attack",
+                        "Defence Percent","Flat Defence",
+                        "HP","Flat HP",
+                        "Energy Recharge","Elemental Mastery",
+                        "Crit Rate","Crit Damage",
+                        "Physical Damage Bonus",
+                        "Anemo Damage Bonus", "Geo Damage Bonus",
+                        "Electro Damage Bonus","Dendro Damage Bonus",
+                        "Hydro Damage Bonus","Pyro Damage Bonus",
+                        "Cryo Damage Bonus","Healing Bonus",
+                        "Shield Strength","Attack Speed"
+                        ];
+
     let WeaponSetName = "/SupportFiles/weapon-list.json";
     let WeaponIconName = "/SupportFiles/weapon-icon-list.json";
+    let WeaponJSONName = "/SupportFiles/weapon-json-list.json";
     let WeaponSetIndex = 1;
     let WeaponList = {};
     let WeaponIconList = {};
+    let WeaponJSONList = {};
+    let WeaponJSON = {};
 
     window.onload = (event) =>
     {
@@ -100,6 +136,7 @@
     {
         await FetchWeapons(WeaponSetName, WeaponSetIndex);
         await FetchWeaponIcons(WeaponIconName, WeaponSetIndex);
+        await FetchWeaponJSONS(WeaponJSONName, WeaponSetIndex);
         InitializeWeaponList();
 
         console.log("Load Button Ready!");
@@ -134,6 +171,20 @@
         .catch(error => console.error("Something went wrong in fetching " + fname + " " + error));
     }
 
+    async function FetchWeaponJSONS(fname, index)
+    {
+        let MatrixInitializer = {
+            method:'GET',
+            headers: {
+                'Accept': 'application/json',
+            },
+        }
+        await fetch(fname, MatrixInitializer)
+        .then(response => response.json())
+        .then(response => TransferWeaponJSONS(response, index))
+        .catch(error => console.error("Something went wrong in fetching " + fname + " " + error));
+    }
+
     function TransferWeapons(WeaponJSON, index)
     {
         WeaponList = JSON.parse(JSON.stringify(WeaponJSON))[index];
@@ -144,7 +195,14 @@
     function TransferWeaponIcons(WeaponJSON, index)
     {
         WeaponIconList = JSON.parse(JSON.stringify(WeaponJSON))[index];
-        console.log("Got the Weapons Icons!")
+        console.log("Got the Weapon Icons!")
+        // console.log(WeaponList)
+    }
+
+    function TransferWeaponJSONS(WeaponJSON, index)
+    {
+        WeaponJSONList = JSON.parse(JSON.stringify(WeaponJSON))[index];
+        console.log("Got the Weapon JSONS!")
         // console.log(WeaponList)
     }
 
@@ -166,67 +224,98 @@
         // console.log(htmlTags)
     }
 
-    function ChangeSword(value)
+    async function ChangeSword(value)
     {
         let tempWeaponIconList = JSON.parse(JSON.stringify(WeaponIconList));
         delete tempWeaponIconList["000"];
         let htmlTags = `<img src=${tempWeaponIconList[value]} alt="">`;
         document.getElementById('WeaponIcon').innerHTML = htmlTags;
+
+        await fetch_weapon_stat(WeaponJSONList[value], WeaponSetIndex);
+        SetupWeapon();
+        // document.getElementById('weapon-comment').innerHTML = `Loading stats of: ${WeaponJSON}`;
+        // document.getElementById('weapon-comment').innerHTML = JSON.stringify(WeaponJSON);
+        console.log("Got the weapon stat")
     }
+
+    async function fetch_weapon_stat(fname)
+    {
+        await fetch(fname)
+        .then(response => response.json())
+        .then(response => TransferWeaponJSON(response))
+        .catch(error => console.error("Something went wrong in fetching " + fname + " " + error));
+    }
+
+    function WeaponRefinementSlider(value)
+    {
+        document.getElementById('WeaponRefinement').innerHTML = `Refinement: R${value}`;
+    }
+
+    function TransferWeaponJSON(weaponJSON)
+    {
+        WeaponJSON = JSON.parse(JSON.stringify(weaponJSON));
+        console.log("Got the Weapon JSON!")
+        // console.log(WeaponList)
+    }
+
+    function SetupWeapon()
+    {
+        let tempWeaponJSON = JSON.parse(JSON.stringify(WeaponJSON));
+        document.getElementById("weapon-sec-stat-label").innerText = CombatStats[tempWeaponJSON["SecStat"]];
+        let htmlTags = `<input type="number" name="weapon-sec-stat" id="weapon-sec-stat" min="${tempWeaponJSON["Min"]}" step="${tempWeaponJSON["Step"]}" value="${tempWeaponJSON["Value"]}" max="${tempWeaponJSON["Max"]}">`;
+        document.getElementById("weapon-sec-stat-div").innerHTML = htmlTags;
+        
+    }
+
 </script>
 
-                
-           
-
-		
-        <!-- Footer -->
-<footer id="footer" class="">
-	<div class="inner">
-		<ul class="icons">
-			<li><a href="https://www.quora.com/profile/Arun-Prasaad-Gunasekaran" target="_blank" class="icon alt fa-quora"><span class="label">Quora</span></a></li>
-			<li><a href="https://www.youtube.com/channel/UCUJFj-PXuWLRfFFHA44ZGYw" target="_blank" class="icon alt fa-youtube-play"><span class="label">YouTube</span></a></li>
-			<li><a href="https://github.com/arunprasaad2711" target="_blank" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-			<li><a href="https://www.instagram.com/fluidiccolours/" target="_blank" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-			<li><a href="mailto:arunprasaad2711@gmail.com" target="_blank" class="icon alt fa-envelope-o"><span class="label">Mail</span></a></li>
-		</ul>
-		<p>
-			All rights reserved to their respective owners | Arun Prasaad Gunasekaran | Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a>
-		</p>
-	</div>
-</footer>
+    <!-- Footer -->
+    <footer id="footer" class="">
+        <div class="inner">
+            <ul class="icons">
+                <li><a href="https://www.quora.com/profile/Arun-Prasaad-Gunasekaran" target="_blank" class="icon alt fa-quora"><span class="label">Quora</span></a></li>
+                <li><a href="https://www.youtube.com/channel/UCUJFj-PXuWLRfFFHA44ZGYw" target="_blank" class="icon alt fa-youtube-play"><span class="label">YouTube</span></a></li>
+                <li><a href="https://github.com/arunprasaad2711" target="_blank" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="https://www.instagram.com/fluidiccolours/" target="_blank" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="mailto:arunprasaad2711@gmail.com" target="_blank" class="icon alt fa-envelope-o"><span class="label">Mail</span></a></li>
+            </ul>
+            <p>
+                All rights reserved to their respective owners | Arun Prasaad Gunasekaran | Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a>
+            </p>
+        </div>
+    </footer>
         
     </div>
 
     <script type="text/javascript" language="javascript">
-const copyButtonLabel = "Copy Code";
+        const copyButtonLabel = "Copy Code";
 
-// use a class selector if available
-let blocks = document.querySelectorAll("pre");
+        // use a class selector if available
+        let blocks = document.querySelectorAll("pre");
 
-blocks.forEach((block) => {
-    // only add button if browser supports Clipboard API
-    if (navigator.clipboard) {
-    let button = document.createElement("a");
-    button.className = "button small"
+        blocks.forEach((block) => {
+            // only add button if browser supports Clipboard API
+            if (navigator.clipboard) {
+            let button = document.createElement("a");
+            button.className = "button small"
 
-    button.innerText = copyButtonLabel;
-    button.style.cssText = "align:right;"
-    block.appendChild(button);
+            button.innerText = copyButtonLabel;
+            button.style.cssText = "align:right;"
+            block.appendChild(button);
 
-    button.addEventListener("click", async () => {
-        await copyCode(block);
-    });
-    }
-});
+            button.addEventListener("click", async () => {
+                await copyCode(block);
+            });
+            }
+        });
 
-async function copyCode(block) {
-    let code = block.querySelector("code");
-    let text = code.innerText;
+        async function copyCode(block) {
+            let code = block.querySelector("code");
+            let text = code.innerText;
 
-    await navigator.clipboard.writeText(text);
-}
-</script>
-
+            await navigator.clipboard.writeText(text);
+        }
+    </script>
 
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/jquery.scrolly.min.js"></script>
@@ -235,8 +324,6 @@ async function copyCode(block) {
     <script src="/assets/js/breakpoints.min.js"></script>
     <script src="/assets/js/util.js"></script>
     <script src="/assets/js/main.js"></script>
-
-
 
 </body>
 </html>
