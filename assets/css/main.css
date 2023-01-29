@@ -3106,4 +3106,77 @@ body.is-menu-visible #menu .inner {
   transform: none;
   opacity: 1;
   visibility: visible;
+}
+
+.accordion .accordion-container {
+  position: relative;
+}
+
+.accordion .label {
+  position: relative;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.accordion .label::before {
+  content: "+";
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  right: -5px;
+  transform: translateY(-50%);
+}
+
+/* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+.accordion .content {
+  position: relative;
+  height: 0;
+  text-align: justify;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.accordion .accordion-container.active .content {
+  height: auto;
+}
+
+/* Changes from plus sign to negative sign once active */
+.accordion .accordion-container.active .label::before {
+  content: "-";
+  font-size: 30px;
+}
+
+.accent1:hover {
+  background-color: #6fc3df;
+}
+
+.accent2:hover {
+  background-color: #8d82c4;
+}
+
+.accent3:hover {
+  background-color: #ec8d81;
+}
+
+.accent4:hover {
+  background-color: #e7b788;
+}
+
+.accent5:hover {
+  background-color: #8ea9e8;
+}
+
+.accent6:hover {
+  background-color: #87c5a4;
+}
+
+.active, .accordion:hover {
+  color: #ffffff;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #242943;
+  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */

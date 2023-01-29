@@ -288,13 +288,23 @@ async function copyCode(block) {
 }
 </script>
 
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/jquery.scrolly.min.js"></script>
-    <script src="/assets/js/jquery.scrollex.min.js"></script>
-    <script src="/assets/js/browser.min.js"></script>
-    <script src="/assets/js/breakpoints.min.js"></script>
-    <script src="/assets/js/util.js"></script>
-    <script src="/assets/js/main.js"></script>
+<script type="text/javascript" language="javascript">
+   const accordion = document.getElementsByClassName('accordion-container');
+
+for (i=0; i<accordion.length; i++) {
+  accordion[i].addEventListener('click', function () {
+    this.classList.toggle('active')
+  })
+}
+</script>
+
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.scrolly.min.js"></script>
+<script src="/assets/js/jquery.scrollex.min.js"></script>
+<script src="/assets/js/browser.min.js"></script>
+<script src="/assets/js/breakpoints.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
 
 
 </body>

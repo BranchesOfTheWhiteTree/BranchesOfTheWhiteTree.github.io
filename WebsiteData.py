@@ -15,14 +15,14 @@ Banners = [
 	"Greetings, the warrior outlander!",
 	"Welcome, the journalling outlander!",
 	"Greetings Captain, welcome on-board!",
-	"Hey there, fellow descender",
+	"Hey there, fellow traveller!",
 ]
 BannerMessages = [
 	"Welcome to the Adventurers' Guild! Your one stop destination for many things related to Tevyat, and Genshin Impact!",
 	"This is a working collection of combat-oriented information to build your characters, weapons, artifacts, and teams.",
 	"This is a working collection of story information, lore about characters, artifacts, and many details about Teyvat.",
 	"This is a working collection of relevant information and parallels between Honkai Impact and Genshin Impact.",
-	"This is a section with some information about me, the website, and other miscellaneous information.",
+	"Here, you'll find information about me, the website, the community behind this work, FAQs, and other miscellaneous information.",
 ]
 
 BannerImages = [

@@ -88,3 +88,95 @@
 	// @import url(./pygments_themes/syntax-one-dark.css);
 	// @import url(./pygments_themes/onedark.css);
 	// @import url(./pygments_themes/pygments.css);
+
+// Custom CSS
+
+	// @import url(./custom.css);
+
+.accordion .accordion-container
+{
+	position: relative;
+	// margin: 10px 10px;
+}
+
+.accordion .label
+{
+	position: relative;
+	// padding: 10px 0;
+	// font-size: 30px;
+	color: _palette(fg);
+	cursor: pointer;
+}
+
+.accordion .label::before {
+	content: '+';
+	color: _palette(fg);
+	position: absolute;
+	top: 50%;
+	right: -5px;
+	transform: translateY(-50%);
+  }
+  
+  /* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+  
+  .accordion .content {
+	position: relative;
+	height: 0;
+	text-align: justify;
+	overflow: hidden;
+	transition: 0.5s;
+  }
+
+  .accordion .accordion-container.active .content {
+	height: auto;
+  }
+  
+  /* Changes from plus sign to negative sign once active */
+  
+  .accordion .accordion-container.active .label::before {
+	content: '-';
+	font-size: 30px;
+  }
+
+
+.accent1:hover
+{
+	background-color: _palette(accent1);
+}
+
+.accent2:hover
+{
+	background-color: _palette(accent2);
+}
+
+.accent3:hover
+{
+	background-color: _palette(accent3);
+}
+
+.accent4:hover
+{
+	background-color: _palette(accent4);
+}
+
+.accent5:hover
+{
+	background-color: _palette(accent5);
+}
+
+.accent6:hover
+{
+	background-color: _palette(accent6);
+}
+
+.active, .accordion:hover {
+	color: _palette(fg);
+}
+
+.panel {
+	padding: 0 18px;
+	display: none;
+	background-color: _palette(bg);
+	// border: 2px solid _palette(fg);
+	overflow: hidden;
+}
