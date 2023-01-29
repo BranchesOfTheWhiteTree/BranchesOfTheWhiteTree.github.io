@@ -43,6 +43,8 @@ This is a rough outline of what and all will be included in the genshin impact w
 
 ### Sections
 
+These are the broad sections we are including in the page at the moment.
+
 * Playstyle
 * General kit overview
 * Combat mechanics
@@ -59,6 +61,7 @@ This is a rough outline of what and all will be included in the genshin impact w
 * Pros and Cons
 * FAQs and Misconceptions
 * Community tier list?!
+* Nuanced tricks, quirks  (eg: Shogun's puppet does not breath cold air in Dragonspine)
 * ...
 
 ## Individual pages for each weapon
