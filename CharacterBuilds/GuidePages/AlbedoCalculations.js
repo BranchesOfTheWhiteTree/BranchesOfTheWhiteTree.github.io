@@ -345,7 +345,7 @@ function UpdateChart()
     }
     
     // Cinnabar Spindle Passive
-    const SpotlessHeart = 0.0 * DEF;
+    const SpotlessHeart = 0.8 * DEF;
 
     // Data console
     // console.log(Resistance, EnemyResMult, EnemyDefMult, AvgCrit, CritMult, GeoMult);

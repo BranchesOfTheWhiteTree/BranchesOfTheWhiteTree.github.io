@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Meta additions to hold no cache in github. This makes the website reload fresh. -->
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+
+    <!-- KaTeX CSS and JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);">
+    </script>
+
+	<link rel="stylesheet" href="/assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+
+    <title>NewUIAlbedoCalculations | GuidePages | CharacterBuilds | Adventurers' Guild</title>
+
+    </head>
+    
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+<header id="header" class="alt">
+
+	<a href="/index.html" class="logo"><strong>Adventurers' Guild</strong>  <span>by Arun</span></a>
+	
+	<nav>
+		<a href="#menu">Menu</a>
+	</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+	<ul class="links">
+		<li><a href="/index.html">Home</a></li>
+		<li><a href="/CharacterBuilds.html">Character Builds</a></li>
+		<li><a href="/CharacterLore.html">Character Lore</a></li>
+		<li><a href="/HonkaiImpact.html">Honkai Impact</a></li>
+		<li><a href="/About.html">About</a></li>
+	</ul>
+</nav>
+        
+        <section>
+            <div class="inner align-justify">
+
+                <h1 id="albedo---calculator">Albedo - Calculator</h1>
+<h2 id="character-stats">Character stats</h2>
+<div class="row">
+<div class="col-4 col-12-medium">
+<p><label for="charHP">HP</label> <input type="number" name="charHP" id="charHP" min="0" step="1" value="200" max="100000"> <br> <label for="charATK">ATK</label> <input type="number" name="charATK" id="charATK" min="0" step="0.1" value="200" max="10000"> <br> <label for="charDEF">DEF</label> <input type="number" name="charDEF" id="charDEF" min="0" step="0.1" value="200" max="10000"></p>
+</div>
+<div class="col-4 col-12-medium">
+<p><label for="charCRate">Crit Rate %</label> <input type="number" name="charCRate" id="charCRate" min="5" step="0.1" value="5" max="100"> <br> <label for="charCDmg">Crit DMG %</label> <input type="number" name="charCDmg" id="charCDmg" min="50" step="0.1" value="50" max="700"> <br> <label for="charER">Energy Recharge %</label> <input type="number" name="charER" id="charER" min="100" step="0.1" value="100" max="700"></p>
+</div>
+<div class="col-4 col-12-medium">
+<p><label for="charEM">Elemental Mastery</label> <input type="number" name="charEM" id="charEM" min="0" step="1" value="0" max="5000"> <br> <label for="charHB">Healing Bonus %</label> <input type="number" name="charHB" id="charHB" min="0" step="0.1" value="0" max="500"> <br> <label for="charIHB">Incoming Healing Bonus %</label> <input type="number" name="charIHB" id="charIHB" min="0" step="0.1" value="0" max="500"></p>
+</div>
+</div>
+<hr />
+<div class="row">
+<div class="col-4 col-12-medium">
+<p><label for="charLEVEL">Character Level</label> <input type="number" name="charLEVEL" id="charLEVEL" min="1" step="1" value="50" max="90"> <br> <label for="charANEMO">Anemo DMG Bonus %</label> <input type="number" name="charANEMO" id="charANEMO" min="0" step="0.1" value="0" max="500"> <br> <label for="charGEO">Geo DMG Bonus %</label> <input type="number" name="charGEO" id="charGEO" min="0" step="0.1" value="0" max="500"></p>
+</div>
+<div class="col-4 col-12-medium">
+<p><label for="charELECTRO">Electro DMG Bonus %</label> <input type="number" name="charELECTRO" id="charELECTRO" min="0" step="0.1" value="0" max="500"> <br> <label for="charDENDRO">Dendro DMG Bonus %</label> <input type="number" name="charDENDRO" id="charDENDRO" min="0" step="0.1" value="0" max="500"> <br> <label for="charHYDRO">Hydro DMG Bonus %</label> <input type="number" name="charHYDRO" id="charHYDRO" min="0" step="0.1" value="0" max="500"></p>
+</div>
+<div class="col-4 col-12-medium">
+<p><label for="charPYRO">Pyro DMG Bonus %</label> <input type="number" name="charPYRO" id="charPYRO" min="0" step="0.1" value="0" max="500"> <br> <label for="charCRYO">Cryo DMG Bonus %</label> <input type="number" name="charCRYO" id="charCRYO" min="0" step="0.1" value="0" max="500"> <br> <label for="charPHY">Physical DMG Bonus %</label> <input type="number" name="charPHY" id="charPHY" min="0" step="0.1" value="0" max="500"></p>
+</div>
+</div>
+<hr />
+<h2 id="constellation-and-ascension-passives">Constellation and Ascension Passives</h2>
+<p>At the moment, A1 Passive is working. Need to verify C2, C4, and C6 Passives.</p>
+<div class="row">
+<div class="col-4 col-12-medium">
+<p><input type="checkbox" id="A1Passive" name="A1Passive"> </input> <label for="A1Passive">A1 Passive</label></p>
+</div>
+<div class="col-4 col-12-medium">
+<p><input type="checkbox" id="C2Passive" name="C2Passive"> </input> <label for="C2Passive">C2 Passive - 4 stacks</label> <br> <input type="checkbox" id="C4Passive" name="C4Passive"> </input> <label for="C4Passive">C4 Passive</label> <br></p>
+</div>
+<div class="col-4 col-12-medium">
+<p><input type="checkbox" id="C6Passive" name="C6Passive"> </input> <label for="C6Passive">C6 Passive</label></p>
+</div>
+</div>
+<hr />
+<h2 id="additional-stats">Additional Stats</h2>
+<div class="row">
+<div class="col-4 col-12-medium">
+<p><label for="enemyLEVEL">Enemy Level</label> <input type="number" name="enemyLEVEL" id="enemyLEVEL" min="1" step="1" value="50" max="100"> <br> <label for="enemyBaseRes">Enemy Base Resistance %</label> <input type="number" name="enemyBaseRes" id="enemyBaseRes" min="0" step="1" value="50" max="100"></p>
+</div>
+<div class="col-4 col-12-medium">
+<p><label for="defIgnore">Defence Ignore %</label> <input type="number" name="defIgnore" id="defIgnore" min="0" step="1" value="0" max="200"> <br> <label for="ResReduction">Resistance Reduction %</label> <input type="number" name="ResReduction" id="ResReduction" min="0" step="1" value="50" max="100"></p>
+</div>
+<div class="col-4 col-12-medium">
+<p><label for="defReduction">Defence Reduction %</label> <input type="number" name="defReduction" id="defReduction" min="0" step="1" value="0" max="200"> <br> <br> <button type="button" onclick="UpdateChart()">Calculate</button></p>
+</div>
+</div>
+<hr />
+<h2 id="elemental-skill---abiogenesis-solar-isotoma">Elemental Skill - Abiogenesis: Solar Isotoma</h2>
+<canvas id="Albedo_ESkill_Chart">
+</canvas>
+<hr />
+<h2 id="elemental-burst---rite-of-progeniture-tectonic-tide">Elemental Burst - Rite of Progeniture: Tectonic Tide</h2>
+<canvas id="Albedo_EBurst_Chart">
+</canvas>
+<hr />
+<h2 id="normal-attack-section">Normal Attack Section</h2>
+<p>For Albedo, you don’t need to level or use normal attack skills, as his normal attacks don’t contribute a lot to his personal damage. However, if you want to use his normal attacks with or without elemental infusion, do check this out!</p>
+<h3 id="normal-attacks">Normal Attacks</h3>
+<canvas id="Albedo_NA_Chart">
+</canvas>
+<hr />
+<h3 id="charged-attacks">Charged Attacks</h3>
+<canvas id="Albedo_CA_Chart">
+</canvas>
+<hr />
+<h3 id="plunge-attacks">Plunge Attacks</h3>
+<canvas id="Albedo_PA_Chart">
+</canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./NewUIAlbedoCalculations.js">
+</script>
+<p><br></p>
+
+                
+            </div>
+        </section>
+		
+        <!-- Footer -->
+<footer id="footer" class="">
+	<div class="inner">
+		<ul class="icons">
+			<li><a href="https://www.twitch.tv/branonline" target="_blank" class="icon alt fa-twitch"><span class="label">Twitch</span></a></li>
+			<li><a href="https://www.youtube.com/c/BranOnline/" target="_blank" class="icon alt fa-youtube-play"><span class="label">Bran's YouTube Channel</span></a></li>
+			<li><a href="https://github.com/BranchesOfTheWhiteTree" target="_blank" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+		</ul>
+		<p>
+			All rights reserved to their respective owners | Website Owner: <a href="https://arunprasaad2711.github.io" target="_blank">Arun Prasaad Gunasekaran</a> | Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a>
+		</p>
+	</div>
+</footer>
+        
+    </div>
+
+    <script type="text/javascript" language="javascript">
+const copyButtonLabel = "Copy Code";
+
+// use a class selector if available
+let blocks = document.querySelectorAll("pre");
+
+blocks.forEach((block) => {
+    // only add button if browser supports Clipboard API
+    if (navigator.clipboard) {
+    let button = document.createElement("a");
+    button.className = "button small"
+
+    button.innerText = copyButtonLabel;
+    button.style.cssText = "align:right;"
+    block.appendChild(button);
+
+    button.addEventListener("click", async () => {
+        await copyCode(block);
+    });
+    }
+});
+
+async function copyCode(block) {
+    let code = block.querySelector("code");
+    let text = code.innerText;
+
+    await navigator.clipboard.writeText(text);
+}
+</script>
+
+<script type="text/javascript" language="javascript">
+   const accordion = document.getElementsByClassName('accordion-container');
+
+for (i=0; i<accordion.length; i++) {
+  accordion[i].addEventListener('click', function () {
+    this.classList.toggle('active')
+  })
+}
+</script>
+
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.scrolly.min.js"></script>
+<script src="/assets/js/jquery.scrollex.min.js"></script>
+<script src="/assets/js/browser.min.js"></script>
+<script src="/assets/js/breakpoints.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+</body>
+</html>
