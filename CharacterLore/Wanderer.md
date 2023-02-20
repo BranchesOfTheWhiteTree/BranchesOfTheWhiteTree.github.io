@@ -6,6 +6,16 @@ _Wanderer Poster Image from Version 3.3 Live Stream - All Senses Clear, All Exis
 
 # Wanderer - Character Story: The Hifumi, Kaimetsu and Saisei
 
+> _"It took three betrayals for me to finally understand... the world is just an elaborate tapestry of lies" - Story teaser: The "Divine" Will_
+
+## Introduction
+
+Kunikuzushi, Kabukimono, Scaramouche, The Balladeer. I'm sure these names all ring a bell in your head — an iconic character in Genshin Impact. His story is quite intriguing, complex, and well-written. From being a product of a God to making contact with humans, to eventually hating both, he went through a lot. He, who has walked the border of God and Humans, only wished to be wanted. Such is this fascinating character, crafted by taking many references from real-world folklore and mythology. Let's walk down memory lane from his origin, betrayals, grief and finally, acceptance, shall we?
+
+<div class="row">
+<div class="col-3 col-12-medium box sidebar">
+Table of Contents
+
 - [Wanderer - Character Story: The Hifumi, Kaimetsu and Saisei](#wanderer---character-story-the-hifumi-kaimetsu-and-saisei)
   - [Introduction](#introduction)
   - [Voice Actors](#voice-actors)
@@ -42,11 +52,9 @@ _Wanderer Poster Image from Version 3.3 Live Stream - All Senses Clear, All Exis
   - [Inspirations:](#inspirations)
   - [Credits:](#credits)
 
-> _"It took three betrayals for me to finally understand... the world is just an elaborate tapestry of lies" - Story teaser: The "Divine" Will_
+</div>
 
-## Introduction
-
-Kunikuzushi, Kabukimono, Scaramouche, The Balladeer. I'm sure these names all ring a bell in your head — an iconic character in Genshin Impact. His story is quite intriguing, complex, and well-written. From being a product of a God to making contact with humans, to eventually hating both, he went through a lot. He, who has walked the border of God and Humans, only wished to be wanted. Such is this fascinating character, crafted by taking many references from real-world folklore and mythology. Let's walk down memory lane from his origin, betrayals, grief and finally, acceptance, shall we?
+<div class="col-9 col-12-medium">
 
 ## Voice Actors
 
@@ -532,4 +540,7 @@ Thank you for taking the time to read the story, lore, and references of Wandere
 
 ## Credits:
 * Author - Blanky
-* Reviewed - Arun
+* Reviewed by - Arun
+
+</div>
+</div>

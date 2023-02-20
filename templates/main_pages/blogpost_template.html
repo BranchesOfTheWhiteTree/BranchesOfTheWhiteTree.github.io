@@ -5,13 +5,16 @@
     
 <body class="is-preload">
 
+    <!-- Back to top button -->
+    <a onclick="topFunction()" id="Back2TopBtn" class="icon alt fa-arrow-up" title="Go to top"></a>
+    
     <!-- Wrapper -->
     <div id="wrapper">
 
         {% include 'partials/menubar.html' %}
         
         <section>
-            <div class="inner align-justify">
+            <div class="inner">
 
                 {{post.content}}
                 

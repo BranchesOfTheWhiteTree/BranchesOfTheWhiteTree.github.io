@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <link rel="icon" type="image/x-icon" href="/images/Paimon_Icon.png">
+
     <!-- Meta additions to hold no cache in github. This makes the website reload fresh. -->
     <meta http-equiv='cache-control' content='no-cache'> 
     <meta http-equiv='expires' content='0'> 
@@ -29,6 +31,9 @@
     
 <body class="is-preload">
 
+    <!-- Back to top button -->
+    <a onclick="topFunction()" id="Back2TopBtn" class="icon alt fa-arrow-up" title="Go to top"></a>
+    
     <!-- Wrapper -->
     <div id="wrapper">
 
@@ -54,7 +59,7 @@
 </nav>
         
         <section>
-            <div class="inner align-justify">
+            <div class="inner">
 
                 <h1 id="honkai-star-rail-website-sections">Honkai: Star Rail Website Sections</h1>
 <h2 id="what-is-this">What is this?</h2>
@@ -149,6 +154,8 @@
     </div>
 
     <script type="text/javascript" language="javascript">
+// Code block for adding a copy-code button
+
 const copyButtonLabel = "Copy Code";
 
 // use a class selector if available
@@ -179,6 +186,9 @@ async function copyCode(block) {
 </script>
 
 <script type="text/javascript" language="javascript">
+
+// Code block for an accordion
+
    const accordion = document.getElementsByClassName('accordion-container');
 
 for (i=0; i<accordion.length; i++) {
@@ -186,6 +196,32 @@ for (i=0; i<accordion.length; i++) {
     this.classList.toggle('active')
   })
 }
+</script>
+
+<script type="text/javascript" language="javascript">
+
+// codeblock for back to top button
+
+// Get the button:
+let mybutton = document.getElementById("Back2TopBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
 </script>
 
 <script src="/assets/js/jquery.min.js"></script>

@@ -74,9 +74,6 @@ input, select, textarea {
 }
 
 /* Basic */
-@-ms-viewport {
-  width: device-width;
-}
 body {
   -ms-overflow-style: scrollbar;
 }
@@ -98,7 +95,6 @@ body {
   background: #242943;
 }
 body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-  -webkit-animation: none !important;
   animation: none !important;
   transition: none !important;
 }
@@ -1385,7 +1381,6 @@ section.special, article.special {
 
 header.major {
   width: -moz-max-content;
-  width: -webkit-max-content;
   width: -ms-max-content;
   width: max-content;
   margin-bottom: 2em;
@@ -2107,10 +2102,10 @@ button.next:active:after,
 }
 @media screen and (max-width: 1280px) {
   input[type=submit].next,
-input[type=reset].next,
-input[type=button].next,
-button.next,
-.button.next {
+  input[type=reset].next,
+  input[type=button].next,
+  button.next,
+  .button.next {
     padding-right: 5em;
   }
 }
@@ -2449,17 +2444,34 @@ button:disabled,
   }
 }
 
-/* Header */
-@-webkit-keyframes reveal-header {
-  0% {
-    top: -4em;
-    opacity: 0;
-  }
-  100% {
-    top: 0;
-    opacity: 1;
+.sidebar {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+#Back2TopBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+}
+
+@media screen and (max-width: 980px) {
+  .sidebar {
+    position: static;
   }
 }
+/* Header */
 @keyframes reveal-header {
   0% {
     top: -4em;
@@ -2571,13 +2583,11 @@ button:disabled,
   right: 2em;
 }
 #header.reveal {
-  -webkit-animation: reveal-header 0.35s ease;
   animation: reveal-header 0.35s ease;
 }
 #header.alt {
   transition: opacity 2.5s ease;
   transition-delay: 0.75s;
-  -webkit-animation: none;
   animation: none;
   background-color: transparent;
   box-shadow: none;
