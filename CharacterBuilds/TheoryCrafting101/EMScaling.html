@@ -262,38 +262,63 @@
     </div>
 
     <script type="text/javascript" language="javascript">
-// Code block for adding a copy-code button
-
-const copyButtonLabel = "Copy Code";
-
-// use a class selector if available
-let blocks = document.querySelectorAll("pre");
-
-blocks.forEach((block) => {
-    // only add button if browser supports Clipboard API
-    if (navigator.clipboard) {
-    let button = document.createElement("a");
-    button.className = "button small"
-
-    button.innerText = copyButtonLabel;
-    button.style.cssText = "align:right;"
-    block.appendChild(button);
-
-    button.addEventListener("click", async () => {
-        await copyCode(block);
+    // Code block for adding a copy-code button
+    
+    const copyButtonLabel = "Copy Code";
+    
+    // use a class selector if available
+    let blocks = document.querySelectorAll("pre");
+    
+    blocks.forEach((block) => {
+        // only add button if browser supports Clipboard API
+        if (navigator.clipboard) {
+        let button = document.createElement("a");
+        button.className = "button small"
+    
+        button.innerText = copyButtonLabel;
+        button.style.cssText = "align:right;"
+        block.appendChild(button);
+    
+        button.addEventListener("click", async () => {
+            await copyCode(block);
+        });
+        }
     });
+    
+    async function copyCode(block) {
+        let code = block.querySelector("code");
+        let text = code.innerText;
+    
+        await navigator.clipboard.writeText(text);
     }
-});
-
-async function copyCode(block) {
-    let code = block.querySelector("code");
-    let text = code.innerText;
-
-    await navigator.clipboard.writeText(text);
-}
 </script>
 
 <script type="text/javascript" language="javascript">
+
+    // codeblock for back to top button
+    
+    // Get the button:
+    let mybutton = document.getElementById("Back2TopBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    
+</script>
+    <script type="text/javascript" language="javascript">
 
 // Code block for an accordion
 
@@ -304,32 +329,6 @@ for (i=0; i<accordion.length; i++) {
     this.classList.toggle('active')
   })
 }
-</script>
-
-<script type="text/javascript" language="javascript">
-
-// codeblock for back to top button
-
-// Get the button:
-let mybutton = document.getElementById("Back2TopBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
 </script>
 
 <script src="/assets/js/jquery.min.js"></script>
