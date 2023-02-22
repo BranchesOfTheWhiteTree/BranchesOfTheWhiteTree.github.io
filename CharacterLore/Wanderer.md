@@ -183,7 +183,7 @@ As such, this was the second betrayal. Now betrayed by humans and gods, he consi
 
 ## The Third Betrayal
 
-<span class="image fit"><img src="./WandererImages/image13.png" alt="Kabukimono sees the unnamed sickly child outside of Tatarasuna and starts to take a familial liking to him."></span>
+<span class="image fit"><img src="./WandererImages/image13.PNG" alt="Kabukimono sees the unnamed sickly child outside of Tatarasuna and starts to take a familial liking to him."></span>
 
 _Kabukimono sees the unnamed sickly child outside of Tatarasuna and starts to take a familial liking to him._
 
@@ -305,7 +305,7 @@ That is the story of how Wanderer came to be. He started as a puppet - a fledgli
 
 ## Vision Story
 
-<span class="image fit"><img src="./WandererImages/image18.png" alt="Wanderer, now gaining his anemo vision, decides to destroy 'Shoku No Kami'"></span>
+<span class="image fit"><img src="./WandererImages/image18.PNG" alt="Wanderer, now gaining his anemo vision, decides to destroy 'Shoku No Kami'"></span>
 
 _Wanderer, now gaining his anemo vision, decides to destroy "Shoku No Kami"_
 
@@ -375,9 +375,9 @@ After everything that happened, the Wanderer allowed the Traveler to name him, s
 
 ## Character Meanings
 
-<span class="image fit"><img src="./WandererImages/image3.png" alt="Backshot of Scaramouche being attached to 'Shoku no Kami' with tubes and connections. One could only imagine how much pain he must've endured in the process."></span>
+<span class="image fit"><img src="./WandererImages/image3.png" alt="Backshot of Scaramouche being attached to 'Shouku no Kami' with tubes and connections. One could only imagine how much pain he must've endured in the process."></span>
 
-_Backshot of Scaramouche being attached to 'Shoku no Kami' with tubes and connections. One could only imagine how much pain he must've endured in the process._
+_Backshot of Scaramouche being attached to 'Shouku no Kami' with tubes and connections. One could only imagine how much pain he must've endured in the process._
 
 > _Eternity stretches things out over a long time. But each moment within it becomes all the more fragile_
 
@@ -386,7 +386,7 @@ It means "strange thing", or "the crazy one". The word is derived from kabuku wh
 
 It is quite fitting for Wanderer as before this, the people of Tatarasuna called him this because of his unique outfit of being different from the regular clothing.
 
-<span class="image fit"><img src="./WandererImages/image9.png" alt=""></span>
+<span class="image fit"><img src="./WandererImages/image9.PNG" alt=""></span>
 
 It could also be possible that Wanderer lacks a heart, which makes him different from the mortals born with one. However, Niwa assures him they are all alike.
 
@@ -521,7 +521,7 @@ The meet-up we all hope for. Mother and Son, finally reunited. I hope, both can 
 
 ## Conclusion
 
-<span class="image left"><img src="./WandererImages/image11.png" width="50%" alt=""></span>
+<span class="image"><img src="./WandererImages/image11.png" width="75%" alt=""></span>
 
 > _"Hmm? A birthday present?... You didn't put something strange in there, did you?"_
 
