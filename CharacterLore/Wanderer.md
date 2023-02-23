@@ -1,25 +1,10 @@
-> _"If only I could have burned to death in that fire too... no, in fact... I wish I was never born at all"_
-
-<span class="image fit"><img src="./WandererImages/image4.png" alt="Wanderer Poster Image from Version 3.3 Live Stream - All Senses Clear, All Existence Void"></span>
-
-_Wanderer Poster Image from Version 3.3 Live Stream - All Senses Clear, All Existence Void_
-
-# The Hifumi, Kaimetsu and Saisei
-
-> _"It took three betrayals for me to finally understand... the world is just an elaborate tapestry of lies" - Story teaser: The "Divine" Will_
-
-## Wanderer
-
-Kunikuzushi, Kabukimono, Scaramouche, The Balladeer. I’m sure these names all ring a bell in your head — an iconic character in Genshin Impact. His story is quite intriguing, complex, and well-written. From being a product of a God to making contact with humans, to eventually hating both, he went through a lot. He, who has walked the border of God and Humans, only wished to be wanted. Such a fascinating character, crafted by taking many references from real-world folklore and mythology. Let’s walk down memory lane from his origin, betrayals, grief and finally, acceptance.
-
 <div class="row">
 <div class="col-3 col-12-medium box sidebar">
 Table of Contents
 
 - [The Hifumi, Kaimetsu and Saisei](#the-hifumi-kaimetsu-and-saisei)
+  - [Credits](#credits)
   - [Wanderer](#wanderer)
-  - [Bio](#bio)
-  - [Voice Actors](#voice-actors)
   - [Prologue](#prologue)
   - [The First Betrayal](#the-first-betrayal)
   - [The Second Betrayal](#the-second-betrayal)
@@ -51,32 +36,50 @@ Table of Contents
   - [Conclusion](#conclusion)
   - [The End](#the-end)
   - [Inspirations:](#inspirations)
-  - [Credits:](#credits)
+</div>
+<div class="col-9 col-12-medium ">
 
+> _"If only I could have burned to death in that fire too... no, in fact... I wish I was never born at all"_
+
+<span class="image fit"><img src="./WandererImages/image4.png" alt="Wanderer Poster Image from Version 3.3 Live Stream - All Senses Clear, All Existence Void"></span>
+
+_Wanderer Poster Image from Version 3.3 Live Stream - All Senses Clear, All Existence Void_
+
+# The Hifumi, Kaimetsu and Saisei
+
+> _"It took three betrayals for me to finally understand... the world is just an elaborate tapestry of lies" - Story teaser: The "Divine" Will_
+
+## Credits
+* Written by: Blanky
+* Reviewed by: Arun
+* Last updated on: 23rd February, 2023
+* Updated till v3.4
+
+## Wanderer
+
+<div class="row">
+<div class="col-6 col-12-medium">
+* Title - Eons Adrift
+* Type - Limited 5-star, Medium Male, Anemo Catalyst playable character
+* Birthday - January 3rd
+* Constellation - Peregrinus
+* Affiliation - None
+* Special Dish - Shimi Chazuke
+* EN VA - Patrick Pedraza
+* CN VA - Lu Yin (鹿喑)
+* JP VA - Kakihara Tetsuya (柿原 徹也)
+* KR VA - Min Seung-woo (민승우)
+</div>
+<div class="col-6 col-12-medium">
+<span class="image"><img src="/images/characters/icon/Wanderer.png" alt="Character Image"></span>
+</div>
 </div>
 
-<div class="col-9 col-12-medium">
+Kunikuzushi, Kabukimono, Scaramouche, The Balladeer. I’m sure these names all ring a bell in your head — an iconic character in Genshin Impact. His story is quite intriguing, complex, and well-written. From being a product of a God to making contact with humans, to eventually hating both, he went through a lot. He, who has walked the border of God and Humans, only wished to be wanted. Such a fascinating character, crafted by taking many references from real-world folklore and mythology. Let’s walk down memory lane from his origin, betrayals, grief and finally, acceptance.
 
 <span class="image"><img src="./WandererImages/image8.png" width="50%" alt="Artwork for his birthday"></span>
 
-## Bio
-
-* Limited 5-star, Medium Male, Anemo Catalyst playable character
-* Birthday: January 3rd
-* Constellation: Peregrinus
-* Affiliation: None
-* Special Dish: Shimi Chazuke
-
-## Voice Actors
-
-* English - Patrick Pedraza
-* Chinese - Lu Yin (鹿喑)
-* Japanese - Kakihara Tetsuya (柿原 徹也)
-* Korean - Min Seung-woo (민승우)
-
 _Artwork for his birthday_
-
-> _My chest will never again be defiled by worldly filth. I will scrub away every last trace of human emotion._
 
 ## Prologue
 
@@ -209,7 +212,8 @@ And thus, enter Scaramouche.
 
 _Kabukimono decided to forsake this world and join the Fatui._
 
-> _"Humans... they can't be trusted. And the gods fill me with pure loathing. So I said good riddance! I denounce the world and laugh in its face."_
+> _My chest will never again be defiled by worldly filth. I will scrub away every last trace of human emotion._
+> _Humans... they can't be trusted. And the gods fill me with pure loathing. So I said good riddance! I denounce the world and laugh in its face._
 
 Joining the Fatui, the puppet gained a new name - Scaramouche. Dottore unlocked Scaramouche’s divine abilities that were sealed in him by Ei in the past. He also modified him to gain additional abilities, making him even more powerful and efficient during his missions. His early years were brutal, experiencing countless experiments by Dottore. Dottore gained new knowledge from all this experimentation, and this might’ve allowed Dottore to make his iconic “segments” at the peak of his abilities.
 
@@ -411,8 +415,6 @@ Wanderer- A broad name that he told the Traveler that they could call him whatev
 
 <span class="image left"><img src="./WandererImages/image23.png" alt=""></span>
 
-_Wanderer's constellation: Peregrinus - it means "Wanderer"_
-
 **Peregrinus** means “Wanderer” and references a philosopher of the same name. His life story seemingly parallels Wanderers’. In his early life, he was accused of parasites and the murder of a family member, which forced him to leave his homeland. This is similar to the people of Tatarasuna dying to the Tataragami and Kabukimono leaving the scene. He, later on, rose into authority in a Christian Community, quite like the Fatui. After being imprisoned by the Romans, Peregrinus left his inheritance, and wandered the world, only to burn himself in Egypt. This is similar to how Scaramouche lost his Gnosis and wandered the world before erasing himself from the Irminsul. 
 
 Wanderer is the only non-archon character besides the twins to have constellations that represented himself. It is also shaped like a Kokeshi Doll. It’s an emblem of hope, which is like Wanderer's hopes for the future, a new fate in his life where he can make the choice.
@@ -545,10 +547,6 @@ Thank you for taking the time to read the story, lore, and references of Wandere
 <span class="image fit"><img src="./WandererImages/image1.png" alt=""></span>
 
 > _"Never Been Born At All... Is That Really All You Wished For?" - Wanderer to his old version_
-
-## Credits:
-* Author - Blanky
-* Reviewed by - Arun
 
 </div>
 </div>
