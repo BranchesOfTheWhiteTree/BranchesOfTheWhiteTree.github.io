@@ -116,9 +116,11 @@ This could also be why Jean is linked to the smaller lion constellation Leo Mino
 
 ## Her Story
 
-<span class="image left"><img src="./JeanImages/Gunnhildr_Clan.webp" alt="Gunnhildr Clan"><span>
-
 Jean was born into the Gunnhildr Clan, a venerable knightly house in Mondstadt well known for their role in establishing and maintaining Mondstadt's freedom throughout the nation's history. She inherited the prideful blood from her mother, Frederica, who is known as the Alder Knight. Her father, on the other hand, Seamus Pegg, was a famed adventurer throughout the continent. When he came to Mondstadt, he dusted off his past self and started anew with the Church of Favonius, climbed the ranks within it and became known as the Cardinal of Daybreak, Seneschal of the Church of Favonius. The two lovers had two children, Jean and later on, Barbara.
+
+<span class="image fit"><img src="./JeanImages/GunnhildrClan.PNG" alt="Gunnhildr Clan"><span>
+
+_The Gunnhildr Clan's emblem. Gunnhildr is one among the three noble clans of Mondstadt, other two being the Ragnvindr Clan, and the Lawrence Clan_
 
 The two lovers eventually parted ways, with Jean following their mother and Barbara following their father.
 
@@ -364,11 +366,11 @@ One day, Noelle went to ask Klee for tips on how to become a knight, but Klee in
 
 <span class="image fit"><img src="./JeanImages/17.jpg" alt="kaeya klee amber lisa and jean sighing"><span>
 
-Another day, Kaeya and Klee were at Good Hunter. Klee blew up the stove there, so both Klee and Kaeya were sent to solitary confinement, even though both were supposed to travel to the Chasm to help out with demolition.
+<span class="image left"><img src="./JeanImages/18.png" alt="angry jean chibi"><span>
+
+Another day, Kaeya and Klee were at Good Hunter. Klee blew up the stove there, so both Klee and Kaeya were sent to solitary confinement, even though both were supposed to travel to the Chasm to help out with a demolition request.
 
 Besides sending the Knights to solitary confinement, there are other "punishments" at hand for those who were caught scheming destructive plans.
-
-<span class="image left"><img src="./JeanImages/18.png" alt="angry jean chibi"><span>
 
 At the Golden Apple Archipelago, Klee and Albedo were talking about the reclining chair "Dodoco's Beach Nap", with Klee wanting to tie three of these chairs together to make a giant slingshot and send Jumpy Dumpties over the city walls into Cider Lake. As such, Albedo had to write a guarantee that "mementos from the Golden Apple Archipelago will not be modified for use in pranks" on Klee's behalf after these reclining chairs were brought back to Mondstadt.
 
