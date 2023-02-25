@@ -58,6 +58,7 @@ _Venti the windborne bard_
 * Birthday - June 16th
 * Constellation - Carmen Dei
 * Affiliation - City of Mondstadt
+* Special Dish - A Buoyant Breeze
 * EN VA - Erika Harlacher
 * CN VA - 喵酱 (Miaojiang)
 * JP VA - 村瀬歩(MURASE Ayumu)
