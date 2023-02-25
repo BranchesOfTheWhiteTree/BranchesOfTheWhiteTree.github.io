@@ -75,6 +75,46 @@ _Wanderer Poster Image from Version 3.3 Live Stream - All Senses Clear, All Exis
 </div>
 </div>
 
+<div class="box false_sidebar">
+Table of Contents
+
+- [The Hifumi, Kaimetsu and Saisei](#the-hifumi-kaimetsu-and-saisei)
+  - [Credits](#credits)
+  - [Wanderer](#wanderer)
+  - [Prologue](#prologue)
+  - [The First Betrayal](#the-first-betrayal)
+  - [The Second Betrayal](#the-second-betrayal)
+  - [The Third Betrayal](#the-third-betrayal)
+  - [The Fatui](#the-fatui)
+  - [The Present](#the-present)
+  - [Acceptance: Wanderer](#acceptance-wanderer)
+  - [Vision Story](#vision-story)
+  - [Aspirations](#aspirations)
+  - [Connection With Other Characters](#connection-with-other-characters)
+    - [Raiden Ei](#raiden-ei)
+    - [Katsuragi](#katsuragi)
+    - [Niwa Hisahide](#niwa-hisahide)
+    - [The Young Boy](#the-young-boy)
+    - [Nahida](#nahida)
+    - [The Traveler](#the-traveler)
+  - [Character Meanings](#character-meanings)
+    - [Kabukimono:](#kabukimono)
+    - [Kunikuzushi:](#kunikuzushi)
+    - [Scaramouche/The Balladeer:](#scaramouchethe-balladeer)
+  - [Constellation meanings](#constellation-meanings)
+  - [Reference from the real world](#reference-from-the-real-world)
+  - [Quirks and Misconceptions](#quirks-and-misconceptions)
+  - [Theories](#theories)
+    - [The False Sky:](#the-false-sky)
+    - [Wanderer meeting Kazuha:](#wanderer-meeting-kazuha)
+    - [Wanderer vs Dottore:](#wanderer-vs-dottore)
+    - [Wanderer meets Ei:](#wanderer-meets-ei)
+  - [Conclusion](#conclusion)
+  - [The End](#the-end)
+  - [Inspirations:](#inspirations)
+
+</div>
+
 Kunikuzushi, Kabukimono, Scaramouche, The Balladeer. I’m sure these names all ring a bell in your head — an iconic character in Genshin Impact. His story is quite intriguing, complex, and well-written. From being a product of a God to making contact with humans, to eventually hating both, he went through a lot. He, who has walked the border of God and Humans, only wished to be wanted. Such a fascinating character, crafted by taking many references from real-world folklore and mythology. Let’s walk down memory lane from his origin, betrayals, grief and finally, acceptance.
 
 <span class="image"><img src="./WandererImages/image8.png" width="50%" alt="Artwork for his birthday"></span>

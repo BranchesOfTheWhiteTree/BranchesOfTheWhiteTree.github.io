@@ -81,6 +81,51 @@ _Jean birthday image_
 </div>
 </div>
 
+<div class="box false_sidebar">
+Table of Contents
+
+- [Jean - The Dandelion Knight](#jean---the-dandelion-knight)
+  - [Credits](#credits)
+  - [Jean](#jean)
+  - [Etymology](#etymology)
+  - [Constellation: Leo Minor](#constellation-leo-minor)
+  - [Her Story](#her-story)
+  - [Her Aspirations](#her-aspirations)
+  - [Her Vision](#her-vision)
+  - [Her Connections](#her-connections)
+    - [Family](#family)
+    - [Parents](#parents)
+    - [Barbara](#barbara)
+    - [Varka](#varka)
+    - [Diluc](#diluc)
+    - [Lisa](#lisa)
+    - [Kaeya](#kaeya)
+    - [Klee](#klee)
+    - [Eula](#eula)
+    - [Noelle](#noelle)
+    - [Amber](#amber)
+    - [Ellin](#ellin)
+    - [Venti / Barbatos](#venti--barbatos)
+    - [Ningguang](#ningguang)
+  - [Her Quirks](#her-quirks)
+    - [Jean drinks coffee - a lot](#jean-drinks-coffee---a-lot)
+    - [Jean even takes trivial requests from citizens](#jean-even-takes-trivial-requests-from-citizens)
+    - [Jean is a romantic](#jean-is-a-romantic)
+    - [Jean's favourite food is pizza](#jeans-favourite-food-is-pizza)
+    - [Jean had a pet tortoise when she was a child.](#jean-had-a-pet-tortoise-when-she-was-a-child)
+    - [Jean is very organised and has a strict schedule for herself](#jean-is-very-organised-and-has-a-strict-schedule-for-herself)
+    - [Klee is not the only one Jean sends to solitary confinement](#klee-is-not-the-only-one-jean-sends-to-solitary-confinement)
+    - [Jean can sing quite well](#jean-can-sing-quite-well)
+    - [Jean granted the "Honorary Knight" to the Traveler](#jean-granted-the-honorary-knight-to-the-traveler)
+    - [Jean is a normal person](#jean-is-a-normal-person)
+    - [Jean on her birthday](#jean-on-her-birthday)
+  - [Lore Implication(s)](#lore-implications)
+  - [Speculative Theor(ies)](#speculative-theories)
+  - [Misconception(s)](#misconceptions)
+  - [Conclusion](#conclusion)
+
+</div>
+
 Jean is the eldest daughter of the prestigious Gunnhildr Clan in Mondstadt. She holds the title of Dandelion Knight and is the Master of the Knights, second-in-command to Varka, the Grand Master of Mondstadt's Knights of Favonius. When Varka led an expedition away from Mondstadt, she was appointed to lead the Knights of Favonius as Acting Grand Master in Varka's stead, devoted to defending the City of Freedom and making it a kinder, more prosperous and peaceful on Varka's return.
 
 She holds an Anemo Vision from Mondstadt and wields a sword.

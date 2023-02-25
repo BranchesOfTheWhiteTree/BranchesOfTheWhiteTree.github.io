@@ -64,6 +64,33 @@ _Diluc in his new skin_
 </div>
 </div>
 
+<div class="box false_sidebar">
+Table of Contents
+
+- [Diluc - The Dark Side of the Dawn](#diluc---the-dark-side-of-the-dawn)
+  - [Credits](#credits)
+  - [Diluc](#diluc)
+  - [Etymology](#etymology)
+  - [Constellation: Noctua](#constellation-noctua)
+  - [The Aspiring Knight](#the-aspiring-knight)
+  - [Tragedy and Betrayal](#tragedy-and-betrayal)
+  - [His Quest for Answers](#his-quest-for-answers)
+  - [The Dark Knight Returns](#the-dark-knight-returns)
+  - [Vision](#vision)
+  - [Aspirations](#aspirations)
+  - [Connections to other characters](#connections-to-other-characters)
+    - [Crepus Ragnvindr](#crepus-ragnvindr)
+    - [Kaeya Alberich](#kaeya-alberich)
+    - [Jean Gunnhildr](#jean-gunnhildr)
+    - [Adelinde](#adelinde)
+    - [Elzer](#elzer)
+  - [Quirks and Misconceptions](#quirks-and-misconceptions)
+  - [Real-world connections](#real-world-connections)
+  - [Lore implications](#lore-implications)
+  - [Conclusion](#conclusion)
+
+</div>
+
 Diluc is a descendant of the Ragnvindr clan, son of Crepus Ragnvindr. He was the Cavalry Captain of the Knights of Favonius, and now a tycoon of a winery empire in Mondstadt. He’s the owner of the Dawn Winery, which in turn established and funded Angel’s Share tavern. Though he severed his ties with the knights, Diluc still upholds Mondstadt’s peace in his own ways.
 
 Diluc appears as a tall young man, with pale skin, red eyes, and red hair tied in a ponytail that goes down to his back.

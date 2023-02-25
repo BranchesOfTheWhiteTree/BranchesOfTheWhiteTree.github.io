@@ -2452,6 +2452,17 @@ button:disabled,
   scrollbar-width: none;
 }
 
+.false_sidebar {
+  height: 80vh;
+  display: static;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.false_sidebar:hover {
+  overflow-y: scroll;
+}
+
 .sidebar:hover {
   overflow-y: scroll;
 }
@@ -2496,6 +2507,12 @@ button:disabled,
 @media screen and (max-width: 980px) {
   .sidebar {
     position: static;
+    display: none;
+  }
+}
+@media screen and (min-width: 980px) {
+  .false_sidebar {
+    display: none;
   }
 }
 /* Header */

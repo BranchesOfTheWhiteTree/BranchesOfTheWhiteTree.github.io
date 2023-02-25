@@ -69,6 +69,39 @@ _Venti the windborne bard_
 </div>
 </div>
 
+<div class="box false_sidebar">
+Table of Contents
+
+- [Venti - The Windborne Bard](#venti---the-windborne-bard)
+  - [Credits](#credits)
+  - [Venti](#venti)
+  - [Etymology](#etymology)
+  - [Constellation: Carmen Dei](#constellation-carmen-dei)
+  - [Meeting the bard](#meeting-the-bard)
+  - [Revolt against Decarabian](#revolt-against-decarabian)
+  - [Aristocratic Rule](#aristocratic-rule)
+  - [The Cataclysm](#the-cataclysm)
+  - [Freedom in Mondstadt](#freedom-in-mondstadt)
+  - [Vision](#vision)
+  - [Historical references](#historical-references)
+  - [Aspirations](#aspirations)
+  - [Connections to other characters](#connections-to-other-characters)
+    - [Eula](#eula)
+    - [Xiao](#xiao)
+    - [Zhongli](#zhongli)
+    - [Raiden Shogun](#raiden-shogun)
+  - [Quirks](#quirks)
+  - [Lore implications](#lore-implications)
+    - [Last members of the original seven](#last-members-of-the-original-seven)
+    - [Queen Gnosis](#queen-gnosis)
+    - [Him writing songs have a deeper meaning?](#him-writing-songs-have-a-deeper-meaning)
+    - [Why Venti sleeps a lot?](#why-venti-sleeps-a-lot)
+    - [Venti is quite suspicious](#venti-is-quite-suspicious)
+  - [Misconceptions](#misconceptions)
+  - [Conclusion](#conclusion)
+
+</div>
+
 Venti is a playable Anemo character and the mortal vessel of the Anemo Archon of Mondstadt in Genshin Impact. Venti has a carefree and playful attitude with an affinity for music and poetry. Venti usually roams around Monstadt, serenading people who are unaware of his true identity yet appreciate his songs regardless.
 
 He's well-liked among the people of Mondstadt due to his musical talent, having won the title of "The Most Popular Bard of Mondstadt" thrice. He's also an avid drinker and has a high tolerance to alcohol with his favourite drink being the Dandelion Wine.
