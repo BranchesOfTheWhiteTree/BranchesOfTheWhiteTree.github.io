@@ -57,6 +57,7 @@ _Jean birthday image_
 ## Credits
 * Written by: wJ
 * Reviewed by: Arun
+* Proofread by: Lare
 * Last updated on: 23rd February, 2023
 * Character story updated till v3.4
 * Story and Quest involvements - Work-in-Progress

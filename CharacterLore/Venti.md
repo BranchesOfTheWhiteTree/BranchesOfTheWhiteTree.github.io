@@ -45,6 +45,7 @@ _Venti the windborne bard_
 
 * Written by: BeastBoy
 * Reviewed by: Arun
+* Proofread by: Lare
 * Last updated on: 24th February, 2023
 * Character story updated till v3.4
 * Story and Quest involvements - Work-in-progress

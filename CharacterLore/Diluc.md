@@ -40,6 +40,7 @@ _Diluc in his new skin_
 * Written by: Spieds
 * Reviewed by: Arun
 * Last updated on: 25th February, 2023
+* Proofread by: Lare
 * Character story updated till v3.4
 * Story and Quest involvements - Work-in-progress
 

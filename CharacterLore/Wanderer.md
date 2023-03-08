@@ -52,6 +52,7 @@ _Wanderer Poster Image from Version 3.3 Live Stream - All Senses Clear, All Exis
 ## Credits
 * Written by: Blanky
 * Reviewed by: Arun
+* Proofread by: Lare
 * Last updated on: 23rd February, 2023
 * Updated till v3.4
 
