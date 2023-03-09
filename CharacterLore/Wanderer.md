@@ -587,7 +587,7 @@ Thank you for taking the time to read the story, lore, and references of Wandere
 
 <span class="image fit"><img src="./WandererImages/image1.png" alt=""></span>
 
-> _"Never Been Born At All... Is That Really All You Wished For?" - Wanderer to his old version_
+> _"Never been born at all... Is that really all you wished for?"_
 
 </div>
 </div>

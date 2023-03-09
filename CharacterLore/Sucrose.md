@@ -53,10 +53,10 @@ Table of Contents
 <div class="col-6 col-12-medium">
 * Title - Harmless Sweetie
 * Type - Limited 4-star, Medium Female, Anemo Catalyst playable character
-* Birthday - Novembe 26th
+* Birthday - November 26th
 * Constellation - Ampulla
 * Affiliation - Knights of Favonius
-* Special Dish - Nutritious Mean (V.593)
+* Special Dish - Nutritious Meal (V.593)
 * EN VA - Valeria Rodriquez
 * CN VA - Xiaogan (小敢)
 * JP VA - Akane Fujita (藤田茜)
