@@ -61,7 +61,24 @@
         <section>
             <div class="inner">
 
-                <h1 id="albedo---calculator">Albedo - Calculator</h1>
+                <h1 id="albedo---damage-calculator">Albedo - Damage Calculator</h1>
+<h2 id="credits">Credits</h2>
+<ul>
+<li>Created by: Arun</li>
+<li>Testers: Gaminggenius, BlackRock, SavagePanda, Nevembra, Captain John, Pargar, PandaHero.</li>
+<li>Special thanks to the testers for helping me (Arun) with the testing of this calculator, and for their feedback.</li>
+</ul>
+<h2 id="how-do-i-use-this-calculator">How do I use this Calculator?</h2>
+<ul>
+<li>Fill-in the details listed in the stats.</li>
+<li>Press calculate to update the graphs</li>
+<li>Activate/Deactivate the damage values in the graphs and have a look.</li>
+</ul>
+<h2 id="some-reasons-why-your-numbers-might-be-off">Some reasons why your numbers might be off</h2>
+<ul>
+<li>Artifact/weapon passive might’ve been activated/deactivated and that would not have been included. We live-tested this intensely for several hours and found this to be the potential reason.</li>
+<li>If there is an actual error, let me know.</li>
+</ul>
 <h2 id="character-stats">Character stats</h2>
 <div class="row">
 <div class="col-4 col-12-medium">
@@ -87,11 +104,12 @@
 </div>
 </div>
 <hr />
-<h2 id="constellation-and-ascension-passives">Constellation and Ascension Passives</h2>
+<h2 id="constellation-ascension-and-weapon-passives">Constellation, Ascension, and Weapon Passives</h2>
 <p>At the moment, A1 Passive is working. Need to verify C2, C4, and C6 Passives.</p>
+<p>If you are using Cinnabar Spindle, fill the refinement value in the input box. Leave it at zero if you are using some other weapon.</p>
 <div class="row">
 <div class="col-4 col-12-medium">
-<p><input type="checkbox" id="A1Passive" name="A1Passive"> </input> <label for="A1Passive">A1 Passive</label></p>
+<p><input type="checkbox" id="A1Passive" name="A1Passive"> </input> <label for="A1Passive">A1 Passive</label> <br> <label for="cinnabar-spindle">Cinnabar Spindle Refinement</label> <input type="number" name="cinnabar-spindle" id="cinnabar-spindle" min="0" step="1" value="0" max="5"> <br></p>
 </div>
 <div class="col-4 col-12-medium">
 <p><input type="checkbox" id="C2Passive" name="C2Passive"> </input> <label for="C2Passive">C2 Passive - 4 stacks</label> <br> <input type="checkbox" id="C4Passive" name="C4Passive"> </input> <label for="C4Passive">C4 Passive</label> <br></p>
@@ -139,6 +157,15 @@
 <script src="./AlbedoCalculations.js">
 </script>
 <p><br></p>
+<h2 id="feedback-from-the-testers">Feedback from the testers</h2>
+<ul>
+<li>Functionally, it is working perfectly. Damage values accurate to +/- 1</li>
+<li>UI/UX can be better - at the moment, there are too many input variables. Might need simplification.</li>
+<li>Weapon passives / artifact passives can be included via automation</li>
+<li>People do not know the enemy resistances, it can be automated too.</li>
+<li>While the graphs are functional, it takes some getting used to it.</li>
+<li>Constellation passives need testing.</li>
+</ul>
 
                 
             </div>

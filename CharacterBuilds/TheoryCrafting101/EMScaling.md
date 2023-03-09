@@ -1,5 +1,12 @@
 # EM Scaling
 
+## Importance of EM
+Elemental mastery is a valuable game stat needed for enhancing the damage potential of the elemental reactions.
+
+For characters that deal pure elemental damage (like Geo or Freeze teams), or physical damage, EM is not helpful.
+
+However, for many of the elemental reactions, having EM increases the reaction damage either as a direct multiplier (amplifying reactions), or add a massive flat damage to the base damage, or as a separate instance of damage.
+
 ## Amplifying Reactions
 Melt and Vaporize are the only amplifying reactions in the game. They directly multiply the damage caused by the attack stats. Meaning, these reactions are also influenced by crit rate, crit damage, enemy defence and enemy resistance.
 
@@ -104,6 +111,8 @@ $$
 \end{equation*}
 $$
 
+The level multiplier is a special non-linear array of values. It needs to be fetched for calculations.
+
 ### Python Code
 
 ```python
@@ -119,7 +128,7 @@ EM = np.linspace(0, 1000, 50)
 DMG = RM * LM * (1.0 + (16 * EM)/(2000 + EM) + RB) * ERM
 ```
 
-### Interactive Plot
+<!-- ### Interactive Plot
 
 Note: The Level Multiplier calculation is a bit wrong. Level Multiplier is a non-linear function. Here, I am assuming it to be linear between the starting value and ending value for the plot due to the absence of exact values. I need to fetch them.
 
@@ -161,7 +170,7 @@ Note: The Level Multiplier calculation is a bit wrong. Level Multiplier is a non
     if (document.readyState != "loading") fn();
     else document.addEventListener("DOMContentLoaded", fn);
     })();
-</script>
+</script> -->
 
 <!-- BokehJS -->
 <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.3.min.js"></script>
@@ -207,7 +216,7 @@ DMG = RM * LM * (1.0 + (5 * EM)/(1200 + EM) + RB)
 
 
 ## Status
-Test run successful!
+Test run successful! The interactive plots are working. Will add more information later.
 
 ## Notes
 

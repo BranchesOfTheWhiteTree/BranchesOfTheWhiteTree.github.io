@@ -1,4 +1,19 @@
-# Albedo - Calculator
+# Albedo - Damage Calculator
+
+## Credits
+* Created by: Arun
+* Testers: Gaminggenius, BlackRock, SavagePanda, Nevembra, Captain John, Pargar, PandaHero.
+* Special thanks to the testers for helping me (Arun) with the testing of this calculator, and for their feedback.
+
+## How do I use this Calculator?
+
+* Fill-in the details listed in the stats.
+* Press calculate to update the graphs
+* Activate/Deactivate the damage values in the graphs and have a look.
+  
+## Some reasons why your numbers might be off
+* Artifact/weapon passive might've been activated/deactivated and that would not have been included. We live-tested this intensely for several hours and found this to be the potential reason.
+* If there is an actual error, let me know.
 
 ## Character stats
 
@@ -78,14 +93,20 @@
 
 ---
 
-## Constellation and Ascension Passives
+## Constellation, Ascension, and Weapon Passives
 At the moment, A1 Passive is working. Need to verify C2, C4, and C6 Passives.
+
+If you are using Cinnabar Spindle, fill the refinement value in the input box. Leave it at zero if you are using some other weapon.
 
 <div class="row">
 
 <div class="col-4 col-12-medium">
 <input type="checkbox" id="A1Passive" name="A1Passive"> </input>
 <label for="A1Passive">A1 Passive</label>
+<br>
+<label for="cinnabar-spindle">Cinnabar Spindle Refinement</label>
+<input type="number" name="cinnabar-spindle" id="cinnabar-spindle" min="0" step="1" value="0" max="5">
+<br>
 </div>
 
 <div class="col-4 col-12-medium">
@@ -171,3 +192,11 @@ For Albedo, you don't need to level or use normal attack skills, as his normal a
 </script>
 
 <br>
+
+## Feedback from the testers
+* Functionally, it is working perfectly. Damage values accurate to +/- 1
+* UI/UX can be better - at the moment, there are too many input variables. Might need simplification.
+* Weapon passives / artifact passives can be included via automation
+* People do not know the enemy resistances, it can be automated too.
+* While the graphs are functional, it takes some getting used to it.
+* Constellation passives need testing.

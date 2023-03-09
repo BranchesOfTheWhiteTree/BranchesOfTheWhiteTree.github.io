@@ -229,6 +229,8 @@ const TransientBlossomMultipliers = [133.6, 143.62, 153.64, 167, 177.02, 187.04,
 const EBurstMultipliers = [367.20, 394.74, 422.28, 459, 486.54, 514.08, 550.80, 587.52, 624.24, 660.96, 697.68, 734.40, 780.30, 826.20, 872.10];
 const FatalBlossomMultipliers = [72, 77.4, 82.8, 90, 95.4, 100.8, 108, 115.2, 122.4, 129.6, 136.8, 144, 153, 162, 171];
 
+const SpotlessHeartMultipliers = [0.0, 0.4, 0.5, 0.6, 0.7, 0.8]
+
 function UpdateChart()
 {
     // Data Fetching
@@ -243,6 +245,8 @@ function UpdateChart()
 
     const CritRate = document.getElementById("charCRate").value*0.01;
     const CritDMG = document.getElementById("charCDmg").value*0.01;
+
+    const CinnabarSpindle = document.getElementById("cinnabar-spindle").value*1;
 
     const PhysicalDMGBonus = document.getElementById("charPHY").value*0.01;
     const AnemoDMGBonus = document.getElementById("charANEMO").value*0.01;
@@ -343,9 +347,11 @@ function UpdateChart()
             
         }
     }
+
+    // console.log("Cinnabar spindle refinement:", SpotlessHeartMultipliers[CinnabarSpindle])
     
     // Cinnabar Spindle Passive
-    const SpotlessHeart = 0.8 * DEF;
+    const SpotlessHeart = SpotlessHeartMultipliers[CinnabarSpindle] * DEF;
 
     // Data console
     // console.log(Resistance, EnemyResMult, EnemyDefMult, AvgCrit, CritMult, GeoMult);

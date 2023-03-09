@@ -3,17 +3,50 @@
 This blogpost is about adjusting one's optimal crit stats.
 
 - [Optimal Crit Stats](#optimal-crit-stats)
+  - [Credits](#credits)
   - [What is this?](#what-is-this)
-  - [Crit rate vs Crit DMG](#crit-rate-vs-crit-dmg)
+  - [Crit rate or Crit Damage - which should you choose?](#crit-rate-or-crit-damage---which-should-you-choose)
   - [Visualization](#visualization)
-  - [Balancing crit stats to optimal values](#balancing-crit-stats-to-optimal-values)
+  - [How to read this chart?](#how-to-read-this-chart)
+  - [An example](#an-example)
+  - [Colour Zone - Legend](#colour-zone---legend)
   - [Notes](#notes)
+  - [Status](#status)
+
+## Credits
+Author: Arun
 
 ## What is this?
-The game gives crit stats in artifacts in the ration 1:2. That is, for every 1 unit of crit rate, you get 2 crit damage.
 
-## Crit rate vs Crit DMG
-WIP
+Remember how in real-life you get lucky every now and then do extra work? Crit rate and Crit damage are like that with the game - but for damage.
+
+Crit rate tells you how often you can land a boosted damage on the enemy. Crit Damage tells you how big the boosted damage is when compared to the regular non-boosted damage.
+
+The boosted damage in the game is called a crit-hit, while the regular damage is a non-crit hit.
+
+The game gives crit stats in artifacts in the ratio 1:2. That is, for every 1 unit of crit rate, you get 2 crit damage.
+
+So, it is quite necessary to have crit ratio for your characters 1:2
+
+## Crit rate or Crit Damage - which should you choose?
+
+The simple answer is that you need both.
+
+However, there are pointers.
+
+If your ratio is 25/200, it means you will crit only 25% of the time. And in those 25% times, you'll hit 3 times the non-crit damage - this is quite inconsistent - not recommended.
+
+In contrast, if your ratio is 95/120 - then you will crit 95% of the time, but each crit hit will only be just a bit stronger than the non-crit hit - not recommended either.
+
+What is recommended is a good balance of crit rate and crit damage.
+
+For instance, if a character has crit rate/crit damage value of 75/220, it means there is a 75% chance for each and every atttack to be a crit hit. And when you do crit, you deal (1 + 2.2) times the non-crit damage.
+
+So, for higher damage ceiling, it is necessary to have a higher crit rate so that you land crit hits more often. Also, it is necessary to have a higher crit damage so that when you critical hits, you deal a substantial damage.
+
+Since crit rate is a probability for every hit to crit, anything higher than 100% is a wasted stat.
+
+However, crit damage is a straight multiplier bonus. So, it can be as high as you want. Provided you have enough crit rate for consistent crit hits.
 
 ## Visualization
 
@@ -64,8 +97,49 @@ WIP
     Bokeh.set_log_level("info");
 </script>
 
-## Balancing crit stats to optimal values
-WIP
+## How to read this chart?
+
+* Find your crit rate and crit damage in the chart/table and get the number closest to your ratio from the table.
+* The number tells you the average damage your character does with respect to your character not having any stats at all.
+* To increase your character's overall damage, move towards higher numbers in the different colours.
+* To balance your ratio within the zone, look for ratios with similar numerical value whose crit ratio is 1:2.
+
+## An example
+
+Let's say your character has 40/150 crit ratio. The average damage is 1.6. Since you are in the green zone, there is still room to improve. The next best zone to move-in is the purple zone.
+
+Now, to balance this ratio, look for crit rations that have 1.6 or a close value as their number.
+
+40/150 has more crit damage than crit rate. So, you need a ratio with more crit rate and less crit damage for balancing.
+
+So, a slightly better balanced ratio will be 50/120 for the same 1.6 average damage.
+
+The most balanced ratio is 55/110 as it gives the same 1.6 average damage, and it is 1:2.
+
+60/100 also has 1.6 average damage. But here, the crit value of the crit rate is more than the crit damage's crit value. So, this is unbalanced.
+
+
+## Colour Zone - Legend
+This chart and the table helps you to balance your crit rate and crit damage optimally.
+
+You have 8 colour levels - Red to Pink
+
+Red and Blue are under-levelled zones
+
+Green and Purple are decent for "testing the waters" - but still need some development.
+
+Orange Zone - This is a well-built unit. Once you enter this zone, you can start balancing the crit ratio. You will start to get realistic Spiral-Abyss clear builds from here on.
+
+Yellow/Grey Zone - This is the polished/cracked unit zone. If you get your units into this zone, you can actually stop getting crit stats, provided they crit ratio you have is balanced. And the amount of trade-off between crit rate and crit damage becomes less for balancing.
+
+Brown Zone - This is the uncontestable flex zone. There is no point in balancing crit ratio here because to get 1:2, the crit rate has to be more than 100.
+
+Pink Zone - This is the god zone. Almost impossible to achieve.
+
+The number on the table corresponding to the crit rate and crit damage tells you the wieghted damage (averaged over crit and non-crit hits) your character does.
 
 ## Notes
 * Crit stats don't work for swirl and transformative reactions.
+
+## Status
+This article needs a lot of polish. Functionally, it is working. Language can be better.
