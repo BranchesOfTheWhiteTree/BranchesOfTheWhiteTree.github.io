@@ -104,7 +104,7 @@ He holds a Pyro Vision, and wields a Claymore.
 
 Diluc’s name seems to derive from the Latin word “diluculum” which means twilight, dawn, or daybreak. In turn, his father’s name, Crepus, comes from the Latin “crepusculum” and means glimmer, dusk, or partial night.
 
-<span class="image fit"><img src="./DilucImages/DilucGloves.png" alt="Diluc adjusting his gloves"></span>
+<span class="image fit"><img src="./DilucImages/13.png" alt="Diluc adjusting his gloves"></span>
 
 ## Constellation: Noctua
 
@@ -232,7 +232,7 @@ The Executive Chairman of the Mondstadt Wine Guild. Served the Dawn Winery while
 
 * Even though Diluc holds the whole wine industry in his hands, he himself dislikes alcohol. This led to the development of Dawn Winery’s Apple Cider for those who still want to partake in the drinking culture.
 
-<span class="image fit"><img src="./DilucImages/08.jpg" alt="Diluc in Angel Share"></span>
+<span class="image fit"><img src="./DilucImages/11.png" alt="Diluc in Angel Share"></span>
 
 * Although not explicitly mentioned, it is subtly implied that Diluc is the uncrowned King of Mondstadt because of his rich business avenues and connections.
 

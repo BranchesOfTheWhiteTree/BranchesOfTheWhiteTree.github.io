@@ -96,7 +96,7 @@ Table of Contents
 
 </div>
 
-Lisa is an intellectual and a knowledgable sorceres, who works as a Librarian of the Knights of Favonius. Often told by many as someone "overqualified" to be a mere Librarian, she often dismisses these claims and continues enjoy her peaceful life at Mondstadt.
+Lisa is an intellectual and a knowledgable sorceress, who works as a Librarian of the Knights of Favonius. Often told by many as someone "overqualified" to be a mere Librarian, she often dismisses these claims and continues enjoy her peaceful life at Mondstadt.
 
 She holds an Electro Vision from Mondstadt and wields a catalyst.
 

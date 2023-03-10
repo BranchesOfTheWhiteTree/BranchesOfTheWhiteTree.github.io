@@ -585,7 +585,7 @@ Thank you for taking the time to read the story, lore, and references of Wandere
 ## Inspirations:
 * Ashikai for some information regarding Wanderer's lore, check out her [youtube!](https://www.youtube.com/@Ashikai)
 
-<span class="image fit"><img src="./WandererImages/image1.png" alt=""></span>
+<span class="image fit"><img src="./WandererImages/image26.jpeg" alt=""></span>
 
 > _"Never been born at all... Is that really all you wished for?"_
 

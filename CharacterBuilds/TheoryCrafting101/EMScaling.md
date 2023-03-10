@@ -185,7 +185,7 @@ Note: The Level Multiplier calculation is a bit wrong. Level Multiplier is a non
 These reactions add a massive flat damage to the base damage. This damage is independent of the ATK percent. However, together with the base ATK and flat damage, this damage can scale with crit damage.
 
 $$
-\text{AmplifyingReaction} = \text{ReactionMultiplier} \times \text{LevelMultiplier} \times \displaystyle\left[  1 + \frac{5 \times \text{EM}}{1200 + \text{EM}} + \text{ReactionBonus}\right]
+\text{AdditiveReaction} = \text{ReactionMultiplier} \times \text{LevelMultiplier} \times \displaystyle\left[  1 + \frac{5 \times \text{EM}}{1200 + \text{EM}} + \text{ReactionBonus}\right]
 $$
 
 Where the reaction multiplier is
