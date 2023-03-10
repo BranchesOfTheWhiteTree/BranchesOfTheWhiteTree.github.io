@@ -25,6 +25,7 @@ Table of Contents
     - [Ellin](#ellin)
     - [Venti / Barbatos](#venti--barbatos)
     - [Ningguang](#ningguang)
+    - [Alice](#alice)
   - [Her Quirks](#her-quirks)
     - [Jean drinks coffee - a lot](#jean-drinks-coffee---a-lot)
     - [Jean even takes trivial requests from citizens](#jean-even-takes-trivial-requests-from-citizens)
@@ -50,7 +51,7 @@ Table of Contents
 
 <span class="image"><img src="./JeanImages/01.jpeg" width="50%" alt="Jean Birthday Image"></span>
 
-_Jean birthday image_
+_Jean birthday image 2022_
 
 # Jean - The Dandelion Knight
 
@@ -58,7 +59,7 @@ _Jean birthday image_
 * Written by: wJ
 * Reviewed by: Arun
 * Proofread by: Lare
-* Last updated on: 23rd February, 2023
+* Last updated on: 2nd March 2023
 * Character story updated till v3.4
 * Story and Quest involvements - Work-in-Progress
 
@@ -108,6 +109,7 @@ Table of Contents
     - [Ellin](#ellin)
     - [Venti / Barbatos](#venti--barbatos)
     - [Ningguang](#ningguang)
+    - [Alice](#alice)
   - [Her Quirks](#her-quirks)
     - [Jean drinks coffee - a lot](#jean-drinks-coffee---a-lot)
     - [Jean even takes trivial requests from citizens](#jean-even-takes-trivial-requests-from-citizens)
@@ -127,7 +129,7 @@ Table of Contents
 
 </div>
 
-Jean is the eldest daughter of the prestigious Gunnhildr Clan in Mondstadt. She holds the title of Dandelion Knight and is the Master of the Knights, second-in-command to Varka, the Grand Master of Mondstadt's Knights of Favonius. When Varka led an expedition away from Mondstadt, she was appointed to lead the Knights of Favonius as Acting Grand Master in Varka's stead, devoted to defending the City of Freedom and making it a kinder, more prosperous and peaceful on Varka's return.
+Jean is the eldest daughter of the prestigious Gunnhildr Clan in Mondstadt. She holds the title of Dandelion Knight and is the Master of the Knights, second-in-command to Varka, the Grand Master of Mondstadt's Knights of Favonius. When Varka led an expedition away from Mondstadt, she was appointed to lead the Knights of Favonius as Acting Grand Master in Varka's stead, devoted to defending the City of Freedom and making it a kinder, more prosperous and peaceful place on Varka's return.
 
 She holds an Anemo Vision from Mondstadt and wields a sword.
 
@@ -162,11 +164,11 @@ This could also be why Jean is linked to the smaller lion constellation Leo Mino
 
 ## Her Story
 
-Jean was born into the Gunnhildr Clan, a venerable knightly house in Mondstadt well known for their role in establishing and maintaining Mondstadt's freedom throughout the nation's history. She inherited the prideful blood from her mother, Frederica, who is known as the Alder Knight. Her father, on the other hand, Seamus Pegg, was a famed adventurer throughout the continent. When he came to Mondstadt, he dusted off his past self and started anew with the Church of Favonius, climbed the ranks within it and became known as the Cardinal of Daybreak, Seneschal of the Church of Favonius. The two lovers had two children, Jean and later on, Barbara.
+Jean was born into the Gunnhildr Clan, a venerable knightly house in Mondstadt well known for their role in establishing and maintaining Mondstadt's freedom throughout the nation's history. She inherited the prideful blood from her mother, Frederica, who is known as the Alder Knight. Her father, on the other hand, Seamus Pegg, was a famed adventurer throughout the continent. When he came to Mondstadt, he dusted off his past self and started anew with the Church of Favonius, climbed the ranks within it and became known as the Cardinal of Daybreak, Seneschal of the Church of Favonius. The two lovers had two children, Jean and, later on, Barbara.
 
 <span class="image fit"><img src="./JeanImages/GunnhildrClan.PNG" alt="Gunnhildr Clan"><span>
 
-_The Gunnhildr Clan's emblem. Gunnhildr is one among the three noble clans of Mondstadt, other two being the Ragnvindr Clan, and the Lawrence Clan_
+_The Gunnhildr Clan's emblem. Gunnhildr is one among the three noble clans of Mondstadt, the other two being the Ragnvindr Clan and the Lawrence Clan_
 
 The two lovers eventually parted ways, with Jean following their mother and Barbara following their father.
 
@@ -210,7 +212,7 @@ But in Jean's heart, she would rather be a shield that defends freedom and song 
 
 Around the time when she was promoted from Captain of her squad to Master of the Knights, a huge challenge stood before her. From without, the Fatui exerted diplomatic pressure, and from within, there were traitors — comrades of the former Inspector, Eroch. Regrouping and finding a way to break through was no easy task.
 
-But Jean was able to fend off the external pressure with one hand, and lead the Knights to smash the many plots of the Abyss Order with the other, re-establishing the authority of the Knights of Favonius.
+Jean was able to fend off the external pressure with one hand, and lead the Knights to smash the many plots of the Abyss Order with the other, re-establishing the authority of the Knights of Favonius.
 
 Jean will never forget the moment she received her Vision. At that moment, all seemed to grow quiet as she felt the breeze flow through her hand. The world seemed to fade away, save for the time-honoured motto of the house of Gunnhildr:
 
@@ -259,31 +261,9 @@ When Diluc decided to leave Mondstadt to pursue the truth behind the Delusion Cr
 
 Later, when Diluc returned to Mondstadt, Jean wrote a letter to Diluc:
 
-> Dear Diluc,
-> 
-> Welcome back to Mondstadt, Sir.
-> 
-> It has been some time since the incident. We discovered that Eroch had betrayed us, and he has been punished severely. I hope that this news will put your mind at ease.
-> 
-> In other news, our people have discovered that the Abyss Order has stepped up its activities between Wolvendom and Stone Gate lately. Also — a mysterious individual that people are calling the "Darknight Hero" has suddenly started showing up out of nowhere all around Mondstadt City. He typically acts in the dead of night, and his intentions are currently unclear.
-> 
-> Please stay safe, and notify the Knights as soon as possible should you see anything suspicious. We will send support immediately. Whether you are presently in our ranks or not, all faithful knights will remember your contributions to the Knights of Favonius.
-> 
-> May you remain in good health.
->
-> Jean
+Later, when Diluc returned to Mondstadt, Jean wrote a letter to him, welcoming him back to Mondstadt. She first updated him on Eroch’s situation, informing him that he had been punished severely. She then informed him of recent Abyss Order activities between Wolvendom and Stone Gate, and that there had been recent sightings of a mysterious individual with unknown intentions in Mondstadt City, known by the people as the “Darknight Hero”. She told him to stay safe and notify the Knights as soon as possible should he see anything suspicious. She added that whether he was presently among the ranks of the Knight of Favonius, all faithful knights will remember his contributions to the Knights of Favonius. She ended the letter by wishing Diluc to remain in good health.
 
-Diluc then wrote a reply to Jean:
-
-> Dear Jean,
-> 
-> Thank you for your concern, Acting Grand Master. It is as you say. That incident should no longer weigh heavily on my mind. Punishing Eroch for his malfeasance was the right way to correct the Knights of Favonius's past mistakes. This is an important step indeed for the Knights.
-> 
-> As for my own personal safety, you need not concern yourself too much. The Knights of Favonius should focus their efforts where it counts by looking after those who need it most. 
-> 
-> May you also remain in good health.
->
-> Diluc
+Diluc then wrote a reply to Jean, thanking her for her concern. He assured her that Eroch’s situation does not bother him anymore, and agreed that punishing him was the right thing to do to correct the Knights of Favonius’s past mistakes. He also assured her that she did not need to worry over his safety, instead, the Knights of Favonius should focus their efforts on looking after those who needed it most. He ended the letter by also wishing Jean to remain in good health.
 
 <span class="image fit"><img src="./JeanImages/09.jpg" alt="Jean and Diluc - the White Knight and the Dark Knight of Mondstadt"><span>
 
@@ -360,6 +340,13 @@ Not suspicious at all.
 
 As Acting Grand Master of the Knights of Favonius, Jean would often correspond with the Tianquan of the Liyue Qixing via letters pertaining to political affairs and relations between the two nations. Through their letters, Jean spoke highly of the Traveller, which piqued Ningguang's interest in them. As such, she has been putting eyes and ears out ever since the Traveller reached Liyue, and she eventually got wind of their movements when they were on their way to Wangshu Inn thanks to the people of Wangshu Inn. How sneaky.
 
+### Alice
+About 3 years prior to the events of Mondstadt’s Archon Quest, Alice entrusted her daughter, Klee, to the Knights of Favonius before she left on her adventure. However, it seems that Alice had stayed in Mondstadt for a while and had gotten acquainted with the Knights before she left. She had also gotten into trouble with the Knights a couple of times. According to the Teyvet Travel Guide, or her diary, she was once curious about the legend pertaining the ascension of Vennessa at the huge oak tree in Windrise. She searched around the tree for a long time but did not find any launching device, so she grabbed some hilichurls nearby to put her theory to the test. She managed to send the hilichurls from the tree in Windrise to the hunters' huts around Springvale. Her experiment caused quite a stir in Springvale, so Jean arranged Amber to keep tabs on her. However, Alice eventually managed to lose Amber and continued with her adventure around Mondstadt.
+
+At the end of the Midsummer Island Adventure [Event Quest], it was revealed that Alice had planned to invite Jean and the rest to accompany Klee to the Golden Apple Archipelago. Jean was surprised to find out that it was Alice’s plan all along, though in hindsight, she should have known it was her. After all, it was all for Klee and company.
+
+Jean is fully aware of Alice’s character; an extremely enigmatic and near-omnipotent sorceress who has her mysterious ways to watch over Klee and company. She is no longer surprised or troubled by her antics of seemingly knowing what is happening at the present moment, even when she is not around or has already left.
+
 ## Her Quirks
 
 ### Jean drinks coffee - a lot
@@ -368,7 +355,7 @@ Jean is an avid coffee drinker due to her busy schedule. While she does try to l
 
 ### Jean even takes trivial requests from citizens
 
-Although she is the Acting Grand Master, Jean seems to take on many strange requests from her citizens which are oftentimes too trivial to require her attention. As seen from her Story Quest Leo Minor, the citizens of Mondstadt would request Jean's help in dispatching a party of knights to clear out nearby hilichurls, handle quarterly tax returns, and look for their missing cat. Surely, these are not tasks for the Acting Grand Master to handle, right?
+Although she is the Acting Grand Master, Jean seems to take on many strange requests from her citizens which are oftentimes too trivial to require her attention. As seen from her Story Quest, Leo Minor, the citizens of Mondstadt would request Jean's help in dispatching a party of knights to clear out nearby hilichurls, handle quarterly tax returns, and look for their missing cat. Surely, these are not tasks for the Acting Grand Master to handle, right?
 
 ### Jean is a romantic
 
@@ -415,6 +402,8 @@ One day, Noelle went to ask Klee for tips on how to become a knight, but Klee in
 <span class="image left"><img src="./JeanImages/18.png" alt="angry jean chibi"><span>
 
 Another day, Kaeya and Klee were at Good Hunter. Klee blew up the stove there, so both Klee and Kaeya were sent to solitary confinement, even though both were supposed to travel to the Chasm to help out with a demolition request.
+
+And a long time ago, a tourist named Alice summoned a wind current at Windrise by blasting an Anemo Slime and used it to quickly climb great heights with a wind glider. The legendary adventurer performed a series of aerobatic stunts in the skies above Mondstadt. Her performance earned a big round of applause from the crowd. However, Jean, the Acting Grand Master of the Knights of Favonius, summoned her and gave her a 10-day detention.
 
 Besides sending the Knights to solitary confinement, there are other "punishments" at hand for those who were caught scheming destructive plans.
 
@@ -478,7 +467,7 @@ As Jean is a romantic who desires true love, fans have speculated the possible e
 
 While it is true that Jean is often working at the expense of her health, being "overworked" is not her only trait as a character. It is a problem that stems from her overall upbringing and circumstance, which is what her character is about.
 
-Jean has much pressure and weight put on her shoulders. She is not only the Master of the Knights, the Acting Grand Master, and the Dandelion Knight but also the successor to the esteemed Gunnhildr Clan. From a young, she was trained to become a great knight, to uphold her family's motto "For Mondstadt, as always". She was taught to always put Mondstadt first before herself in order to protect her nation and its freedom. She also looks, up to Vennessa, the first Grand Master, who is also the first Lionfang and Dandelion Knight. Jean had always hoped to follow in her footsteps, to take on the huge responsibility of being as gentle as the Dandelion Knight and yet as fierce as the Lionfang Knight.
+Jean has much pressure and weight put on her shoulders. She is not only the Master of the Knights, the Acting Grand Master, and the Dandelion Knight but also the successor to the esteemed Gunnhildr Clan. From a young age, she was trained to become a great knight, to uphold her family's motto "For Mondstadt, as always". She was taught to always put Mondstadt first before herself in order to protect her nation and its freedom. She also looks, up to Vennessa, the first Grand Master, who is also the first Lionfang and Dandelion Knight. Jean had always hoped to follow in her footsteps, to take on the huge responsibility of being as gentle as the Dandelion Knight and yet as fierce as the Lionfang Knight.
 
 Her aspiration of continuing to protect Mondstadt and its freedom comes first before everything else, even herself. This is the burden that she willingly carries, for Mondstadt, as always.
 
@@ -486,7 +475,7 @@ It does not help that even though she is not the current Grand Master of the Kni
 
 The people of Mondstadt seem to also freely take advantage of the Acting Grand Master's chivalry and passion to help. Even though Jean is the Master of the Knights and the Acting Grand Master within the Knights of Favonius, both of which are highly ranked titles, the people of Mondstadt see Jean as someone they can all depend on, one who they can ask for help whenever and for whatever reason. Jean too does not care for her role or title within the Knights of Favonius, her work ethic will always remain the same. This coupled with Jean's popularity among the citizens of Mondstadt leads to the Acting Grand Master being tasked with helping her citizens with trivial matters such as finding their cat even though she has more important tasks at hand. These matters could have been handled by the other knights as well.
 
-With all these factors combined, Jean is "overworked", but this one word is not nearly enough to describe her entire characterisation. She is much more than just someone who has too many tasks on her hand to complete. Her relationship with the Knights of Favonius and the City of Freedom is a part of her characterisation as well. (She is also not just a knight, but a person with personal life and interests outside of her work!)
+With all these factors combined, Jean is "overworked", but this one word is not nearly enough to describe her entire characterisation. She is much more than just someone who has too many tasks on hand to complete. Her relationship with the Knights of Favonius and the City of Freedom is a part of her characterisation as well. (She is also not just a knight, but a person with a personal life and interests outside of her work!)
 
 ## Conclusion
 
