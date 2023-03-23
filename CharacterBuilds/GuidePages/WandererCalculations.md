@@ -44,8 +44,8 @@
 <label for="charDEF">DEF</label>
 <input type="number" name="charDEF" id="charDEF" min="0" step="0.1" value="200" max="10000">
 <br>
-<br>
-<button type="button" onclick="UpdateChart()">Calculate</button>
+<label for="charReactionBonus">Reaction Bonus %</label>
+<input type="number" name="charReactionBonus" id="charReactionBonus" min="0" step="0.1" value="0" max="500">
 </div>
 
 </div>
@@ -58,21 +58,7 @@ Need testing for Constellation passives. They are not tested yet.
 
 <div class="row">
 
-<div class="col-3 col-6-medium col-6-small">
-<input type="radio" id="PyroSwirl" name="Swirl"> </input>
-<label for="PyroSwirl">Pyro Swirl</label>
-<br>
-<input type="radio" id="HydroSwirl" name="Swirl"> </input>
-<label for="HydroSwirl">Hydro Swirl</label>
-<br>
-<input type="radio" id="ElectroSwirl" name="Swirl"> </input>
-<label for="ElectroSwirl">Electro Swirl</label>
-<br>
-<input type="radio" id="CryoSwirl" name="Swirl"> </input>
-<label for="CryoSwirl">Cryo Swirl</label>
-</div>
-
-<div class="col-3 col-6-medium col-6-small">
+<div class="col-4 col-6-medium col-6-small">
 <label for="enemyLEVEL">Enemy Level</label>
 <input type="number" name="enemyLEVEL" id="enemyLEVEL" min="1" step="1" value="50" max="100">
 <br>
@@ -81,7 +67,7 @@ Need testing for Constellation passives. They are not tested yet.
 <input type="number" name="enemyBaseRes" id="enemyBaseRes" min="0" step="1" value="10" max="100">
 </div>
 
-<div class="col-3 col-6-medium col-6-small">
+<div class="col-4 col-6-medium col-6-small">
 <label for="defIgnore">Defence Ignore %</label>
 <input type="number" name="defIgnore" id="defIgnore" min="0" step="1" value="0" max="200">
 <br>
@@ -90,45 +76,24 @@ Need testing for Constellation passives. They are not tested yet.
 <input type="number" name="ResReduction" id="ResReduction" min="0" step="1" value="0" max="100">
 </div>
 
-<div class="col-3 col-6-medium col-6-small">
+<div class="col-4 col-6-medium col-6-small">
 <label for="defReduction">Defence Reduction %</label>
 <input type="number" name="defReduction" id="defReduction" min="0" step="1" value="0" max="200">
 <br>
+<br>
+<br>
+<button type="button" onclick="UpdateChart()">Calculate</button>
 </div>
 
 </div>
 
 ---
 
-## Elemental Skill - Abiogenesis: Solar Isotoma
-<canvas id="Albedo_ESkill_Chart">
-</canvas>
----
-
-## Elemental Burst - Rite of Progeniture: Tectonic Tide
-<canvas id="Albedo_EBurst_Chart">
+## Damage Chart
+<canvas id="Wanderer_Damage_Chart">
 </canvas>
 
 ---
-
-## Normal Attack Section
-For Albedo, you don't need to level or use normal attack skills, as his normal attacks don't contribute a lot to his personal damage. However, if you want to use his normal attacks with or without elemental infusion, do check this out!
-
-### Normal Attacks
-<canvas id="Albedo_NA_Chart">
-</canvas>
-
----
-
-### Charged Attacks
-<canvas id="Albedo_CA_Chart">
-</canvas>
-
----
-
-### Plunge Attacks
-<canvas id="Albedo_PA_Chart">
-</canvas>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="./WandererCalculations.js">

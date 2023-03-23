@@ -1,43 +1,44 @@
 // Chart setups
-const ctx1 = document.getElementById('Albedo_ESkill_Chart');
-ctx1.style.backgroundColor = 'rgba(255,255,255,255)';
-
-const ctx2 = document.getElementById('Albedo_EBurst_Chart');
-ctx2.style.backgroundColor = 'rgba(255,255,255,255)';
-
-const ctx3 = document.getElementById('Albedo_NA_Chart');
-ctx3.style.backgroundColor = 'rgba(255,255,255,255)';
-
-const ctx4 = document.getElementById('Albedo_CA_Chart');
-ctx4.style.backgroundColor = 'rgba(255,255,255,255)';
-
-const ctx5 = document.getElementById('Albedo_PA_Chart');
-ctx5.style.backgroundColor = 'rgba(255,255,255,255)';
+const ctx = document.getElementById('Wanderer_Damage_Chart');
+ctx.style.backgroundColor = 'rgba(255,255,255,255)';
 
 // Dummy Data Setup
 let data = {
-    labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+    labels: ["N3_1", "C1", "Hanega", "E-N3_1", "E-C1", "Burst", "WindArrow", "Swirl"],
     datasets: [
         {
-            label: 'Skill Damage',
-            data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
-            borderWidth: 1
+            label: 'Non-Crit Hits',
+            data: [1, 2, 3, 4, 5, 6, 7, 8],
+            borderWidth: 1,
+            hidden: false
         },
         {
-            label: 'Transient Blossom Damage',
-            data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
-            borderWidth: 1
+            label: 'Avg Hits',
+            data: [1, 2, 3, 4, 5, 6, 7, 8],
+            borderWidth: 1,
+            hidden: true
+        },
+        {
+            label: 'Crit Hits',
+            data: [1, 2, 3, 4, 5, 6, 7, 8],
+            borderWidth: 1,
+            hidden: false
         }
     ]
 };
 
 // Chart Options
-let options1 = {
+let options = {
     scales:
     {
         y:
         {
-            beginAtZero: true
+            beginAtZero: true,
+            title:
+            {
+                display: true,
+                text: 'Damage'
+            },
         }
     },
     plugins:
@@ -49,160 +50,24 @@ let options1 = {
         subtitle:
         {
             display: true,
-            text: 'A compact comparison of Elemental Skill damages across all talent levels'
+            text: 'A compact comparison of damages across all talents'
         },
         title:
         {
             display: true,
-            text: 'Albedo Skill Damage Calculator and Visualizer'
-        },
-    }
-};
-
-let options2 = {
-    scales:
-    {
-        y:
-        {
-            beginAtZero: true
-        }
-    },
-    plugins:
-    {
-        legend:
-        {
-            position:'right',
-        },
-        subtitle:
-        {
-            display: true,
-            text: 'A compact comparison of Elemental Burst damages across all talent levels'
-        },
-        title:
-        {
-            display: true,
-            text: 'Albedo Burst Damage Calculator and Visualizer'
-        },
-    }
-};
-
-let options3 = {
-    scales:
-    {
-        y:
-        {
-            beginAtZero: true
-        }
-    },
-    plugins:
-    {
-        legend:
-        {
-            position:'right',
-        },
-        subtitle:
-        {
-            display: true,
-            text: 'A compact comparison of Normal Attack damages across all talent levels'
-        },
-        title:
-        {
-            display: true,
-            text: 'Albedo Normal Attack Damage Calculator and Visualizer'
-        },
-    }
-};
-
-let options4 = {
-    scales:
-    {
-        y:
-        {
-            beginAtZero: true
-        }
-    },
-    plugins:
-    {
-        legend:
-        {
-            position:'right',
-        },
-        subtitle:
-        {
-            display: true,
-            text: 'A compact comparison of Charged Attack damages across all talent levels'
-        },
-        title:
-        {
-            display: true,
-            text: 'Albedo Charged Attack Damage Calculator and Visualizer'
-        },
-    }
-};
-
-let options5 = {
-    scales:
-    {
-        y:
-        {
-            beginAtZero: true
-        }
-    },
-    plugins:
-    {
-        legend:
-        {
-            position:'right',
-        },
-        subtitle:
-        {
-            display: true,
-            text: 'A compact comparison of Plunge Attack damages across all talent levels'
-        },
-        title:
-        {
-            display: true,
-            text: 'Albedo Plunge Attack Damage Calculator and Visualizer'
+            text: 'Wanderer Damage Calculator and Visualizer'
         },
     }
 };
 
 // Plotting the Chart
-let plotData1 = {
+let plotData = {
     type: 'bar',
     data: data,
-    options: options1,
+    options: options,
 };
 
-let plotData2 = {
-    type: 'bar',
-    data: data,
-    options: options2,
-};
-
-let plotData3 = {
-    type: 'bar',
-    data: data,
-    options: options3,
-};
-
-let plotData4 = {
-    type: 'bar',
-    data: data,
-    options: options4,
-};
-
-let plotData5 = {
-    type: 'bar',
-    data: data,
-    options: options5,
-};
-
-var AlbedoESChart = new Chart(ctx1, plotData1);
-var AlbedoEBChart = new Chart(ctx2, plotData2);
-var AlbedoNAChart = new Chart(ctx3, plotData3);
-var AlbedoCAChart = new Chart(ctx4, plotData4);
-var AlbedoPAChart = new Chart(ctx5, plotData5);
+var WandererChart = new Chart(ctx, plotData);
 
 // Enemy and Environment Level Multiplier
 const EELM = [17.165605, 18.535048, 19.904854, 21.274903, 22.6454, 24.649613, 26.640643, 28.868587, 31.367679, 34.143343, 37.201, 40.66, 44.446668, 48.563519, 53.74848, 59.081897, 64.420047, 69.724455, 75.123137, 80.584775, 86.112028, 91.703742, 97.244628, 102.812644, 108.409563, 113.201694, 118.102906, 122.979318, 129.72733, 136.29291, 142.67085, 149.029029, 155.416987, 161.825495, 169.106313, 176.518077, 184.072741, 191.709518, 199.556908, 207.382042, 215.3989, 224.165667, 233.50216, 243.350573, 256.063067, 268.543493, 281.526075, 295.013648, 309.067188, 323.601597, 336.757542, 350.530312, 364.482705, 378.619181, 398.600417, 416.398254, 434.386996, 452.566797, 471.426268, 490.481663, 509.50428, 532.771793, 556.393323, 580.103031, 607.894973, 630.20133, 652.866818, 675.186325, 697.782682, 720.170325, 742.454652, 765.205477, 784.374617, 803.401172, 830.920776, 854.403332, 877.759777, 900.117232, 923.766661, 946.370258, 968.634183, 991.029365, 1013.527108, 1036.132954, 1066.623598, 1089.964198, 1114.964489, 1141.662656, 1171.941798, 1202.813736, 1233.939915, 1264.69967, 1305.689483, 1346.084383, 1411.738173, 1468.874501, 1524.041318, 1576.966305, 1627.613082, 1674.809242]
@@ -229,15 +94,16 @@ const P2Multipliers = [114, 123, 132, 145, 155, 165, 180, 194, 209, 225, 240, 25
 const P3Multipliers = [142, 153, 165, 182, 193, 206, 224, 243, 261, 281, 300, 320, 340, 360, 380];
 
 // Elemental Skill Multipliers
-const ESkillMultipliers = [95.2, 102.3, 109.5, 119, 126.1, 133.3, 142.8, 152.3, 161.8, 171.4, 180.9, 190.4, 202.3, 214.2, 226.1];
-const EFushoudanMultiplers = [133, 135, 136.9, 139.5% Normal Attack DMG	141.5% Normal Attack DMG	143.5% Normal Attack DMG	146% Normal Attack DMG	148.6% Normal Attack DMG	151.2% Normal Attack DMG	153.7% Normal Attack DMG	156.3% Normal Attack DMG	158.9% Normal Attack DMG	161.4% Normal Attack DMG	164% Normal Attack DMG	166.6% Normal Attack DMG];
-const TransientBlossomMultipliers = [133.6, 143.62, 153.64, 167, 177.02, 187.04, 200.4, 213.76, 227.12, 240.48, 253.84, 267.2, 283.9, 300.6, 317.3];
+const HanegaMultipliers = [95.2, 102.3, 109.5, 119, 126.1, 133.3, 142.8, 152.3, 161.8, 171.4, 180.9, 190.4, 202.3, 214.2, 226.1];
+const FushoudanMultiplers = [133, 135, 136.9, 139.5, 141.5, 143.5, 146, 148.6, 151.2, 153.7, 156.3, 158.9, 161.4, 164, 166.6];
+const ToufukaiMultiplers = [126.4, 128, 129.5, 131.6, 133.2, 134.8, 136.8, 138.9, 140.9, 143, 145, 147.1, 149.1, 151.2, 153.2];
+const KuugoryokuPoints = [100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100];
 
 // Elemental Burst Multipliers
-const EBurstMultipliers = [367.20, 394.74, 422.28, 459, 486.54, 514.08, 550.80, 587.52, 624.24, 660.96, 697.68, 734.40, 780.30, 826.20, 872.10];
-const FatalBlossomMultipliers = [72, 77.4, 82.8, 90, 95.4, 100.8, 108, 115.2, 122.4, 129.6, 136.8, 144, 153, 162, 171];
+const BurstMultipliers = [147.2, 158.2, 169.3, 184, 195, 206.1, 220.8, 235.5, 250.2, 265, 279.7, 294.4, 312.8, 331.2, 349.6];
 
-const SpotlessHeartMultipliers = [0.0, 0.4, 0.5, 0.6, 0.7, 0.8]
+// Gales of Reverie Multiplier
+const GaleMultipliers = [35.0];
 
 function UpdateChart()
 {
@@ -254,29 +120,19 @@ function UpdateChart()
     const CritRate = document.getElementById("charCRate").value*0.01;
     const CritDMG = document.getElementById("charCDmg").value*0.01;
 
-    const CinnabarSpindle = document.getElementById("cinnabar-spindle").value*1;
-
-    const PhysicalDMGBonus = document.getElementById("charPHY").value*0.01;
     const AnemoDMGBonus = document.getElementById("charANEMO").value*0.01;
-    const GeoDMGBonus = document.getElementById("charGEO").value*0.01;
-    const ElectroDMGBonus = document.getElementById("charELECTRO").value*0.01;
-    const DendroDMGBonus = document.getElementById("charDENDRO").value*0.01;
-    const HydroDMGBonus = document.getElementById("charHYDRO").value*0.01;
-    const PyroDMGBonus = document.getElementById("charPYRO").value*0.01;
-    const CryoDMGBonus = document.getElementById("charCRYO").value*0.01;
+    const ReactionDMGBonus = document.getElementById("charReactionBonus").value*0.01;
 
     const ATK = document.getElementById("charATK").value*1.0;
     const DEF = document.getElementById("charDEF").value*1.0;
-    const HP = document.getElementById("charHP").value*1.0;
     const EM = document.getElementById("charEM").value*1.0;
     const ER = document.getElementById("charER").value*0.01;
-    const HB = document.getElementById("charHB").value*0.01;
-    const IHB = document.getElementById("charIHB").value*0.01;
 
-    const A1Passive = document.getElementById("A1Passive").checked;
-    const C2Passive = document.getElementById("C2Passive").checked;
-    const C4Passive = document.getElementById("C4Passive").checked;
-    const C6Passive = document.getElementById("C6Passive").checked;
+    const CharT1  = document.getElementById("charT1").value*1 - 1;
+    const CharT2  = document.getElementById("charT2").value*1 - 1;
+    const CharT3  = document.getElementById("charT3").value*1 - 1;
+
+    // console.log(CharT1, CharT2, CharT3);
 
     // Multiplier Calculations
     let Resistance = BaseResistance - ResistanceReduction;
@@ -298,422 +154,152 @@ function UpdateChart()
     let AvgCrit = 1.0 + CritRate*CritDMG;
     let CritMult = 1.0 + CritDMG;
 
-    let PhyMult = 1.0 + PhysicalDMGBonus;
     let AnemoMult = 1.0 + AnemoDMGBonus;
-    let GeoMult = 1.0 + GeoDMGBonus;
-    let ElectroMult = 1.0 + ElectroDMGBonus;
-    let DendroMult = 1.0 + DendroDMGBonus;
-    let HydroMult = 1.0 + HydroDMGBonus;
-    let PyroMult = 1.0 + PyroDMGBonus;
-    let CryoMult = 1.0 + CryoDMGBonus;
-    
-    let PhysicalMultiplier = PhyMult*EnemyDefMult*EnemyResMult;
     let AnemoMultiplier = AnemoMult*EnemyDefMult*EnemyResMult;
-    let GeoMultiplier = GeoMult*EnemyDefMult*EnemyResMult;
-    let ElectroMultiplier = ElectroMult*EnemyDefMult*EnemyResMult;
-    let DendroMultiplier = DendroMult*EnemyDefMult*EnemyResMult;
-    let HydroMultiplier = HydroMult*EnemyDefMult*EnemyResMult;
-    let PyroMultiplier = PyroMult*EnemyDefMult*EnemyResMult;
-    let CryoMultiplier = CryoMult*EnemyDefMult*EnemyResMult;
-
-    let RegularMultiplier = GeoMult*EnemyDefMult*EnemyResMult;
-    let AdjustedPhysicalMultiplier = PhyMult*EnemyDefMult*EnemyResMult;
-    let A1PassiveMultiplier = GeoMult*EnemyDefMult*EnemyResMult;
-    let C2PassiveMultiplier = GeoMult*EnemyDefMult*EnemyResMult;
-    let C4PassiveMultiplier = PhyMult*EnemyDefMult*EnemyResMult;
-
-    let C2FlatDMG = 0.0;
-
-    if(C6Passive)
-    {
-        if(A1Passive)
-            A1PassiveMultiplier = (GeoMult + 0.25 + 0.17)*EnemyDefMult*EnemyResMult;
-    
-        AdjustedPhysicalMultiplier = (PhyMult + 0.17)*EnemyDefMult*EnemyResMult;
-        C4PassiveMultiplier = (PhyMult + 0.30 + 0.17)*EnemyDefMult*EnemyResMult;
-        C2FlatDMG += 4.0 * 0.30 * DEF;
-        C2PassiveMultiplier = (GeoMult + 0.17)*EnemyDefMult*EnemyResMult;
-    }
-    else
-    {
-        if(A1Passive)
-            A1PassiveMultiplier = (GeoMult + 0.25)*EnemyDefMult*EnemyResMult;
-        
-        if(C4Passive)
-        {
-            C4PassiveMultiplier = (PhyMult + 0.30)*EnemyDefMult*EnemyResMult;
-            C2FlatDMG += 4.0 * 0.30 * DEF;
-            // C2PassiveMultiplier = (GeoMult)*EnemyDefMult*EnemyResMult;
-        }
-        else
-        {
-            if(C2Passive)
-            {
-                C2FlatDMG += 4.0 * 0.30 * DEF; // C2 Passive
-                // C2PassiveMultiplier = (GeoMult)*EnemyDefMult*EnemyResMult;
-            }
-            
-        }
-    }
-
-    // console.log("Cinnabar spindle refinement:", SpotlessHeartMultipliers[CinnabarSpindle])
-    
-    // Cinnabar Spindle Passive
-    const SpotlessHeart = SpotlessHeartMultipliers[CinnabarSpindle] * DEF;
+    let FushoudanMultiplier = AnemoMultiplier*FushoudanMultiplers[CharT2]*0.01;
+    let ToufukaiMultiplier = AnemoMultiplier*ToufukaiMultiplers[CharT2]*0.01;
 
     // Data console
     // console.log(Resistance, EnemyResMult, EnemyDefMult, AvgCrit, CritMult, GeoMult);
 
     // Damage Calculations
-    // Normal Attaks
-    let N1DMG = FullMultiplyArray(N1Multipliers, ATK, AdjustedPhysicalMultiplier);
+    // Normal Attacks
+    let N1DMG = FullMultiplyArray(N1Multipliers, ATK, AnemoMultiplier);
     let AvgN1DMG = MultiplyArray(N1DMG, AvgCrit);
     let CritN1DMG = MultiplyArray(N1DMG, CritMult);
-    let N2DMG = FullMultiplyArray(N2Multipliers, ATK, AdjustedPhysicalMultiplier);
+
+    let N2DMG = FullMultiplyArray(N2Multipliers, ATK, AnemoMultiplier);
     let AvgN2DMG = MultiplyArray(N2DMG, AvgCrit);
     let CritN2DMG = MultiplyArray(N2DMG, CritMult);
-    let N3DMG = FullMultiplyArray(N3Multipliers, ATK, AdjustedPhysicalMultiplier);
-    let AvgN3DMG = MultiplyArray(N3DMG, AvgCrit);
-    let CritN3DMG = MultiplyArray(N3DMG, CritMult);
-    let N4DMG = FullMultiplyArray(N4Multipliers, ATK, AdjustedPhysicalMultiplier);
-    let AvgN4DMG = MultiplyArray(N4DMG, AvgCrit);
-    let CritN4DMG = MultiplyArray(N4DMG, CritMult);
-    let N5DMG = FullMultiplyArray(N5Multipliers, ATK, AdjustedPhysicalMultiplier);
-    let AvgN5DMG = MultiplyArray(N5DMG, AvgCrit);
-    let CritN5DMG = MultiplyArray(N5DMG, CritMult);
-    
+
+    let N31DMG = FullMultiplyArray(N31Multipliers, ATK, AnemoMultiplier);
+    let AvgN31DMG = MultiplyArray(N31DMG, AvgCrit);
+    let CritN31DMG = MultiplyArray(N31DMG, CritMult);
+
+    let N32DMG = FullMultiplyArray(N32Multipliers, ATK, AnemoMultiplier);
+    let AvgN32DMG = MultiplyArray(N32DMG, AvgCrit);
+    let CritN33DMG = MultiplyArray(N32DMG, CritMult);
+
     // Charge Attacks
-    let C1DMG = FullMultiplyArray(C1Multipliers, ATK, AdjustedPhysicalMultiplier);
+    let C1DMG = FullMultiplyArray(C1Multipliers, ATK, AnemoMultiplier);
     let AvgC1DMG = MultiplyArray(C1DMG, AvgCrit);
     let CritC1DMG = MultiplyArray(C1DMG, CritMult);
-    let C2DMG = FullMultiplyArray(C2Multipliers, ATK, AdjustedPhysicalMultiplier);
-    let AvgC2DMG = MultiplyArray(C2DMG, AvgCrit);
-    let CritC2DMG = MultiplyArray(C2DMG, CritMult);
-    
+
     // Plunge Attacks
-    let P1DMG = FullMultiplyArray(P1Multipliers, ATK, C4PassiveMultiplier);
+    let P1DMG = FullMultiplyArray(P1Multipliers, ATK, AnemoMultiplier);
     let AvgP1DMG = MultiplyArray(P1DMG, AvgCrit);
     let CritP1DMG = MultiplyArray(P1DMG, CritMult);
-    let P2DMG = FullMultiplyArray(P2Multipliers, ATK, C4PassiveMultiplier);
+
+    let P2DMG = FullMultiplyArray(P2Multipliers, ATK, AnemoMultiplier);
     let AvgP2DMG = MultiplyArray(P2DMG, AvgCrit);
     let CritP2DMG = MultiplyArray(P2DMG, CritMult);
-    let P3DMG = FullMultiplyArray(P3Multipliers, ATK, C4PassiveMultiplier);
+
+    let P3DMG = FullMultiplyArray(P3Multipliers, ATK, AnemoMultiplier);
     let AvgP3DMG = MultiplyArray(P3DMG, AvgCrit);
     let CritP3DMG = MultiplyArray(P3DMG, CritMult);
 
     // Elemental Skill
-    let SkillDMG = FullMultiplyArray(ESkillMultipliers, ATK, RegularMultiplier, 1.0, SpotlessHeart);
-    let AvgSkillDMG = MultiplyArray(SkillDMG, AvgCrit);
-    let CritSkillDMG = MultiplyArray(SkillDMG, CritMult);
-    let TransientBlossomDMG = FullMultiplyArray(TransientBlossomMultipliers, DEF, A1PassiveMultiplier, 1.0, SpotlessHeart);
-    let AvgTransientBlossomDMG = MultiplyArray(TransientBlossomDMG, AvgCrit);
-    let CritTransientBlossomDMG = MultiplyArray(TransientBlossomDMG, CritMult);
+    let HanegaDMG = FullMultiplyArray(HanegaMultipliers, ATK, AnemoMultiplier, 1.0, 0);
+    let AvgHanegaDMG = MultiplyArray(HanegaDMG, AvgCrit);
+    let CritHanegaDMG = MultiplyArray(HanegaDMG, CritMult);
+
+    let FushoudanN1DMG = FullMultiplyArray(N1Multipliers, ATK, FushoudanMultiplier, 1.0, 0);
+    let AvgFushoudanN1DMG = MultiplyArray(FushoudanN1DMG, AvgCrit);
+    let CritFushoudanN1DMG = MultiplyArray(FushoudanN1DMG, CritMult);
+
+    let FushoudanN2DMG = FullMultiplyArray(N2Multipliers, ATK, FushoudanMultiplier, 1.0, 0);
+    let AvgFushoudanN2DMG = MultiplyArray(FushoudanN2DMG, AvgCrit);
+    let CritFushoudanN2DMG = MultiplyArray(FushoudanN2DMG, CritMult);
+
+    let FushoudanN31DMG = FullMultiplyArray(N31Multipliers, ATK, FushoudanMultiplier, 1.0, 0);
+    let AvgFushoudanN31DMG = MultiplyArray(FushoudanN31DMG, AvgCrit);
+    let CritFushoudanN31DMG = MultiplyArray(FushoudanN31DMG, CritMult);
+
+    let FushoudanN32DMG = FullMultiplyArray(N32Multipliers, ATK, FushoudanMultiplier, 1.0, 0);
+    let AvgFushoudanN32DMG = MultiplyArray(FushoudanN32DMG, AvgCrit);
+    let CritFushoudanN32DMG = MultiplyArray(FushoudanN32DMG, CritMult);
+
+    let ToufukaiDMG = FullMultiplyArray(C1Multipliers, ATK, ToufukaiMultiplier, 1.0, 0);
+    let AvgToufukaiDMG = MultiplyArray(ToufukaiDMG, AvgCrit);
+    let CritToufukaiDMG = MultiplyArray(ToufukaiDMG, CritMult);
 
     // Elemental Burst
-    let BurstDMG = FullMultiplyArray(EBurstMultipliers, ATK, C2PassiveMultiplier, 1.0, C2FlatDMG);
+    let BurstDMG = FullMultiplyArray(BurstMultipliers, ATK, AnemoMultiplier, 1.0, 0);
     let AvgBurstDMG = MultiplyArray(BurstDMG, AvgCrit);
     let CritBurstDMG = MultiplyArray(BurstDMG, CritMult);
-    let FatalBlossomDMG = FullMultiplyArray(FatalBlossomMultipliers, ATK, C2PassiveMultiplier, 1.0, C2FlatDMG);
-    let AvgFatalBlossomDMG = MultiplyArray(FatalBlossomDMG, AvgCrit);
-    let CritFatalBlossomDMG = MultiplyArray(FatalBlossomDMG, CritMult);
+
+    // Gales of Reverie - Wind Arrow
+    let WindArrowDMG = FullMultiplyArray(GaleMultipliers, ATK, AnemoMultiplier, 1.0, 0);
+    let AvgWindArrowDMG = MultiplyArray(WindArrowDMG, AvgCrit);
+    let CritWindArrowDMG = MultiplyArray(WindArrowDMG, CritMult);
+
+    // Swirl Reaction
+    let EMBonus = (1.0 + (16.0 * EM)/(2000.0 + EM) + ReactionDMGBonus);
+    let LevelMultipler = CLM[CharLevel - 1];
+    let SwirlMultiplier = 0.6;
+    let SwirlDMG = SwirlMultiplier * LevelMultipler * EMBonus * EnemyResMult;
+    let AvgSwirlDMG = SwirlDMG;
+    let CritSwirlDMG = SwirlDMG;
 
     let data1 = {
-        labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+        labels: ["N3_1", "C1", "Hanega", "E-N3_1", "E-C1", "Burst", "WindArrow", "Swirl"],
         datasets: [
             {
-                label: 'Skill Damage',
-                data: SkillDMG,
+                label: 'Non-Crit Hits',
+                data: [N31DMG[CharT1], C1DMG[CharT1], HanegaDMG[CharT1], FushoudanN31DMG[CharT1], ToufukaiDMG[CharT1], BurstDMG[CharT3], WindArrowDMG[0], SwirlDMG],
+                borderWidth: 1,
+                hidden: false
+            },
+            {
+                label: 'Avg Hits',
+                data: [AvgN31DMG[CharT1], AvgC1DMG[CharT1], AvgHanegaDMG[CharT1], AvgFushoudanN31DMG[CharT1], AvgToufukaiDMG[CharT1], AvgBurstDMG[CharT3], AvgWindArrowDMG[0], AvgSwirlDMG],
+                borderWidth: 1,
+                hidden: true
+            },
+            {
+                label: 'Crit Hits',
+                data: [CritN31DMG[CharT1], CritC1DMG[CharT1], CritHanegaDMG[CharT1], CritFushoudanN31DMG[CharT1], CritToufukaiDMG[CharT1], CritBurstDMG[CharT3], CritWindArrowDMG[0], CritSwirlDMG],
                 borderWidth: 1,
                 hidden: false,
-            },
-            {
-                label: 'Transient Blossom Damage',
-                data: TransientBlossomDMG,
-                borderWidth: 1,
-                hidden: false,
-            },
-            {
-                label: 'Average Skill Damage',
-                data: AvgSkillDMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-            {
-                label: 'Average Transient Blossom Damage',
-                data: AvgTransientBlossomDMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-            {
-                label: 'Critical Skill Damage',
-                data: CritSkillDMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-            {
-                label: 'Critical Transient Blossom Damage',
-                data: CritTransientBlossomDMG,
-                borderWidth: 1,
-                hidden: true,
-            },
+            }
         ]
     };
 
-    let data2 = {
-        labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
-        datasets: [
+    let options1 = {
+        scales:
+        {
+            y:
             {
-                label: 'Burst Damage',
-                data: BurstDMG,
-                borderWidth: 1,
-                hidden: false,
-            },
+                beginAtZero: true,
+                title:
+                {
+                    display: true,
+                    text: 'Damage'
+                },
+            }
+        },
+        plugins:
+        {
+            legend:
             {
-                label: 'Fatal Blossom Damage',
-                data: FatalBlossomDMG,
-                borderWidth: 1,
-                hidden: false,
+                position:'right',
             },
+            subtitle:
             {
-                label: 'Average Burst Damage',
-                data: AvgBurstDMG,
-                borderWidth: 1,
-                hidden: true,
+                display: true,
+                text: `A compact comparison of select damage numbers. Talents:${CharT1 + 1} - ${CharT2 + 1} - ${CharT3 + 1}`
             },
+            title:
             {
-                label: 'Average Fatal Blossom Damage',
-                data: AvgFatalBlossomDMG,
-                borderWidth: 1,
-                hidden: true,
+                display: true,
+                text: 'Wanderer Damage Calculator and Visualizer'
             },
-            {
-                label: 'Critical Burst Damage',
-                data: CritBurstDMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-            {
-                label: 'Critical Fatal Blossom Damage',
-                data: CritFatalBlossomDMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-        ]
+        }
     };
 
-    let data3 = {
-        labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
-        datasets: [
-            {
-                label: 'N1 Damage',
-                data: N1DMG,
-                borderWidth: 1,
-                hidden: false,
-            },
-            {
-                label: 'N2 Damage',
-                data: N2DMG,
-                borderWidth: 1,
-                hidden: false,
-            },
-            {
-                label: 'N3 Damage',
-                data: N3DMG,
-                borderWidth: 1,
-                hidden: false,
-            },
-            {
-                label: 'N4 Damage',
-                data: N4DMG,
-                borderWidth: 1,
-                hidden: false,
-            },
-            {
-                label: 'N5 Damage',
-                data: N5DMG,
-                borderWidth: 1,
-                hidden: false,
-            },
-            {
-                label: 'Avg N1 Damage',
-                data: AvgN1DMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-            {
-                label: 'Avg N2 Damage',
-                data: AvgN2DMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-            {
-                label: 'Avg N3 Damage',
-                data: AvgN3DMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-            {
-                label: 'Avg N4 Damage',
-                data: AvgN4DMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-            {
-                label: 'Avg N5 Damage',
-                data: AvgN5DMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-            {
-                label: 'Crit N1 Damage',
-                data: CritN1DMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-            {
-                label: 'Crit N2 Damage',
-                data: CritN2DMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-            {
-                label: 'Crit N3 Damage',
-                data: CritN3DMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-            {
-                label: 'Crit N4 Damage',
-                data: CritN4DMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-            {
-                label: 'Crit N5 Damage',
-                data: CritN5DMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-        ]
-    };
-
-    let data4 = {
-        labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
-        datasets: [
-            {
-                label: 'C1 Damage',
-                data: C1DMG,
-                borderWidth: 1,
-                hidden: false,
-            },
-            {
-                label: 'C2 Damage',
-                data: C2DMG,
-                borderWidth: 1,
-                hidden: false,
-            },
-            {
-                label: 'Avg C1 Damage',
-                data: AvgC1DMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-            {
-                label: 'Avg C2 Damage',
-                data: AvgC2DMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-            {
-                label: 'Crit C1 Damage',
-                data: CritC1DMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-            {
-                label: 'Crit C2 Damage',
-                data: CritC2DMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-        ]
-    };
-
-    let data5 = {
-        labels: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
-        datasets: [
-            {
-                label: 'Plunge Damage',
-                data: P1DMG,
-                borderWidth: 1,
-                hidden: false,
-            },
-            {
-                label: 'Low Plunge',
-                data: P2DMG,
-                borderWidth: 1,
-                hidden: false,
-            },
-            {
-                label: 'High Plunge',
-                data: P3DMG,
-                borderWidth: 1,
-                hidden: false,
-            },
-            {
-                label: 'Avg Plunge Damage',
-                data: AvgP1DMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-            {
-                label: 'Avg Low Plunge Damage',
-                data: AvgP2DMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-            {
-                label: 'Avg High Plunge Damage',
-                data: AvgP3DMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-            
-            {
-                label: 'Crit Plunge Damage',
-                data: CritP1DMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-            {
-                label: 'Crit Low Plunge',
-                data: CritP2DMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-            {
-                label: 'Crit High Plunge',
-                data: CritP3DMG,
-                borderWidth: 1,
-                hidden: true,
-            },
-        ]
-    };
-
-    AlbedoESChart.config.data = data1;
-    AlbedoESChart.update();
-
-    AlbedoEBChart.config.data = data2;
-    AlbedoEBChart.update();
-
-    AlbedoNAChart.config.data = data3;
-    AlbedoNAChart.update();
-
-    AlbedoCAChart.config.data = data4;
-    AlbedoCAChart.update();
-
-    AlbedoPAChart.config.data = data5;
-    AlbedoPAChart.update();
+    WandererChart.config.data = data1;
+    WandererChart.config.options = options1;
+    WandererChart.update();
 
 }
 
