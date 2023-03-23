@@ -163,15 +163,15 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 1.5em;
 }
 
 h2 {
-  font-size: 1.75em;
+  font-size: 1.3em;
 }
 
 h3 {
-  font-size: 1.35em;
+  font-size: 1.2em;
 }
 
 h4 {
@@ -186,17 +186,6 @@ h6 {
   font-size: 0.7em;
 }
 
-@media screen and (max-width: 736px) {
-  h1 {
-    font-size: 2em;
-  }
-  h2 {
-    font-size: 1.5em;
-  }
-  h3 {
-    font-size: 1.25em;
-  }
-}
 sub {
   font-size: 0.8em;
   position: relative;

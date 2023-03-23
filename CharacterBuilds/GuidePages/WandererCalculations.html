@@ -27,7 +27,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
-    <title>template | WeaponMatrices | CharacterBuilds | Adventurers' Guild</title>
+    <title>WandererCalculations | GuidePages | CharacterBuilds | Adventurers' Guild</title>
 
     </head>
     
@@ -63,74 +63,74 @@
         <section>
             <div class="inner">
 
-                <h1 id="calculations-page---for-kaedehara-kazuha">Calculations Page - For Kaedehara Kazuha</h1>
+                <h1 id="wanderer---damage-calculator">Wanderer - Damage Calculator</h1>
+<h2 id="character-stats">Character stats</h2>
 <div class="row">
-<div class="col-4 col-12-medium">
-<h3>
-Pick a Weapon
-</h3>
-<p><select name="weapons" id="weapons"> </select></p>
+<div class="col-3 col-6-medium col-6-small">
+<p><label for="charATK">ATK</label> <input type="number" name="charATK" id="charATK" min="0" step="0.1" value="200" max="10000"> <br> <label for="charEM">Elemental Mastery</label> <input type="number" name="charEM" id="charEM" min="0" step="1" value="0" max="5000"> <br> <label for="charCRate">Crit Rate %</label> <input type="number" name="charCRate" id="charCRate" min="5" step="0.1" value="5" max="100"></p>
+</div>
+<div class="col-3 col-6-medium col-6-small">
+<p><label for="charANEMO">Anemo DMG Bonus %</label> <input type="number" name="charANEMO" id="charANEMO" min="0" step="0.1" value="0" max="500"> <br> <label for="charLEVEL">Character Level</label> <input type="number" name="charLEVEL" id="charLEVEL" min="1" step="1" value="50" max="90"> <br> <label for="charCDmg">Crit DMG %</label> <input type="number" name="charCDmg" id="charCDmg" min="50" step="0.1" value="50" max="700"></p>
+</div>
+<div class="col-3 col-6-medium col-6-small">
+<p><label for="charT1">Normal Level</label> <input type="number" name="charT1" id="charT1" min="1" step="1" value="1" max="15"> <br> <label for="charT2">Skill Level</label> <input type="number" name="charT2" id="charT2" min="1" step="1" value="1" max="15"> <br> <label for="charT3">Burst Level</label> <input type="number" name="charT3" id="charT3" min="1" step="1" value="1" max="15"></p>
+</div>
+<div class="col-3 col-6-medium col-6-small">
+<p><label for="charER">Energy Recharge %</label> <input type="number" name="charER" id="charER" min="100" step="0.1" value="100" max="700"> <br> <label for="charDEF">DEF</label> <input type="number" name="charDEF" id="charDEF" min="0" step="0.1" value="200" max="10000"> <br> <br> <button type="button" onclick="UpdateChart()">Calculate</button></p>
 </div>
 </div>
-</form>
-<script type="text/javascript" language="javascript">
-
-    let WeaponSetName = "./../SupportFiles/weapon-list.json";
-    let WeaponSetIndex = 1;
-    let WeaponList = {};
-
-    window.onload = (event) =>
-    {
-        SetupPage()
-    };
-
-    async function SetupPage()
-    {
-        await FetchWeapons(WeaponSetName, WeaponSetIndex);
-        InitializeWeaponList();
-
-        console.log("Load Button Ready!");
-        // InitializeForms();
-    }
-
-    async function FetchWeapons(fname, index)
-    {
-        let MatrixInitializer = {
-            method:'GET',
-            headers: {
-                'Accept': 'application/json',
-            },
-        }
-        await fetch(fname, MatrixInitializer)
-        .then(response => response.json())
-        .then(response => TransferWeapons(response, index))
-        .catch(error => console.error("Something went wrong in fetching " + fname + " " + error));
-    }
-
-    function TransferWeapons(WeaponJSON, index)
-    {
-        WeaponList = JSON.parse(JSON.stringify(WeaponJSON))[index];
-        console.log("Got the Weapons!")
-        // console.log(WeaponList)
-    }
-
-    function InitializeWeaponList()
-    {
-        let tempWeaponList = JSON.parse(JSON.stringify(WeaponList));
-        delete tempWeaponList["000"];
-
-        let htmlTags = "";
-
-        for(weaponID in tempWeaponList)
-        {
-            htmlTags += `<option value=${weaponID} id="weapon-${weaponID}">`
-            htmlTags += tempWeaponList[weaponID];
-            htmlTags += '</option>'
-        }
-        
-        document.getElementById('weapons').innerHTML = htmlTags;
-    }
+<hr />
+<h2 id="additional-details">Additional Details</h2>
+<p>Need testing for Constellation passives. They are not tested yet.</p>
+<div class="row">
+<div class="col-3 col-6-medium col-6-small">
+<p><input type="radio" id="PyroSwirl" name="Swirl"> </input> <label for="PyroSwirl">Pyro Swirl</label> <br> <input type="radio" id="HydroSwirl" name="Swirl"> </input> <label for="HydroSwirl">Hydro Swirl</label> <br> <input type="radio" id="ElectroSwirl" name="Swirl"> </input> <label for="ElectroSwirl">Electro Swirl</label> <br> <input type="radio" id="CryoSwirl" name="Swirl"> </input> <label for="CryoSwirl">Cryo Swirl</label></p>
+</div>
+<div class="col-3 col-6-medium col-6-small">
+<p><label for="enemyLEVEL">Enemy Level</label> <input type="number" name="enemyLEVEL" id="enemyLEVEL" min="1" step="1" value="50" max="100"> <br> <br> <label for="enemyBaseRes">Enemy Base Resistance %</label> <input type="number" name="enemyBaseRes" id="enemyBaseRes" min="0" step="1" value="10" max="100"></p>
+</div>
+<div class="col-3 col-6-medium col-6-small">
+<p><label for="defIgnore">Defence Ignore %</label> <input type="number" name="defIgnore" id="defIgnore" min="0" step="1" value="0" max="200"> <br> <br> <label for="ResReduction">Resistance Reduction %</label> <input type="number" name="ResReduction" id="ResReduction" min="0" step="1" value="0" max="100"></p>
+</div>
+<div class="col-3 col-6-medium col-6-small">
+<p><label for="defReduction">Defence Reduction %</label> <input type="number" name="defReduction" id="defReduction" min="0" step="1" value="0" max="200"> <br></p>
+</div>
+</div>
+<hr />
+<h2 id="elemental-skill---abiogenesis-solar-isotoma">Elemental Skill - Abiogenesis: Solar Isotoma</h2>
+<canvas id="Albedo_ESkill_Chart">
+</canvas>
+<hr />
+<h2 id="elemental-burst---rite-of-progeniture-tectonic-tide">Elemental Burst - Rite of Progeniture: Tectonic Tide</h2>
+<canvas id="Albedo_EBurst_Chart">
+</canvas>
+<hr />
+<h2 id="normal-attack-section">Normal Attack Section</h2>
+<p>For Albedo, you don’t need to level or use normal attack skills, as his normal attacks don’t contribute a lot to his personal damage. However, if you want to use his normal attacks with or without elemental infusion, do check this out!</p>
+<h3 id="normal-attacks">Normal Attacks</h3>
+<canvas id="Albedo_NA_Chart">
+</canvas>
+<hr />
+<h3 id="charged-attacks">Charged Attacks</h3>
+<canvas id="Albedo_CA_Chart">
+</canvas>
+<hr />
+<h3 id="plunge-attacks">Plunge Attacks</h3>
+<canvas id="Albedo_PA_Chart">
+</canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./WandererCalculations.js">
 </script>
+<p><br></p>
+<h2 id="feedback-from-the-testers">Feedback from the testers</h2>
+<ul>
+<li>Functionally, it is working perfectly. Damage values accurate to +/- 1</li>
+<li>UI/UX can be better - at the moment, there are too many input variables. Might need simplification.</li>
+<li>Weapon passives / artifact passives can be included via automation</li>
+<li>People do not know the enemy resistances, it can be automated too.</li>
+<li>While the graphs are functional, it takes some getting used to it.</li>
+<li>Constellation passives need testing.</li>
+</ul>
 
                 
             </div>
