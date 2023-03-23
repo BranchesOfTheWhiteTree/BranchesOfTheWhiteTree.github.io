@@ -96,6 +96,7 @@ Need testing for Constellation passives. They are not tested yet.
 ---
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
 <script src="./WandererCalculations.js">
 </script>
 

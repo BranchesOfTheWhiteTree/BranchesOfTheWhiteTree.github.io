@@ -1,4 +1,5 @@
 // Chart setups
+Chart.register(ChartDataLabels);
 const ctx1 = document.getElementById('Albedo_ESkill_Chart');
 ctx1.style.backgroundColor = 'rgba(255,255,255,255)';
 

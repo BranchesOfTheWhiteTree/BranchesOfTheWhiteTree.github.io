@@ -1,10 +1,11 @@
 // Chart setups
+Chart.register(ChartDataLabels);
 const ctx = document.getElementById('Wanderer_Damage_Chart');
 ctx.style.backgroundColor = 'rgba(255,255,255,255)';
 
 // Dummy Data Setup
 let data = {
-    labels: ["N3_1", "C1", "Hanega", "E-N3_1", "E-C1", "Burst", "WindArrow", "Swirl"],
+    labels: ["N1", "C1", "Hanega", "E-N1", "E-C1", "Burst", "WindArrow", "Swirl"],
     datasets: [
         {
             label: 'Non-Crit Hits',
@@ -43,6 +44,12 @@ let options = {
     },
     plugins:
     {
+        datalabels:
+        { // This code is used to display data values
+            anchor: 'end',
+            align: 'top',
+            formatter: Math.round,
+        },
         legend:
         {
             position:'right',
@@ -242,23 +249,23 @@ function UpdateChart()
     let CritSwirlDMG = SwirlDMG;
 
     let data1 = {
-        labels: ["N3_1", "C1", "Hanega", "E-N3_1", "E-C1", "Burst", "WindArrow", "Swirl"],
+        labels: ["N1", "C1", "Hanega", "E-N1", "E-C1", "Burst", "WindArrow", "Swirl"],
         datasets: [
             {
                 label: 'Non-Crit Hits',
-                data: [N31DMG[CharT1], C1DMG[CharT1], HanegaDMG[CharT1], FushoudanN31DMG[CharT1], ToufukaiDMG[CharT1], BurstDMG[CharT3], WindArrowDMG[0], SwirlDMG],
+                data: [N1DMG[CharT1], C1DMG[CharT1], HanegaDMG[CharT1], FushoudanN1DMG[CharT1], ToufukaiDMG[CharT1], BurstDMG[CharT3], WindArrowDMG[0], SwirlDMG],
                 borderWidth: 1,
                 hidden: false
             },
             {
                 label: 'Avg Hits',
-                data: [AvgN31DMG[CharT1], AvgC1DMG[CharT1], AvgHanegaDMG[CharT1], AvgFushoudanN31DMG[CharT1], AvgToufukaiDMG[CharT1], AvgBurstDMG[CharT3], AvgWindArrowDMG[0], AvgSwirlDMG],
+                data: [AvgN1DMG[CharT1], AvgC1DMG[CharT1], AvgHanegaDMG[CharT1], AvgFushoudanN1DMG[CharT1], AvgToufukaiDMG[CharT1], AvgBurstDMG[CharT3], AvgWindArrowDMG[0], AvgSwirlDMG],
                 borderWidth: 1,
                 hidden: true
             },
             {
                 label: 'Crit Hits',
-                data: [CritN31DMG[CharT1], CritC1DMG[CharT1], CritHanegaDMG[CharT1], CritFushoudanN31DMG[CharT1], CritToufukaiDMG[CharT1], CritBurstDMG[CharT3], CritWindArrowDMG[0], CritSwirlDMG],
+                data: [CritN1DMG[CharT1], CritC1DMG[CharT1], CritHanegaDMG[CharT1], CritFushoudanN1DMG[CharT1], CritToufukaiDMG[CharT1], CritBurstDMG[CharT3], CritWindArrowDMG[0], CritSwirlDMG],
                 borderWidth: 1,
                 hidden: false,
             }
@@ -280,6 +287,12 @@ function UpdateChart()
         },
         plugins:
         {
+            datalabels:
+            { // This code is used to display data values
+                anchor: 'end',
+                align: 'top',
+                formatter: Math.round,
+            },
             legend:
             {
                 position:'right',
