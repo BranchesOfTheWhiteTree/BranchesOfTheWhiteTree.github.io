@@ -225,11 +225,12 @@ const C1Multipliers = [132.1, 142, 151.9, 165.1, 175, 184.9, 198.1, 211.3, 224.5
 
 // Plunge Attack Multipliers - regular plunge, low plunge, high plunge
 const P1Multipliers = [56.8, 61.5, 66.1, 72.7, 77.3, 82.6, 89.9, 97.1, 104.4, 112.3, 120.3, 128.2, 136.1, 144.1, 152];
-const P2Multipliers = [127.84, 138.24, 148.65, 163.51, 173.92, 185.81, 202.16, 218.51, 234.86, 252.70, 270.54, 288.38, 306.22, 324.05, 341.89];
-const P3Multipliers = [159.68, 172.67, 185.67, 204.24, 217.23, 232.09, 252.51, 272.93, 293.36, 315.64, 337.92, 360.20, 382.48, 404.76, 427.04];
+const P2Multipliers = [114, 123, 132, 145, 155, 165, 180, 194, 209, 225, 240, 256, 272, 288, 304];
+const P3Multipliers = [142, 153, 165, 182, 193, 206, 224, 243, 261, 281, 300, 320, 340, 360, 380];
 
 // Elemental Skill Multipliers
-const ESkillMultipliers = [130.4, 140.18, 149.96, 163, 172.78, 182.56, 195.6, 208.64, 221.68, 234.72, 247.76, 260.8, 277.1, 293.4, 309.7];
+const ESkillMultipliers = [95.2, 102.3, 109.5, 119, 126.1, 133.3, 142.8, 152.3, 161.8, 171.4, 180.9, 190.4, 202.3, 214.2, 226.1];
+const EFushoudanMultiplers = [133, 135, 136.9, 139.5% Normal Attack DMG	141.5% Normal Attack DMG	143.5% Normal Attack DMG	146% Normal Attack DMG	148.6% Normal Attack DMG	151.2% Normal Attack DMG	153.7% Normal Attack DMG	156.3% Normal Attack DMG	158.9% Normal Attack DMG	161.4% Normal Attack DMG	164% Normal Attack DMG	166.6% Normal Attack DMG];
 const TransientBlossomMultipliers = [133.6, 143.62, 153.64, 167, 177.02, 187.04, 200.4, 213.76, 227.12, 240.48, 253.84, 267.2, 283.9, 300.6, 317.3];
 
 // Elemental Burst Multipliers
