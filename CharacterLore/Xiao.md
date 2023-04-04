@@ -198,7 +198,7 @@ Sometime after the traveler explores the Chasm and unravels the abyss scheme, Xi
 
 When Xiao faced a manifestation of Bosacius’ will, his corrupted soul fought back, as Xiao struggled to make peace with it. 
 
-As Xiao regrouped with the traveler and the others, he explains how the domain is an antlion’s den, using illusions to slowly entrap their victims
+As Xiao regrouped with the traveler and the others, he explains how the domain is an antlion’s den, using illusions to slowly entrap their victims.
 
 Xiao proposed to use his power to get the group back to the surface at the cost of his being left behind. 
 
@@ -242,7 +242,7 @@ Xiao, like the other Yakshas, considers them family, calling each other brother 
 
 <span class="image fit"><img src="./XiaoImages/image29.webp" alt="Guardian Yakshas"><span>
 
-_From left to right: Menogias, Indarias, Alatus, Bonanus, Menogias_
+_From left to right: Menogias, Indarias, Alatus, Bonanus, Bosacius_
 
 ### Bosacius
 
