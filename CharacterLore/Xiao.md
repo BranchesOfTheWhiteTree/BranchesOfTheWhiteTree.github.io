@@ -359,7 +359,7 @@ One of the messages on the Bulletin Board states:
 
 **Guest Message:**
 
-> "I sometimes catch a glimpse of youth standing on the top floor, but I've never seen this person before around the inn. Could it be my imagination?"
+> "I sometimes catch a glimpse of a youth standing on the top floor, but I've never seen this person before around the inn. Could it be my imagination?"
 
 **Reply:**
 
@@ -399,7 +399,7 @@ Xiao having a youthful look can show that he is still learning the world and the
 
 <span class="image fit"><img src="./XiaoImages/image13.png" alt="Xiao during perilous trail"><span>
 
-_Don't think about getting close, and stay out of my way, or all that awaits you is regret_
+_Don't think about getting close, and stay out of my way, or all that awaits you is regret._
 
 There has been speculation that Xiao is going to die in the future. It is supported by his suicidal way of thinking and self-sacrifice as seen in Perilous Trail. As such, he is a huge death flag. However, after recent events, Xiao is led to actually think for his well-being, as he is now finding the meaning to live his life out and to carry his fallen Yaksha's legacy.
 
