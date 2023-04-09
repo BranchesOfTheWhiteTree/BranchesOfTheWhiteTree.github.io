@@ -9,7 +9,7 @@ Table of Contents
   - [Constellation - Lupus Minor](#constellation---lupus-minor)
   - [Story](#story)
   - [Meeting Klee and the meaning of Lupical](#meeting-klee-and-the-meaning-of-lupical)
-  - [Wienlesefest v3.1](#wienlesefest-v31)
+  - [3.1 Weinlesefest](#31-weinlesefest)
   - [Vision](#vision)
   - [Aspirations](#aspirations)
   - [Connections](#connections)
@@ -71,7 +71,7 @@ Table of Contents
   - [Constellation - Lupus Minor](#constellation---lupus-minor)
   - [Story](#story)
   - [Meeting Klee and the meaning of Lupical](#meeting-klee-and-the-meaning-of-lupical)
-  - [Wienlesefest v3.1](#wienlesefest-v31)
+  - [3.1 Weinlesefest](#31-weinlesefest)
   - [Vision](#vision)
   - [Aspirations](#aspirations)
   - [Connections](#connections)
@@ -128,15 +128,12 @@ One day, a tall man came to the forests of Wolvendom, crossing paths with Razor.
 
 > "Am I a human, or a wolf?"
 
-Over time, Varka managed to become a mentor for the boy and, some might
-even say, a third father, giving Razor his name and teaching him how to
-wield a sword.
+Over time, Varka managed to become a mentor for the boy and, some might even say, a third father, giving Razor his name and teaching him how to wield a sword.
 
 <span class="image right"><img src="./RazorImages/18.jpg" alt="Razor birthday art"></span>
 
-> "Now you can protect your friends."
-
-> "Fr-ren-dzz..."
+_"Now you can protect your friends."_
+_"Fr-ren-dzz..."_
 
 In this way, Razor learned another new word that would become widely used in his life, although at that time he did not know the meaning of this word.
 
@@ -164,11 +161,11 @@ While tending to the wolf, some Springvale residents come and accuse Razor of le
 
 With the help from Traveler, they manage to tame Wolf King's fury, and the latter confirms that the outside wolf pack was creating problems. However, as Andrius says, Razor is a human and no wolf, so he cannot intervene in their affairs.
 
-In due time, Razor will also become friends with Bennet, getting stuck with him in the Thousand Winds Temple during the version 1.4 Windblume Festival and choosing Wolfhooks as his Windblume. He will also meet Klee's brother, Albedo, Diluc and Keaya while trying to help Klee on the Golden Apple Archipelago during the version 1.6 Midsummer Island Adventure.
+In due time, Razor will also become friends with Bennet, getting stuck with him in the Thousand Winds Temple during the version 1.4 Windblume Festival and choosing Wolfhooks as his Windblume. He will also meet Klee's brother, Albedo, Diluc and Kaeya while trying to help Klee on the Golden Apple Archipelago during the version 1.6 Midsummer Island Adventure.
 
 <span class="image fit"><img src="./RazorImages/19.jpg" alt="Razor and Bennett"></span>
 
-## Wienlesefest v3.1
+## 3.1 Weinlesefest
 
 A year after that, during the Weinlesefest, Varka would send a letter to Lisa, asking her to handle something for him. He wants her to give Razor a wooden box with some items that his parents left for him, thinking that now is the right time. As it turns out, Varka might have known Razor's parents and had not randomly stumbled upon him in the woods.
 
@@ -284,7 +281,7 @@ Razor also sometimes remembers people by their smell: Traveler - Stars, the sea,
 
 Razor has gone through a lot since birth: having been abandoned as a child, raised by wolves yet not being one, having lost those dear to him.
 
-Yet, even after all of this never has broken him and he still strives to find new connections and protect already existing ones. And even though the protector of the Wolvendom doesn't need help, Razor will always be there to protect his Lupical.
+Yet, all of this never has broken him and he still strives to find new connections and protect already existing ones. And even though the protector of the Wolvendom doesn't need help, Razor will always be there to protect his Lupical.
 
 <span class="image fit"><img src="./RazorImages/17.png" alt="Razor and Boar"></span>
 
