@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="icon" type="image/x-icon" href="/images/Paimon_Icon.png">
+
+    <!-- Meta additions to hold no cache in github. This makes the website reload fresh. -->
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+
+    <!-- KaTeX CSS and JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);">
+    </script>
+
+	<link rel="stylesheet" href="/assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+
+    <title>Ayato | GuidePages | CharacterBuilds | Adventurers' Guild</title>
+
+    </head>
+    
+<body class="is-preload">
+
+    <!-- Back to top button -->
+    <a onclick="topFunction()" id="Back2TopBtn" class="icon alt fa-arrow-up" title="Go to top"></a>
+    
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+<header id="header" class="alt">
+
+	<a href="/index.html" class="logo"><strong>Adventurers' Guild</strong>  <span>by Arun</span></a>
+	
+	<nav>
+		<a href="#menu">Menu</a>
+	</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+	<ul class="links">
+		<li><a href="/index.html">Home</a></li>
+		<li><a href="/CharacterBuilds.html">Character Builds</a></li>
+		<li><a href="/CharacterLore.html">Character Lore</a></li>
+		<li><a href="/HonkaiImpact.html">Honkai Impact</a></li>
+		<li><a href="/About.html">About</a></li>
+	</ul>
+</nav>
+        
+        <section>
+            <div class="inner">
+
+                <div class="row">
+<div class="col-3 col-12-medium box sidebar">
+<p>Table of Contents</p>
+<ul>
+<li><a href="#kamisato-ayato---pillar-of-fortitude">Kamisato Ayato - Pillar of Fortitude</a>
+<ul>
+<li><a href="#credits">Credits</a></li>
+<li><a href="#general-overview">General Overview</a></li>
+<li><a href="#pros-and-cons">Pros and Cons</a></li>
+<li><a href="#normal-attack---kamisato-art-marobashi">Normal Attack - Kamisato Art: Marobashi</a>
+<ul>
+<li><a href="#normal-attack">Normal Attack</a></li>
+<li><a href="#charged-attack">Charged Attack</a></li>
+<li><a href="#plunging-attack">Plunging Attack</a></li>
+</ul></li>
+<li><a href="#elemental-skill--kamisato-art-kyouka">Elemental Skill – Kamisato Art: Kyouka</a>
+<ul>
+<li><a href="#takimeguri-kanka">Takimeguri Kanka</a></li>
+</ul></li>
+<li><a href="#tldr">TLDR</a></li>
+<li><a href="#elemental-burst--kamisato-art-suiyuu">Elemental Burst – Kamisato Art: Suiyuu</a></li>
+<li><a href="#a1-passive----kamisato-art-mine-wo-matoishi-kiyotaki">A1 Passive - Kamisato Art: Mine Wo Matoishi Kiyotaki</a></li>
+<li><a href="#a4-passive---kamisato-art-michiyuku-hagetsu">A4 Passive - Kamisato Art: Michiyuku Hagetsu</a></li>
+<li><a href="#utility-passive--kamisato-art-daily-cooking">Utility Passive – Kamisato Art: Daily Cooking</a></li>
+<li><a href="#talent-priority">Talent Priority</a>
+<ul>
+<li><a href="#for-on-field-dps">For On-Field DPS,</a></li>
+<li><a href="#for-off-field-dps">For Off-Field DPS,</a></li>
+</ul></li>
+<li><a href="#constellation-overview">Constellation overview</a>
+<ul>
+<li><a href="#constellation-1-kyouka-fuushi">Constellation 1: Kyouka Fuushi</a></li>
+<li><a href="#constellation-2-world-source">Constellation 2: World Source</a></li>
+<li><a href="#constellation-3-to-admire-the-flowers">Constellation 3: To Admire the Flowers</a></li>
+<li><a href="#constellation-4-endless-flow">Constellation 4: Endless Flow</a></li>
+<li><a href="#constellation-5-bansui-ichiro">Constellation 5: Bansui Ichiro</a></li>
+<li><a href="#constellation-6-boundless-origin">Constellation 6: Boundless Origin</a></li>
+</ul></li>
+<li><a href="#build">Build</a></li>
+<li><a href="#general-gameplay-style">General Gameplay Style</a></li>
+<li><a href="#artifact-recommendation">Artifact Recommendation</a>
+<ul>
+<li><a href="#artifact-mainstat-recommendations">Artifact Mainstat Recommendations</a></li>
+<li><a href="#substats">Substats</a></li>
+</ul></li>
+<li><a href="#best-artifact-sets">Best Artifact Sets</a>
+<ul>
+<li><a href="#4pc-heart-of-depth">4pc Heart Of Depth</a></li>
+<li><a href="#4pc-gladiators-finale">4pc Gladiator’s Finale</a></li>
+<li><a href="#4pc-echoes-of-an-offering">4pc Echoes Of An Offering</a></li>
+<li><a href="#2pc-2pc-alternatives">2pc-2pc Alternatives</a></li>
+<li><a href="#4pc-emblem-of-severed-fate">4pc Emblem Of Severed Fate</a></li>
+<li><a href="#4pc-thundering-fury">4pc Thundering Fury</a></li>
+<li><a href="#4pc-blizzard-strayer">4pc Blizzard Strayer</a></li>
+<li><a href="#below-ar-45-artifacts">Below AR 45 artifacts</a></li>
+</ul></li>
+<li><a href="#weapon-recommendation">Weapon Recommendation</a>
+<ul>
+<li><a href="#top-tier-weapons">Top Tier Weapons</a>
+<ul>
+<li><a href="#haran-geppaku-futsu">Haran Geppaku Futsu</a></li>
+<li><a href="#primordial-jade-cutter">Primordial Jade Cutter</a></li>
+<li><a href="#mistsplitter-reforged">Mistsplitter Reforged</a></li>
+</ul></li>
+<li><a href="#good-enough-weapons">Good-enough weapons</a>
+<ul>
+<li><a href="#the-black-sword">The Black Sword</a></li>
+<li><a href="#lion-roar">Lion Roar</a></li>
+<li><a href="#harbinger-of-dawn">Harbinger Of Dawn</a></li>
+</ul></li>
+<li><a href="#meh-weapons">Meh Weapons</a>
+<ul>
+<li><a href="#kagotsurube-isshin">Kagotsurube Isshin</a></li>
+<li><a href="#amenoma-kageuchi">Amenoma Kageuchi</a></li>
+<li><a href="#skyward-blade">Skyward Blade</a></li>
+<li><a href="#favonius-sword">Favonius Sword</a></li>
+<li><a href="#summit-shaper">Summit Shaper</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div class="col-9 col-12-medium">
+<blockquote>
+<p>“Everything comes at a cost. And if you aspire to things that most could never dream of, then naturally, there will be an unimaginable price to pay.”</p>
+</blockquote>
+<p><span class="image fit"><img src="./AyatoImages/image16.png" alt="Ayato and Ayaka"></span></p>
+<div class="box false_sidebar">
+<p>Table of Contents</p>
+<ul>
+<li><a href="#kamisato-ayato---pillar-of-fortitude">Kamisato Ayato - Pillar of Fortitude</a>
+<ul>
+<li><a href="#credits">Credits</a></li>
+<li><a href="#general-overview">General Overview</a></li>
+<li><a href="#pros-and-cons">Pros and Cons</a></li>
+<li><a href="#normal-attack---kamisato-art-marobashi">Normal Attack - Kamisato Art: Marobashi</a>
+<ul>
+<li><a href="#normal-attack">Normal Attack</a></li>
+<li><a href="#charged-attack">Charged Attack</a></li>
+<li><a href="#plunging-attack">Plunging Attack</a></li>
+</ul></li>
+<li><a href="#elemental-skill--kamisato-art-kyouka">Elemental Skill – Kamisato Art: Kyouka</a>
+<ul>
+<li><a href="#takimeguri-kanka">Takimeguri Kanka</a></li>
+</ul></li>
+<li><a href="#tldr">TLDR</a></li>
+<li><a href="#elemental-burst--kamisato-art-suiyuu">Elemental Burst – Kamisato Art: Suiyuu</a></li>
+<li><a href="#a1-passive----kamisato-art-mine-wo-matoishi-kiyotaki">A1 Passive - Kamisato Art: Mine Wo Matoishi Kiyotaki</a></li>
+<li><a href="#a4-passive---kamisato-art-michiyuku-hagetsu">A4 Passive - Kamisato Art: Michiyuku Hagetsu</a></li>
+<li><a href="#utility-passive--kamisato-art-daily-cooking">Utility Passive – Kamisato Art: Daily Cooking</a></li>
+<li><a href="#talent-priority">Talent Priority</a>
+<ul>
+<li><a href="#for-on-field-dps">For On-Field DPS,</a></li>
+<li><a href="#for-off-field-dps">For Off-Field DPS,</a></li>
+</ul></li>
+<li><a href="#constellation-overview">Constellation overview</a>
+<ul>
+<li><a href="#constellation-1-kyouka-fuushi">Constellation 1: Kyouka Fuushi</a></li>
+<li><a href="#constellation-2-world-source">Constellation 2: World Source</a></li>
+<li><a href="#constellation-3-to-admire-the-flowers">Constellation 3: To Admire the Flowers</a></li>
+<li><a href="#constellation-4-endless-flow">Constellation 4: Endless Flow</a></li>
+<li><a href="#constellation-5-bansui-ichiro">Constellation 5: Bansui Ichiro</a></li>
+<li><a href="#constellation-6-boundless-origin">Constellation 6: Boundless Origin</a></li>
+</ul></li>
+<li><a href="#build">Build</a></li>
+<li><a href="#general-gameplay-style">General Gameplay Style</a></li>
+<li><a href="#artifact-recommendation">Artifact Recommendation</a>
+<ul>
+<li><a href="#artifact-mainstat-recommendations">Artifact Mainstat Recommendations</a></li>
+<li><a href="#substats">Substats</a></li>
+</ul></li>
+<li><a href="#best-artifact-sets">Best Artifact Sets</a>
+<ul>
+<li><a href="#4pc-heart-of-depth">4pc Heart Of Depth</a></li>
+<li><a href="#4pc-gladiators-finale">4pc Gladiator’s Finale</a></li>
+<li><a href="#4pc-echoes-of-an-offering">4pc Echoes Of An Offering</a></li>
+<li><a href="#2pc-2pc-alternatives">2pc-2pc Alternatives</a></li>
+<li><a href="#4pc-emblem-of-severed-fate">4pc Emblem Of Severed Fate</a></li>
+<li><a href="#4pc-thundering-fury">4pc Thundering Fury</a></li>
+<li><a href="#4pc-blizzard-strayer">4pc Blizzard Strayer</a></li>
+<li><a href="#below-ar-45-artifacts">Below AR 45 artifacts</a></li>
+</ul></li>
+<li><a href="#weapon-recommendation">Weapon Recommendation</a>
+<ul>
+<li><a href="#top-tier-weapons">Top Tier Weapons</a>
+<ul>
+<li><a href="#haran-geppaku-futsu">Haran Geppaku Futsu</a></li>
+<li><a href="#primordial-jade-cutter">Primordial Jade Cutter</a></li>
+<li><a href="#mistsplitter-reforged">Mistsplitter Reforged</a></li>
+</ul></li>
+<li><a href="#good-enough-weapons">Good-enough weapons</a>
+<ul>
+<li><a href="#the-black-sword">The Black Sword</a></li>
+<li><a href="#lion-roar">Lion Roar</a></li>
+<li><a href="#harbinger-of-dawn">Harbinger Of Dawn</a></li>
+</ul></li>
+<li><a href="#meh-weapons">Meh Weapons</a>
+<ul>
+<li><a href="#kagotsurube-isshin">Kagotsurube Isshin</a></li>
+<li><a href="#amenoma-kageuchi">Amenoma Kageuchi</a></li>
+<li><a href="#skyward-blade">Skyward Blade</a></li>
+<li><a href="#favonius-sword">Favonius Sword</a></li>
+<li><a href="#summit-shaper">Summit Shaper</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<h1 id="kamisato-ayato---pillar-of-fortitude">Kamisato Ayato - Pillar of Fortitude</h1>
+<h2 id="credits">Credits</h2>
+<ul>
+<li>Written by: Blanky</li>
+<li>Reviewed by: Arun</li>
+<li>Proofread by: Yet to be done</li>
+<li>Last updated on: 26th April, 2023</li>
+<li>Character guide updated till v3.6</li>
+</ul>
+<h2 id="general-overview">General Overview</h2>
+<p>As the newest 5* hydro sword character, Ayato, with his elegance skill and burst brings forth new cards to the table in the meta. He is your average DPS but with exceptional enabling abilities with his hydro application from his skill. As a hydro character, he is quite flexible and can be slotted into many different teams, although some can be quite frustrating to build, while also suffering from some stepbacks, in this guide, I will cover everything you need to know about him and further your knowledge on our dear boba man.</p>
+<h2 id="pros-and-cons">Pros and Cons</h2>
+<table>
+<tr>
+<th>
+Pros
+</th>
+<th>
+Cons
+</th>
+</tr>
+<tr>
+<td>
+Strong damage in both AoE and single target
+</td>
+<td>
+F2P weapons are underwhelming
+</td>
+</tr>
+<tr>
+<td>
+Wide variety of team compositions
+</td>
+<td>
+Lacking frontloaded damage
+</td>
+</tr>
+<tr>
+<td>
+Flexible with artifacts and weapon
+</td>
+<td>
+Constellations are underwhelming
+</td>
+</tr>
+<tr>
+<td>
+Resin-efficient artifact sets
+</td>
+<td>
+Many of his team use contested characters
+</td>
+</tr>
+<tr>
+<td>
+Low skill level to use
+</td>
+<td>
+May suffer energy issues
+</td>
+</tr>
+<tr>
+<td>
+Consistent damage
+</td>
+<td>
+Other hydro units can be better at his role
+</td>
+</tr>
+</table>
+<h2 id="normal-attack---kamisato-art-marobashi">Normal Attack - Kamisato Art: Marobashi</h2>
+<h3 id="normal-attack">Normal Attack</h3>
+<p>Performs up to 5 rapid strikes.</p>
+<h3 id="charged-attack">Charged Attack</h3>
+<p>Consumes a certain amount of Stamina to dash forward and perform an <a href="https://en.wikipedia.org/wiki/Iaido">iai</a>.</p>
+<h3 id="plunging-attack">Plunging Attack</h3>
+<p>Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing <a href="https://genshin-impact.fandom.com/wiki/AoE">AoE</a> DMG upon impact.</p>
+<p>Your everyday normal attacks, nothing special, can be neglected. Do note that Shunsuiken slashes (convert from Normal Attacks) after casting his Skill <strong>do not</strong> scale off his Normal Attack.</p>
+<h2 id="elemental-skill-kamisato-art-kyouka">Elemental Skill – Kamisato Art: Kyouka</h2>
+<p>Kamisato Ayato shifts positions and enters the Takimeguri Kanka state.</p>
+<p>After this shift, he will leave a watery illusion at his original location. After it is formed, the watery illusion will explode if opponents are nearby or after its duration ends, dealing <strong>AoE Hydro DMG</strong>.</p>
+<h3 id="takimeguri-kanka">Takimeguri Kanka</h3>
+<p>In this state, Kamisato Ayato uses his Shunsuiken to engage in blindingly fast attacks, causing DMG from his Normal Attacks to be converted into <strong>AoE Hydro DMG</strong>. This cannot be overridden.</p>
+<p>It also has the following properties:</p>
+<ul>
+<li><p>After a Shunsuiken attack hits an opponent, it will grant Ayato the Namisen effect, increasing the DMG dealt by Shunsuiken based on Ayato’s current Max HP.</p></li>
+<li><p>The initial maximum number of Namisen stacks is 4, and 1 stack can be gained through Shunsuiken every 0.1s.</p></li>
+<li><p>This effect will be dispelled when Takimeguri Kanka ends. Kamisato Ayato’s resistance to interruption is increased. Unable to use Charged or Plunging Attacks.</p></li>
+</ul>
+<p>Takimeguri Kanka will be cleared when Ayato leaves the field. Using Kamisato Art: Kyouka again while in the Takimeguri Kanka state will reset and replace the pre-existing state.</p>
+<h2 id="tldr">TLDR</h2>
+<p>Ayato goes forward, leaving an illusion behind that will explode after some time. In this state, holding the left click will allow Ayato to do Hydro AoE slashes and is able to gain stack to increase its damage. In this state, he cannot make a charge or plunge attack, and the state will be removed if you switch out.</p>
+<p>Ayato’s primary source of damage. Able to deal AoE damage to enemies. While he has HP scaling, it is relatively low. As such, it is not recommended to build HP solely for this, but it can provide some niche improvement in damage.</p>
+<p>You can do up to 15 slashes, even more, if you have an attack speed buff (Jean C2, Ayato C4, Yuijin C6, ETC) or have high FPS, but it isn’t necessary.</p>
+<h2 id="elemental-burst-kamisato-art-suiyuu">Elemental Burst – Kamisato Art: Suiyuu</h2>
+<p>Unveils a garden of purity that silences the cacophony within.</p>
+<p>While this space exists, Bloomwater Blades will constantly rain down and attack opponents within its AoE, dealing <strong>Hydro DMG</strong> and increasing the Normal Attack DMG of characters within.</p>
+<p>Droplets will drop down dealing niche damage but it’s good for a Burst DPS Ayato whose purpose is to use his burst constantly. His off-field hydro application really shines here as it applies hydro via droplets which drop for about 18 seconds or in other words 36 droplets. It also has wide AoE so more enemies get hydro. It buffs Normal Attack DMG which is nice to have especially for Ayato as his skill is counted as Normal Attack DMG. However, it has a high energy cost, and while his A4 reduces it by a little, it is recommended to have some ER rolls on him (You can use the <a href="https://docs.google.com/spreadsheets/d/1-vkmgp5n0bI9pvhUg110Aza3Emb2puLWdeoCgrxDlu4/edit#gid=1616109791">Energy Recharge Calculator</a> to help find the suitable amount of ER for your team)</p>
+<h2 id="a1-passive---kamisato-art-mine-wo-matoishi-kiyotaki">A1 Passive - Kamisato Art: Mine Wo Matoishi Kiyotaki</h2>
+<p>Kamisato Art: Kyouka has the following properties:</p>
+<p>After it is used, Kamisato Ayato will gain 2 Namisen stacks. When the water illusion explodes, Ayato will gain a Namisen effect equal to the maximum number of stacks possible.</p>
+<p>Ayato can have two Namisen stacks at the start of his rotation (so cool!!) What the stack gives is bonus damage for Ayato, although not a lot, but is nice to have.</p>
+<h2 id="a4-passive---kamisato-art-michiyuku-hagetsu">A4 Passive - Kamisato Art: Michiyuku Hagetsu</h2>
+<p>If Kamisato Ayato is not on the field and his Energy is less than 40, he will regenerate 2 Energy for himself every second.</p>
+<p>Reduces Ayato’s need for ER by a small amount because it can recover 6 to 16 Flat Energy for him during realistic rotations. Energy Recharge has no impact on this Flat Energy.</p>
+<h2 id="utility-passive-kamisato-art-daily-cooking">Utility Passive – Kamisato Art: Daily Cooking</h2>
+<p>When Ayato cooks a dish perfectly, he has an 18% chance to receive an additional “Suspicious” dish of the same type. That’s basically it.</p>
+<h2 id="talent-priority">Talent Priority</h2>
+<h3 id="for-on-field-dps">For On-Field DPS,</h3>
+<p>Skill &gt; Burst &gt;&gt;&gt; NA</p>
+<p>You can completely ignore normal attack on Ayato, and if anything you are levelling it just because you like him a lot. Other than that, you don’t need to put in valuable resources levelling it and instead upgrade your skill which is the top priority for DMG increased as well as your burst for nice bonus DMG as well as the increase of the Normal Attack DMG Bonus.</p>
+<h3 id="for-off-field-dps">For Off-Field DPS,</h3>
+<p>Burst &gt;= Skill &gt;&gt;&gt; NA</p>
+<p>Again, normal attack can be left alone. Instead, you can prioritise either Burst or Skill, whichever you want (Burst being slightly prioritised)</p>
+<p><span class="image fit"><img src="./AyatoImages/image33.png" alt="Ayato and Ayaka"></span></p>
+<h2 id="constellation-overview">Constellation overview</h2>
+<blockquote>
+<p>“You want to know about me? Hmm. Things aren’t always a case of the more you know, the better.”</p>
+</blockquote>
+<h3 id="constellation-1-kyouka-fuushi">Constellation 1: Kyouka Fuushi</h3>
+<blockquote>
+<p>“Shunsuiken DMG is increased by 40% against opponents with 50% HP or less.”</p>
+</blockquote>
+<p>C1 is highly dependent on the enemies you are facing. Overall, it is conditional and insignificant.</p>
+<h3 id="constellation-2-world-source">Constellation 2: World Source</h3>
+<blockquote>
+<p>“Namisen’s maximum stack count is increased to 5. When Kamisato Ayato has at least 3 Namisen stacks, his Max HP is increased by 50%”</p>
+</blockquote>
+<p>A strong constellation that boosts his Namisen stack damage (assuming 15 Shunsuiken strikes each Skill). A good place to halt if you’re looking for low Constellations on Ayato.</p>
+<h3 id="constellation-3-to-admire-the-flowers">Constellation 3: To Admire the Flowers</h3>
+<blockquote>
+<p>“Increases the Level of Kamisato Art: Kyouka by 3. Maximum upgrade level is 15.”</p>
+</blockquote>
+<p>Based purely on the fact that it grants levels to his major source of damage, this constellation is already powerful. Yet, this Constellation also enhances his C2 due to the rise in HP-based Namisen stack scaling.</p>
+<p>An excellent Constellation overall, and another place to halt for low Constellations.</p>
+<h3 id="constellation-4-endless-flow">Constellation 4: Endless Flow</h3>
+<blockquote>
+<p>“After using Kamisato Art: Suiyuu, all nearby party members will have 15% increased Normal Attack SPD for 15s.”</p>
+</blockquote>
+<p>Ayato can often employ an additional two or three Shunsuiken attacks per Skill with this Constellation. Also, a nice buff for Off-Field Ayato as the one taking the field may benefit from the Normal Attack speed buff. An overall strong rise in damage.</p>
+<h3 id="constellation-5-bansui-ichiro">Constellation 5: Bansui Ichiro</h3>
+<blockquote>
+<p>“Increases the Level of Kamisato Art: Suiyuu by 3. Maximum upgrade level is 15.”</p>
+</blockquote>
+<p>This Constellation is not particularly strong because Ayato’s Burst is not his main source of damage.</p>
+<h3 id="constellation-6-boundless-origin">Constellation 6: Boundless Origin</h3>
+<blockquote>
+<p>“After using Kamisato Art: Kyouka, Ayato’s next Shunsuiken attack will create 2 extra Shunsuiken strikes when they hit opponents, each one dealing 450% of Ayato’s ATK as DMG.”</p>
+</blockquote>
+<p>Namisen won’t have an impact on either of these Shunsuiken strikes.</p>
+<p>Ayato is able to frontload part of his damage thanks to a significant increase in DPS.</p>
+<p>Overall, his constellations is underwhelming, and only give a little damage increase. As such, it isn’t recommended or needed to roll for his constellations, unless you really like him then by all means go for it.</p>
+<h2 id="build">Build</h2>
+<p>My favourite section. Ayato is mainly built as a Main DPS (On-Field DPS), however, you can choose to run him as a Burst DPS (Off-Field or Sub-DPS) instead. In this section, I will go through different artifact sets you can use on him depending on what type of Ayato you are going for, and even includes some fun playstyles you can use.</p>
+<h2 id="general-gameplay-style">General Gameplay Style</h2>
+<p>The easiest way to explain Ayato is to think of him like Childe if Childe uses a sword. Ayato vs Childe has been a thing for a long time, and the main difference is that, unlike Childe, Ayato can fit in almost any team. National, International, Hyper, Fridge, Burgeon, Hyperbloom, Bloom, Electro-Charged, Freeze, Vape and Soup. That’s quite a handful, and while you can argue Childe can also do so, his highest utility and team would only be International (Xiangling, Bennett, Kazuha)</p>
+<p>You can use Ayato either as an on-field damage dealer who utilises his kit the best and lowers his ER requirement but has longer rotation or as a burst DPS which leaves the field time for another character to deal more on-field damage in exchange for higher ER requirement.</p>
+<p>Overall, you mostly want to use him on-field as it is his highest damage potential, but in some cases/teams, you can go for the burst DPS variant of Ayato.</p>
+<p>Most importantly, play him however you want.</p>
+<h2 id="artifact-recommendation">Artifact Recommendation</h2>
+<h3 id="artifact-mainstat-recommendations">Artifact Mainstat Recommendations</h3>
+<p><strong>Sands: ATK% or ER%</strong></p>
+<p>Generally speaking, ATK% Sands is always advised. It is advised to use 1 Skill every rotation. ER% Sands should only be used to fulfil Ayato’s ER requirement if you are using him as an Off-Fielder. ER % sands are not recommended for an On-Field build.</p>
+<p>HP% Sands should be avoided even though it initially appears to be a feasible option. This is because it performs much worse than ATK% Sands when Ayato’s Burst is taken into account. Additionally, HP% only adds to his Namisen stacks which are only marginal boosts to the main ATK scaling of his skill.</p>
+<p><strong>Goblet: Hydro% DMG Bonus</strong></p>
+<p>Universal best main stat to have on any goblet for a Hydro DPS.</p>
+<p><strong>Circlet: Crit Rate or Crit DMG</strong></p>
+<p>Use whichever one that is able to balance Ayato crit ratio (1:2)</p>
+<h3 id="substats">Substats</h3>
+<p>ER until you meet his ER requirements &gt; Crit Rate = Crit DMG &gt; ATK% &gt; HP% &gt; the rest</p>
+<p>You would want to focus on getting enough ER rolls so that he is able to burst every rotation, then you can start getting his offensive stats higher.</p>
+<h2 id="best-artifact-sets">Best Artifact Sets</h2>
+<h3 id="pc-heart-of-depth">4pc Heart Of Depth</h3>
+<p>One of Ayato’s best artifact which is more reliable than 4-piece Echoes’ RNG and perhaps easier to get in terms of resin. (Also strongbox exists)</p>
+<p>Another thing to keep in mind is that 4-piece HoD performs better with gear and buffs like PJC and Amenoma that don’t give DMG%.</p>
+<h3 id="pc-gladiators-finale">4pc Gladiator’s Finale</h3>
+<p>Similar to 4 pc Heart of Depth in terms of performance, 4pc Glad performs somewhat better with weapons that have less ATK and more DMG% while slightly worsening with weapons that have more ATK and fewer DMG%.</p>
+<p>It is also a very convenient option because bosses and the Strongbox both grant access to it. Use whichever of the four pc Glad or four pc HoD substats is preferable/better.</p>
+<h3 id="pc-echoes-of-an-offering">4pc Echoes Of An Offering</h3>
+<blockquote>
+<p>“Disappointment is the only word I have for this artifact set, lol” - Blanky</p>
+</blockquote>
+<p>Only use this if you have continuously low ping (sub 100). This is due to the fact that player ping and the average activation rate of the 4pc effect of 4pc Echoes are correlated, with higher ping typically resulting in a lower average proc rate.</p>
+<p>From a live game point of view, every time you do damage, it gets registered in the server. The server does calculations based on the damage recorded to give an enemy reaction and show a damage number.</p>
+<p>Since the set has an RNG proc happening at 50 ms, if you have 50 ms ping or low, you should be technically fine. However, if your ping is more than 50 ms, the RNG proc of the set gets delayed. This reduces the overall bonus the set gives. It may or may not be as good as a 4pc Gladiator or 4pc HoD sets.</p>
+<p>If your ping is more than 100 ms, the reduction in this bonus is quite significant, and it performs less than 4pc Gladiator or 4pc HoD with identical stats.</p>
+<p>While using weapons and buffs that increase DMG% and when using weapons and buffs that increase ATK, 4pc Echoes will outperform 4pc HoD and 4pc Glad if players have consistently low ping. Use whichever of these four-piece sets has the best substats once again. However, generally, I would not recommend you farm this set (Or this domain as a whole) as it is useless and you probably have some Glad pieces from world boss rewards that you can use instead of this RNG set.</p>
+<p>As a safe option, it is recommended to go for 4pc Gladiator or 4pc HoD because of their unconditional passives.</p>
+<h3 id="pc-2pc-alternatives">2pc-2pc Alternatives</h3>
+<p>Pick any two from Emblem of Severed Fate, ATK%, ATK%, HoD (ATK% being: Glad, Shimenawa, Vermillion and Echoes)</p>
+<p>With better substats and being simpler to obtain, any combination of the 2 can be just as powerful as the aforementioned 4-piece sets.</p>
+<p>Emblem can be an excellent alternative for reducing the requirement for ER in substats while being more accessible than 4-piece sets.</p>
+<p>For Burst DPS Ayato, the distance between these and the 4-piece sets closes, sometimes even surpassing the 4-piece sets.</p>
+<h3 id="pc-emblem-of-severed-fate">4pc Emblem Of Severed Fate</h3>
+<p>By employing only 1 Skill for each Burst, Ayato’s Burst does more of his damage than usual, and his ER needs are often higher. 4pc EoSF can be a good option for Burst DPS Ayato—performing similarly to all other alternatives.</p>
+<p>4pc EoSF is not advised for On-Field Ayato as he preferred better artifact sets that can boost his On-Field Damage.</p>
+<h3 id="pc-thundering-fury">4pc Thundering Fury</h3>
+<div style="width:260px;max-width:100%;">
+<div style="height:0;padding-bottom:110%;position:relative;">
+<iframe width="260" height="286" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameBorder="0" src="https://imgflip.com/embed/7cagpb">
+</iframe>
+</div>
+<p>
+<a href="https://imgflip.com/gif/7cagpb">via Imgflip</a>
+</p>
+</div>
+<blockquote>
+<p>“I heckin love 4 TF Ayato” - Zajef</p>
+</blockquote>
+<p>Ah, yes. The Zajef special. 4pc TF is a respectable option when playing Beidou against Electro-Charged opponents. Beidou benefits from having a driver on the field because it makes it more likely for her to activate her Elemental Burst, and also permits Ayato to remain on the field and launch his Shunsuiken slashes for a longer length of time. You can even run Hyperbloom Ayato (Which will be talked more of in the team section) with a team of Ayato-Beidou-Fischl/Kuki-Nahida/DMC/Yaoyao where Ayato, if done properly, will have 100% uptime on his skill. However, worth noting that the effect of 4 pc TF will only work in Hyperbloom Ayato if there is more than one Electro unit so that there will be a consistency of Electro application for 4 pc TF to take place.</p>
+<p>It should be remembered that TF is only a marginal improvement over other sets, even in the best-case situation. This suggests that farming this set for Ayato might not be worthwhile. With superior substats and being more all-purpose, other possibilities may exceed this set in terms of performance. But, 4 pc TF is just so fun on Ayato, as such, if you are just looking for ways to mess around with Ayato, look no further than 4 pc TF.</p>
+<h3 id="pc-blizzard-strayer">4pc Blizzard Strayer</h3>
+<p>Only usable in freeze team where Ayato will be On-Field using his skill. On the assumption of high freeze time throughout, it may be noticeably superior to alternative options.</p>
+<p>However, there is fierce competition in the freeze teams for the set because many characters (Ayaka, Ganyu), including Ayato, covet it. If there aren’t enough Blizzard Strayer sets available, using 4 pc BS on those characters may be beneficial for the entire team because they will suffer more than Ayato.</p>
+<h3 id="below-ar-45-artifacts">Below AR 45 artifacts</h3>
+<p>If you are lower than AR 45, it is advised not to try and get any of the artifact sets mentioned above and instead focus on levelling him up, his talent and his weapon. Here is some artifact set you can use for the time being.</p>
+<p>2pc The Exile + 2pc Berserker 2pc ATK%+ 2pc ATK% 4pc Martial Artist</p>
+<h2 id="weapon-recommendation">Weapon Recommendation</h2>
+<p>In this section, most of the weapons will be those that can boost/buff Ayato’s damage capabilities and some are support weapons as a utility.</p>
+<h3 id="top-tier-weapons">Top Tier Weapons</h3>
+<h4 id="haran-geppaku-futsu">Haran Geppaku Futsu</h4>
+<p>Ayato’s signature, as such his BiS (Best in Slot), has a specialized passive that only presently functions very effectively with Ayato. Can be a good sword to use as a statstick for other sword characters. Pulling for HGF is not advised if players already own PJC or Mist and even then, not a needed weapon.</p>
+<h4 id="primordial-jade-cutter">Primordial Jade Cutter</h4>
+<p>One of Ayato’s strongest weapons. An unconditional passive which fully buffs Ayato as he enjoys both HP and ATK buff.</p>
+<h4 id="mistsplitter-reforged">Mistsplitter Reforged</h4>
+<p>Mistsplitter lags behind its CRIT 5* rivals despite having a passive that is more universal than HGF’s as it frequently has trouble maintaining maximum stacks for very long or at all in many of its rotations.</p>
+<p>The Burst DPS Ayato teams are the exception when the distance closes considerably.</p>
+<h3 id="good-enough-weapons">Good-enough weapons</h3>
+<h4 id="the-black-sword">The Black Sword</h4>
+<p>One of Ayato’s best 4* options, it offers beneficial Crit Rate and NA DMG Boost as well as a healing passive that occasionally comes in handy but is mostly insignificant.</p>
+<p>It scales with refines relatively badly because only the NA DMG Boost in its passive is particularly helpful, especially given that each refines costs $10 (Battle Pass)</p>
+<h4 id="lion-roar">Lion Roar</h4>
+<p>Another strong 4*, although it can only be used in electro-charged and hyperbloom teams because that is the only setting in which its passive can maintain high uptime. Without its passive, it performs so far worse that players should choose to run any other weapon instead.</p>
+<h4 id="harbinger-of-dawn">Harbinger Of Dawn</h4>
+<p>If players can keep 100% uptime on a 3*’s passive, it suddenly becomes a shockingly potent alternative. Ayato finds it challenging to accomplish this because his teams hardly ever use shielders and he spends most of his time anchored On-Field while performing Shunsuiken attacks. On teams without large ATK buffs (such as Bennett), Harbinger will suffer even more as a result of its terrible basic attack</p>
+<h3 id="meh-weapons">Meh Weapons</h3>
+<h4 id="kagotsurube-isshin">Kagotsurube Isshin</h4>
+<p>Only provides ATK. Even if the passive is cast at the start of a rotation, it may still be quickly snapshotted onto Ayato’s Burst by performing a single Normal Attack while he is not in Takimeguri Kanka. Overall, a good F2P alternative ought to be employed in the absence of any other choices.</p>
+<h4 id="amenoma-kageuchi">Amenoma Kageuchi</h4>
+<p>Amenoma’s passive can occasionally be rendered worthless, at least during the first rotation, because Ayato frequently casts his Burst first in rotations. When Ayato’s A4 Talent does activate, the flat Energy generation of its passive may reduce the quantity of Energy acquired from it.</p>
+<p>On rotations where Ayato Bursts before casting any Skills, it is advised to overlook its passive and build ER on Ayato as usual. Nonetheless, it functions as an ATK statstick for F2P players to receive a little amount of Energy back.</p>
+<h4 id="skyward-blade">Skyward Blade</h4>
+<p>When Ayato’s ER requirements call for a substantial quantity of ER Skyward Blade gives, it can be a good choice because it can surpass other weapons in damage. Otherwise, Ayato receives relatively little benefit from its passive.</p>
+<p>Overall, Ayato’s weapons options are not that bad, with decent F2P options as well as being able to use Crit Weapons effectively.</p>
+<h4 id="favonius-sword">Favonius Sword</h4>
+<p>An okay weapon if you want to reduce the team’s overall ER requirements.</p>
+<h4 id="summit-shaper">Summit Shaper</h4>
+<p>An alright weapon to use for its ATK stats. Other than that, not the best.</p>
+</div>
+</div>
+
+                
+            </div>
+        </section>
+		
+        <!-- Footer -->
+<footer id="footer" class="">
+	<div class="inner">
+		<ul class="icons">
+			<li><a href="https://www.twitch.tv/branonline" target="_blank" class="icon alt fa-twitch"><span class="label">Bran's Twitch Channel</span></a></li>
+			<li><a href="https://www.youtube.com/c/BranOnline/" target="_blank" class="icon alt fa-youtube-play"><span class="label">Bran's YouTube Channel</span></a></li>
+			<li><a href="https://github.com/BranchesOfTheWhiteTree" target="_blank" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+			<li><a href="https://discord.gg/rEwN4bDdZv" target="_blank" class="icon alt fa-server"><span class="label">Discord</span></a></li>
+		</ul>
+		<p>
+			Checkout these links to Bran's Twitch channel, Bran's YouTube channel, project's github repository, and the project's community discord server! <br>
+			All rights reserved to their respective owners | Website Owner: <a href="https://arunprasaad2711.github.io" target="_blank">Arun Prasaad Gunasekaran</a> | Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a>
+		</p>
+	</div>
+</footer>
+        
+    </div>
+
+    <script type="text/javascript" language="javascript">
+    // Code block for adding a copy-code button
+    
+    const copyButtonLabel = "Copy Code";
+    
+    // use a class selector if available
+    let blocks = document.querySelectorAll("pre");
+    
+    blocks.forEach((block) => {
+        // only add button if browser supports Clipboard API
+        if (navigator.clipboard) {
+        let button = document.createElement("a");
+        button.className = "button small"
+    
+        button.innerText = copyButtonLabel;
+        button.style.cssText = "align:right;"
+        block.appendChild(button);
+    
+        button.addEventListener("click", async () => {
+            await copyCode(block);
+        });
+        }
+    });
+    
+    async function copyCode(block) {
+        let code = block.querySelector("code");
+        let text = code.innerText;
+    
+        await navigator.clipboard.writeText(text);
+    }
+</script>
+
+<script type="text/javascript" language="javascript">
+
+    // codeblock for back to top button
+    
+    // Get the button:
+    let mybutton = document.getElementById("Back2TopBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    
+</script>
+    <script type="text/javascript" language="javascript">
+
+// Code block for an accordion
+
+   const accordion = document.getElementsByClassName('accordion-container');
+
+for (i=0; i<accordion.length; i++) {
+  accordion[i].addEventListener('click', function () {
+    this.classList.toggle('active')
+  })
+}
+</script>
+
+<script src="/assets/js/jquery.min.js"></script>
+<script src="/assets/js/jquery.scrolly.min.js"></script>
+<script src="/assets/js/jquery.scrollex.min.js"></script>
+<script src="/assets/js/browser.min.js"></script>
+<script src="/assets/js/breakpoints.min.js"></script>
+<script src="/assets/js/util.js"></script>
+<script src="/assets/js/main.js"></script>
+
+
+</body>
+</html>
