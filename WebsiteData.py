@@ -1,4 +1,4 @@
-Main_Folders = ["CharacterBuilds", "CharacterLore", "HonkaiImpact", "About"]
+Main_Folders = ["CharacterBuilds", "CharacterLore", "About"]
 
 main_pages = [
 	'index.html',
