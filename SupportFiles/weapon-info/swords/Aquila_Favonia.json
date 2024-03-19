@@ -1,0 +1,29 @@
+{
+    "SecStat": 12,
+    "Min": 9.0,
+    "Max": 41.3,
+    "Step": 0.1,
+    "Value": 20.0,
+    "Direct_Passives": [
+        {
+            "Comment": "Direct Passive - gets added to the character",
+            "ATK"   :[20, 25, 30, 35, 40]
+        }
+    ],
+    "Indirect_Passives": [
+        {
+            "Comment": "Weapon Proc 1",
+            "Type": "Separate damage, scaling from ATK",
+            "OriginalStat": "Full_ATK",
+            "Multiplier": [200, 230, 260, 290, 320],
+            "FinalOutput": "DMG"
+        },
+        {
+            "Comment": "Weapon Proc 2",
+            "Type": "Separate healing, scaling from ATK",
+            "OriginalStat": "Full_ATK",
+            "Multiplier": [100, 115, 130, 145, 160],
+            "FinalOutput": "HP"
+        }
+    ]
+}

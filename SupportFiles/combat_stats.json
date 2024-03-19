@@ -1,0 +1,23 @@
+[   
+    "BaseATK", 
+    "ATK",
+    "F_ATK",
+    "DEF",
+    "F_DEF",
+    "HP",
+    "F_HP",
+    "ER",
+    "EM",
+    "CR",
+    "CD",
+    "PhysicalDMG_Bonus",
+    "AnemoDMG_Bonus",
+    "GeoDMG_Bonus",
+    "ElectroDMG_Bonus",
+    "DendroDMG_Bonus",
+    "PyroDMG_Bonus",
+    "HydroDMG_Bonus",
+    "CryoDMG_Bonus",
+    "Healing_Bonus",
+    "ShieldStrength"
+]
