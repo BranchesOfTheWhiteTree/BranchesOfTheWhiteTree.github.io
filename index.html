@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link href="sass/style.css" rel="stylesheet">
+    <link type="text/css" href="sass/font-awesome.min.css" rel="stylesheet">
 
 	<title>Home | Branches of the White Tree</title>
 
@@ -24,13 +25,21 @@
     
 </head>
 
-<body class="bg-dark text-light">
+<body class="d-flex flex-column min-vh-100" style="background-color: #2B3035;">
 
     <!-- Back to top button -->
-    <a onclick="topFunction()" id="Back2TopBtn" class="icon alt fa-arrow-up" title="Go to top"></a>
+    <!-- 
+        Link to FontAwesome: https://fontawesome.com/v4/icons/
+    -->
+    <button
+        type="button"
+        class="btn btn-primary btn-floating btn-sm"
+        id="Back2TopBtn">
+        <i class="fa fa-arrow-up"></i>
+    </button>
 
     <!-- Navbar -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top py-3">
+<nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top">
 
     <!-- Navbar Container -->
     <div class="container-xxl">
@@ -88,72 +97,73 @@
     </div>
     
 </nav>
-    
+
     <!-- Banner Carousel -->
-<div id="index-carousel" class="carousel slide carousel-fade container-xxl" data-bs-ride="carousel">
+<div class="bg-dark text-light">
+    <div id="index-carousel" class="carousel slide carousel-fade container-xxl" data-bs-ride="carousel">
 
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#index-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#index-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#index-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#index-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#index-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#index-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
 
-    <div class="carousel-inner banner-carousel">
-      <div class="carousel-item active">
-        <img src="images/BannerImages/GenshinBanner.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item banner-carousel">
-        <img src="images/BannerImages/HSRBanner.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item banner-carousel">
-        <img src="images/BannerImages/HI3rd_Valkyrie.jpg" class="d-block w-100" alt="...">
-      </div>
+        <div class="carousel-inner banner-carousel">
+        <div class="carousel-item active">
+            <img src="images/BannerImages/GenshinBanner.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item banner-carousel">
+            <img src="images/BannerImages/HSRBanner.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item banner-carousel">
+            <img src="images/BannerImages/HI3rd_Valkyrie.jpg" class="d-block w-100" alt="...">
+        </div>
+        </div>
     </div>
 </div>
 
-    <section class="container p-5">
+    <div class="bg-light text-dark">
+    <section class="container-xxl py-3">
 
-    <figure class="text-center">
-        <blockquote class="blockquote">
-            <p>"Countless shooting stars streak across the night sky... If you can pick the right one, it will carry your wish to thousands of distant worlds."</p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-            Black Swan in Myriad Celestia Trailer, Honkai: Star Rail
-        </figcaption>
-    </figure>
-    
-</section>
+        <figure class="text-center">
+            <blockquote class="blockquote">
+                <p>"Countless shooting stars streak across the night sky... If you can pick the right one, it will carry your wish to thousands of distant worlds."</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                Black Swan in Myriad Celestia Trailer, Honkai: Star Rail
+            </figcaption>
+        </figure>
+        
+    </section>
+</div>
 
-<section class="container">
-    <div class="text-center">
-        <h1> Welcome to our <span class="text-warning">Website!</span> </h1>
-    </div>
-    <p>
-        Greetings Traveller, Trailblazer, and/or Captain! Welcome to the Branches of the White Tree! This is a non-profit fan-made website for the Hoyoverse games: <span class="text-warning">Genshin Impact</span>, <span class="text-warning">Honkai: Star Rail</span>, and <span class="text-warning">Honkai Impact 3rd</span>.
-    </p>
-
-    <p>
-        In our website, you'll find many lore-related write-ups and compendiums pertaining to the games. Additionally, we are trying our best to add guides and some basic theorycrafting information about the characters.
-    </p>
-
-</section>
-
-    <!-- Footer -->
-<footer id="footer" class="text-center position-relative p-5">
-
-    <div class="container">
-
-        <hr class="bg-white">
+<div class="bg-primary text-light">
+    <section class="container-xxl py-3">
+        <div class="text-center">
+            <h1> Welcome to our <span class="text-warning">Website!</span> </h1>
+        </div>
+        <p>
+            Greetings Traveller, Trailblazer, and/or Captain! Welcome to the Branches of the White Tree! This is a non-profit fan-made website for the Hoyoverse games: <span class="text-warning">Genshin Impact</span>, <span class="text-warning">Honkai: Star Rail</span>, and <span class="text-warning">Honkai Impact 3rd</span>.
+        </p>
 
         <p>
+            In our website, you'll find many lore-related write-ups and compendiums pertaining to the games. Additionally, we are trying our best to add guides and some basic theorycrafting information about the characters.
+        </p>
+
+    </section>
+</div>
+
+    <!-- Footer -->
+<footer id="footer" class="mt-auto">
+    <div class="container-xxl text-light text-center position-relative py-3" style="background-color: #2B3035;">
+        <p>
             A fan-made website for Hoyoverse game players. All the game assets are the property of COGNOSPHERE PTE. LTD.
-    
+
             <br>
             
             Website Owner: <a href="https://arunprasaad2711.github.io" target="_blank">Arun Prasaad Gunasekaran</a> | Website designed using: <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
         </p>
     </div>
-    
 </footer>
 
     <!-- Support Scripts -->
@@ -178,6 +188,9 @@
         mybutton.style.display = "none";
       }
     }
+
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", topFunction);
     
     // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
@@ -186,6 +199,12 @@
     }
     
 </script>
-    
+
+<!-- Mermaid.js code -->
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+</script>
+
 </body>
 </html>

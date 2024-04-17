@@ -20,6 +20,9 @@
         mybutton.style.display = "none";
       }
     }
+
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", topFunction);
     
     // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
@@ -27,4 +30,10 @@
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
     
+</script>
+
+<!-- Mermaid.js code -->
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true, theme: 'dark' });
 </script>

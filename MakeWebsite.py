@@ -28,6 +28,23 @@ for page in main_pages:
 	print(f"Created {page} page!")
 	i += 1
 
+i = 0
+for page in other_pages:
+
+    data = {
+        'title': other_titles[i]
+    }
+
+    # Templating Page
+    template = env.get_template('main_pages/'+page)
+    output = template.render(post=data)
+        
+    # Create Page
+    with open(page, 'w') as f:
+        print(output, file=f)
+    
+    i += 1
+
 try:
     sys("rm ./temp.html")
 except:
