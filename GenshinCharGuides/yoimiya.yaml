@@ -1,0 +1,362 @@
+# Character icon thumbnail image
+char-img-url: https://branchesofthewhitetree.github.io/images/Genshin/characters/thumbnails/Yoimiya.png
+
+# Character Banner Image image
+char-banner-img-url: https://branchesofthewhitetree.github.io/images/Genshin/characters/gacha/Yoimiya.png
+
+# Character Element Colour
+char-element-colour: "#FF6640"
+
+char-name: Yoimiya
+char-title-name: Frolicking Flames
+
+# Character kit's interesting features
+char-desc: This section is an introduction and key feature section of the unit.
+char-kit-points:
+  - Kit Overview:
+    - Yoimiya is an ATK scaling, "Medium Female Model", On-field Pyro damage dealer user who wields a Bow.
+    - Her kit's signature mechanic revolves around rapid-firing enemies with her pyro-infused normal attacks.
+    - When combined with a support/sub-DPS unit who can constantly maintain a Hydro/Electro/Dendro/Cryo aura on the enemy, you can make her Pyro attacks constantly trigger the corresponding elemental reaction to do a substantial amount of damage.
+    - Her playstyle is quite simple as all you have to do is activate her skill and keep using her normal attacks till it's pyro infusion is over.
+    - As a consequence, although she is objectively weaker than Hu Tao, her playstyle simplicity makes her highly desirable for many players.
+
+# Character Normal Attack
+char-normal: Normal Attack
+char-normal-type: Single Target Attack
+char-normal-name: Firework Flare-up
+char-normal-desc:
+  - Key Points:
+    - She deals upto 5 consecutive normal attacks dealing Physical DMG.
+    - Her N1 and N4 deal 2 instances of damage while her other attacks deal 1 instance of damage.
+    - Her N3 and N5 have the highest damage multipliers. Due to ICD, N1-first hit, and these ones are capable of triggering the elemental reaction and thus dealing large reaction damage.
+    - Her elemental skill infuses her normal attacks with Pyro, and she starts dealing Pyro DMG scaling off her ATK.
+    - If the enemy has an elemental aura, she can make use of it and trigger a relevant elemental reaction.
+    - This is her major source of DMG and it is highly recommended to level this up as high as possible.
+  - Charged Attack:
+    - She deals a standard precise aimed shot dealing Pyro DMG.
+    - At charge level 1, she fires a single pyro-infused shot.
+    - At charge level 2, depending on how much charge time you take, she can launch upto 3 "kindling arrows" along with her aimed shot.
+    - These kindling arrows tend to either home-in on the main target, or sway away and hit nearby enemies or attackable entities like torches, animals, etc.,
+    - These kindling arrows deal a very small Pyro DMG.
+    - For her kit, the charged attack and kindling arrows are rarely used in combat. They are reserved almost exclusively for overworld exploration.
+    - The homing nature of her kindling arrows - when used properly - can help attack moving targets like birds in the overworld.
+  - Plunge Attack:
+    - Just the regular plunge attack for bow users. It deals AoE Physical DMG on impact. Nothing special.
+    
+# Character Skill
+char-skill: Elemental Skill
+char-skill-type: Enhance
+char-skill-name: Niwabi Fire-Dance
+char-skill-desc:
+  - Key Points:
+    - On activating her elemental skill, all of Yoimiya's normal attacks get a Pyro infusion enabling her to do Pyro DMG for 10 seconds.
+    - This Pyro infusion state is called "Niwabi Enshou".
+    - You can see that her skill is active if you see few rings surrounding her.
+    - This 10 second window is vital as this is her time to dish out as much damage as possible.
+    - So, it is imperative to keep her on-field for this entire duration and plan your team rotations for applying skills and buffs/debuffs accordingly.
+  - Cooldown and Energy:
+    - If Yoimiya dies or she is swapped out before this state ends, the infusion ends prematurely.
+    - Post the 10 second window, she reverts to her Physical DMG normal attacks.
+    - Her skill has a cooldown of 18 seconds. So, she'll be in her unenhanced normal attack state for 8 seconds.
+    - At this time, it's best to swap to allies to start your next rotation of attacks.
+    - During her infused attacks, you can gain upto 4 elemental particles in the 10-second window with a cooldown of 2 seconds between each particle.
+  - Additional Effects:
+    - In the "Niwabi Enshou" state, Yoimiya's charge attacks will not produce "kindling arrows".
+    - Her skill also grants her normal attacks an additional multiplicative damage multiplier.
+    - Since the multiplier is a decent boost that plateaus at higher talent levels, it is recommended to atleast level her skill upto 6.
+
+# Character Burst
+char-burst: Elemental Burst
+char-burst-type: AoE Attack
+char-burst-name: Ryuukin Saxifrage
+char-burst-desc:
+  - Key Points:
+    - She leaps into the air and deals an AoE Pyro DMG on the enemies.
+    - After that, she marks one enemy with a status effect called "Aurous Blaze" for 10 seconds.
+  - Aurous Blaze:
+    - Any ally other than Yoimiya attacking the enemy marked by Aurous Blaze will trigger an AoE Pyro DMG. This damage proc can be triggered once every 2 seconds.
+    - Each proc of Aurous Blaze deals nearly the same damage as her elemental burst attack's first hit.
+    - Yoimiya CANNOT trigger Aurous Blaze procs. So, it is recommended to swap to other allies after launching Yoimiya's burst to take advantage of this damage.
+    - If the enemy marked by Aurous Blaze dies before the 10 second duration, the mark will pass on to a nearby opponent for the remainder of the duration.
+  - Low Priority Talent:
+    - In her entire kit, this talent has the lowest priority. Although you need this talent at higher levels to maximize her kit's damage, many players prefer to keep this talent at lower levels or completely ignore it.
+    - This is especially the case when people use the 4pc Shimenawa set on her over the 4pc Crimson set.
+  - Potential to miss the target:
+    - If the enemy moves during the burst animation, it is totally possible for the enemy to dodge the burst and not get the mark. So, be mindful of enemy motion when casting the burst.
+
+# Character Ascensions
+char-ascension-title: Ascension abilities
+char-ascension-desc: All the Ascension abilities of Yoimiya
+
+# Character A2:
+char-a1-name: "Ascension Ability A1: Tricks of the Trouble-Maker"
+char-a1-desc:
+  - Yoimiya's skill enhanced Pyro Normal attacks will give 2% Pyro DMG bonus to her on hit.
+  - She can gain upto 10 stacks of this, with each stack lasting for 3 seconds.
+  - This is a mild damage boosting ascension ability.
+
+# Character A4:
+char-a4-name: "Ascension Ability A4: Summer Night's Dawn"
+char-a4-desc:
+  - Using her Ultimate gives the nearby party members a 10% ATK boost for 15 seconds.
+  - This does not apply to Yoimiya.
+  - Also, the allies get 1% additional ATK bonus for every stack of "Tricks of the trouble-maker" she has.
+  - This is a mild damage boosting ability for the team. It incentivises the on-field ally/team mate with a small boost.
+
+# Character A6:
+char-a0-name: "Ascension Ability A0: Blazing Match"
+char-a0-desc:
+  - When Yoimiya crafts Decoration, Ornament, and Landscape-type Furnishings, she has a 100% chance to refund a portion of the materials used.
+  - This passive has no use in combat.
+  - For all the teapot enthusiats, this passive is useful as she can refund upto 25% of the total number of materials used to craft an item in the teapot.
+
+# Character Ascension Stats
+# Character Talent Priority
+char-talents-title: Talent priority
+char-talents-desc: This section talks about the talent priority and ascension stats.
+char-talents-list: 
+  - Character Talent Levelling Priority:
+    - Normal Attack > Skill >> Burst
+  - Ascension Stats:
+    - Crit Rate - 19.2%
+char-talents-notes:
+  - Since Normal Attacks form the major portion of her damage, it is recommended to level this talent as high as possible.
+  - Her Skill - while important - only gets incrementally better at higher talent levels. So, you can consider stopping at level 6 to save resources.
+  - Her Elemental Burst has the lowest priority. You can consider ignoring this talent level up if you strongly prefer not using her Burst.
+  - Level her burst up only if you plan to make use of her Bursts in rotations or for overall damage increase/flexibility in rotations. Level 6 is a decent stopping point.
+
+# Character Relic Stats
+char-artifacts-stats: Artifact Stats for Yoimiya
+char-artifacts-stats-desc: These are the Artifact stats for Yoimiya.
+char-artifacts-stats-list:
+  - Sands:
+    - ATK
+    - EM
+  - Goblet:
+    - Pyro DMG Bonus
+    - ATK
+    - EM
+  - Circlet:
+    - Crit Rate/DMG
+    - ATK
+    - EM
+  - Preferred Sub-stats:
+    - Crit Rate/DMG
+    - ATK/EM
+  - Good-to-have substats:
+    - EM
+    - ER
+char-artifacts-stats-notes:
+  - For all the mainstat, stick with the main recommendations for most cases.
+  - For the sands, ATK is generally best. You can try EM sands if you have a lot of ATK.
+  - Pyro DMG Bonus Goblet is generally the best choice. In some unusual situations where you get a lot of DMG bonus like having Furina in your team, or in certain domain/event blessings, you can try ATK.
+  - Crit Rate/DMG is the general best option. You can try ATK circlet if your crit stats are very good. EM circlet is best only for niche experimental comps such as Burgeon Yoimiya teams.
+
+# Character best artifacts and notes
+char-artifacts: Artifacts for Yoimiya
+char-artifacts-desc: This section explains the artifacts for Yoimiya.
+char-artifacts-list-title: This is the list of Cavern Relics.
+char-artifacts-list:
+  - 4pc Crimson Witch of Flames
+  - 4pc Shimenawa's Reminiscence
+  - 2pc + 2pc combinations of ATK, EM, Pyro DMG bonus.
+  - 4pc Echoes of an Offering
+  - 4pc Retracing Bolide
+  - 4pc Lavawalker's Resolution
+char-artifacts-notes:
+  - Key Points:
+    - If you plan to use her full kit - including her Elemental Burst, then 4pc Crimson is the best-in-slot set for her. It gives her a Pyro DMG bonus and increases the damage dealt by pryo elemental reactions.
+    - If you plan to use her Elemental Burst less often or completely avoid it, then 4pc Shimenawa set is the go-to option. Her elemental skill takes some energy from her burst and gives her a normal attack boost.
+    - The damage difference between the above two sets is very marginal that you can use either of them. Most people prefer 4pc Shimenawa set for farming efficiency.
+    - Till you get a full-set, you can definitely run 2pc combinations.
+  - Other sets:
+    - 4pc Echoes set is quite viable for her because of her rapid normal attacks. However, due to latency issues that happen when the game ping is beyond 50 ms, and due to the set being niche and thus resin inefficient, this is not recommended.
+    - 4pc Bolide set is also viable provided she is protected by a shield. Since a shielder is often used with her, this condition can be easily achieved. If you have good pieces in this set, then use this set only provisionally, and move to 4pc Crimson/Shimenawa eventually.
+    - 4pc Lavawalker set is only useful for a mono-pyro team. It is not recommended for a general purpose build.
+
+# Character Weapons:
+char-weapons: Yoimiya's Light Cones
+char-weapons-desc: This section talks about Yoimiya's Bows.
+char-weapons-list:
+  - Top-tier 5-star Bows:
+    - Thundering Pulse
+    - Aqua Simulacra
+    - Polar Star
+  - Other 5-star Bows:
+    - Skyward Harp
+    - Hunter's Path
+  - Top-tier 4-star Bows:
+    - Rust
+    - The Viridescent Hunt
+  - Other Bows:
+    - Hamayumi
+    - Black Cliff Warbow
+    - King's Squire
+    - Sling Shot
+char-weapons-notes:
+  - General Notes:
+    - Since she is a normal-attack on-field damage dealer, she needs weapons that give her Crit stats/ATK/EM and enhance her normal attack damage.
+    - So, support bows, and bows that don't enhance her Normal attacks are not recommended on her.
+    - For most players, the best budget option is the 4-star bow - Rust - at higher refinements. She doesn't need her 5-star bow options to deal high damage. So, her best-in-slot weapon is nice to have and not mandatory.
+    - As per [KeqingMains](https://keqingmains.com/q/yoimiya-quickguide/), If suppose a player has both Yunjin and Bennett in their team, then an R5 Slingshot can outperform an R5 Rust in some situations. 
+  - 5-star Bows:
+    - Thundering Pulse is the best-in-slot weapon for her giving her ATK boost, Crit DMG, and Normal Attack DMG.
+    - Aqua Simulacra and Polar Star are great second options. If you have one of these bows lying around, you can consider this for her.
+    - Hunter's Path is good for a huge crit rate boost and elemental damage bonus.
+    - Skyward Harp is a decent alternative worth considering if you have one lying around.
+  - 4-star Bows:
+    - The go-to option for Yoimiya is "Rust", especially at higher refinements. It's ATK boost and Normal ATK DMG boost makes it tailor made for her.
+    - An R5 Rust will outclass most of her 5-star weapons at R1, barring Thundering Pulse.
+    - The Viridescent Hunt is a nice crit stat with a situationally useful passive. Other than that, it's not that remarkable on her.
+    - Rest of the bows suggested are either stat boosters or have mild useability. Use these bows provisionally till you switch to "Rust" or the 5-star bows suggested.
+
+# Character Constellations
+char-constellations: Yoimiya Constellations
+char-constellations-desc: This section talks about Yoimiya's Constellations.
+char-constellations-list:
+  - Agate Ryuukin:
+    - The Aurous Blaze created by Ryuukin Saxifrage lasts for an extra 4s. Additionally, when an opponent affected by Aurous Blaze is defeated within its duration, Yoimiya's ATK is increased by 20% for 20s.
+  - A Procession of Bonfires:
+    - When Yoimiya's Pyro DMG scores a CRIT Hit, Yoimiya will gain a 25% Pyro DMG Bonus for 6s. This effect can be triggered even when Yoimiya is not the active character.
+  - Trickster's Flare:
+    - Increase the Level of Niwabi Fire-Dance by 3. Maximum upgrade level is 15.
+  - Pyrotechnic Professional:
+    - When Yoimiya's own Aurous Blaze triggers an explosion, Niwabi Fire-Dance's CD is decreased by 1.2.
+  - A Summer Festival's Eve:
+    - Increases the Level of Ryuukin Saxifrage by 3. Maximum upgrade level is 15.
+  - Naganohara Meteor Swarm:
+    - During Niwabi Fire-Dance, Yoimiya's Normal Attacks have a 50% chance of firing an extra Blazing Arrow that deals 60% of its original DMG. This DMG is considered Normal Attack DMG.
+char-constellations-pull-value: This section talks about Yoimiya's Constellation pull values.
+char-constellations-notes:
+  - General Points:
+    - Yoimiya is perfectly functional at C0. So, there is no need to go for Constellations.
+    - Additionally, Yoimiya doesn't gain significant improvements/enhancements in her constellations. So, it is perfectly fine to keep her at C0.
+    - For people going for Constellations, C1/C2 are good stopping points.
+  - Constellation Effects:
+    - C1 makes her Burst's mark stay on the enemy for 14 s in total instead of 10 s. It also gives an ATK boost to her if the enemy dies while the mark did not expire.
+    - C2 is a nice DMG boost that is easy to get and retain. This is better than C1, but not very significant.
+    - C3/C5 are standard skill/burst level boosters.
+    - C4 is a nice quality of life that enables Yoimiya to use her skill quickly. This is recommended for people using her Burst actively in team rotations.
+    - C6 makes her enhanced normal attacks shoot extra arrows dealing 60% of her regular normal attack damage. While this makes her stronger, it can mess-up with reactions due to ICD issues.
+
+# Character Team Supports
+char-teams: Team and Ally suggestions for Yoimiya
+char-teams-desc: This section talks about Yoimiya's synergy and anti-synergy with units.
+char-teams-notes:
+  - Shielders:
+    - Yoimiya is a squishy DPS with low HP and DEF. So, she is capable of getting knocked back easily. Plus she has less interruption resistance.
+    - For this reason and for the fact that she needs to complete her Normal Attack sequence, she is often paired with Shielders.
+    - Shielders namely Zhongli, Layla, Diona, Thoma etc., are very good units for Yoimiya.
+  - Top-tier DMG supports:
+    - Xingqiu and Yelan are the top-tier units often paired with Yoimiya. These two help Yoimiya trigger vapourize reaction consistently.
+    - It goes without saying, Bennett is the best offensive support for Yoimiya as he enabled the Pyro Resonance and doubles down as battery, ATK boost, and healer.
+    - For overload teams, Beidou and Fischl are her great allies, as they are capable of snapshotting her A4 passive and in dealing coordinated electro damage to deal overload reactions.
+    - Yunjin gives Yoimiya a large amount of Normal Attack boost. C6 Yunjin, Mika, C2 Jean, and Diona can give ATK speed to Yoimiya making her shoot arrows much faster than she normally does.
+    - Anemo units like Sucrose, and Kazuha help with supplying EM/Damage bonus plus VV set's RES shredding - enabling more reaction damage.
+  - Vaporize Teams:
+    - Yoimiya, Xingqiu/Yelan, Flex Slot, Flex Slot.
+    - Xingqiu/Yelan will be the hydro applicator and sub-DPS unit.
+    - You can fill the flex slot with a shielder(Zhongli/Layla/Diona/Thoma), ATK booster/Buffer (Bennet/Yunjin), or reaction booster (Sucrose/Kazuha) of your choice.
+    - Zhongli provides the strongest shield. Diona provides EM at C6 with her burst and she gives some healing. Layla gives strong shields. Both Layla and Diona can help Yoimiya get a few melt reactions which are much stronger than the reverse-vaporize reactions. Thoma assist with additional pyro damage.
+    - You can also use doube hydro vape teams with Yelan and Xingqiu. Use this incase both of these units are free to try.
+    - For this team archetype, having a shielder is advantageous.
+  - Overload Teams:
+    - Yoimiya, Fischl, Beidou, Flex Slot.
+    - You can use a single electro unit and have the team set-up similar to vape teams.
+    - One main disadvantage of this setup is the enemy knockback. However, when used against the right conditions, it performs really well.
+    - Against single bosses, double electro overload teams might not work due to the AoE of the overload reaction not causing collateral damage.
+  - Overvape Teams:
+    - Yoimiya, Fischl/Beidou, Xingqiu/Yelan, Flex Slot.
+    - This team combines overload, vaporize reactions to deal AoE and single target damage together. You can even generate some electro-charged reactions too.
+    - When combined with a flex unit like Diona, you can get melt, freeze, and superconduct reactions along the way.
+    - This team tries to get the best out of Vaporize and Overload teams.
+  - Mono Pyro Teams:
+    - Yoimiya, Bennett, Anemo VV Unit, Flex slot
+    - The Flex unit could be a Pyro unit like Xiangling for AoE damage, or Thoma for a protective shield.
+    - It can also be a shielder unit.
+    - You can use even 2 Anemo units for grouping and VV res shredding.
+    - This team requires atleast 1 Anemo unit like Kazuha, Venti, or Sucrose with 4pc VV to reduce Pyro RES of enemies.
+    - Alternatively, you can use Yunjin for normal attack boost in the flex slot. You can also remove Anemo units and have a double pyro double geo team.
+  - Dendro Teams:
+    - As of now, we haven't explored many dendro teams with her, not the community. Will update this section when we get more information.
+  
+# Character Kit Advantages
+char-pros: Advantages with Yoimiya
+char-pros-desc: These are some points in favour of having Yoimiya in any account.
+char-pros-list:
+  - Straightforward kit:
+    - She is one of the most easiest units to play. All you need to do is activate her skill, and shoot enemies till her elemental infusion is gone.
+    - As a result, although she is not stronger than Xiangling or Hu Tao, she is still preferred over these two for the ease of useability.
+  - Excellent for Vaporize and Overload teams:
+    - She excels in Vaporize and Overload teams by being a great on-fielder assisted by Xingqiu/Yelan, and Fischl/Beidou. However, due to overload reaction's knockback, Vaporize reaction teams are much better for her playstyle, although there are cases wherein overload teams with her have value.
+  - One of the Best Boss killers:
+    - She being ranged can hit bosses and enemies from a distance. Also, since she focus fires even on moving targets, she is excellent for standing at a single spot and raining down attacks on enemies that move around like PMA, Thunder Manifestation, Golden Wolf Lord, etc.,
+    - In this aspect, she has a better advantage over melee units like Hu Tao.
+  - Overworld Exploration:
+    - Being a Pyro Archer, she is of great help in solving overworld puzzles that require archers. Plus, she can light-up pyro torches.
+    - The most useful utility is the homing nature of her "kindling arrows". They can home-in and attack flying birds and moving targets in the overworld. While they are annoying at times, they can be useful in many cases.
+
+# Character Kit Disadvantages
+char-cons: Disadvantages/Issues with Yoimiya
+char-cons-desc: These are some issues with Yoimiya's kit.
+char-cons-list:
+  - Squishy Unit:
+    - She is very squishy with low HP and low DEF. This makes her easily knocked back and lose a large portion of her HP when hit.
+    - As a result of this, and her lack of interruption resistance, she needs a shielder on-team for survivability and to complete her NA attack string without interruption.
+  - Minor annoyances with Auto-Target:
+    - Being an archer, she moves backward while shooting her arrows. This, and due to some coding issues with auto-targetting for archers in the game, sometimes she can miss moving enemies easily. This becomes a minor source of annoyance for some people.
+    - Since she is the only Archer unit who extensively uses her normal attacks, this problem becomes aggravated on her.
+    - Fortunately this problem is significantly less due to a game update that fixed the archer auto-targetting mechanism.
+  - Comparison with Hu Tao and Xiangling:
+    - Because of Hu Tao and Xiangling (and possibly Arlecchino arriving in v4.6), the incentive or pull value of Yoimiya reduces significantly. These units have more damage potential and so, some people who want a lot of damage might not pull for her as Hu Tao and Xiangling can - with some skill - outclass her noticeably.
+
+# Character Gameplay tips
+char-gameplay: Gameplay tips for playing Yoimiya
+char-gameplay-desc: These are some gameplay tips for playing Yoimiya in your teams.
+char-gameplay-tips:
+  - Shielder and ICD Mechanics:
+    - To avoid dodging and to complete her Normal Attack sequence, it is necessary to have a shielder to protect Yoimiya. Plus, she being squishy, a shielder helps with keeping her alive.
+    - She has standard ICD. So, her N1-first hit, N3, and N5 are the ones that are capable of triggering elemental reactions when paired with an aura applying sub-DPS. So, it is crucial to make these attacks crit and vaporize/overload to get the most damage.
+    - Unless otherwise necessary, don't change targets or interrupt her attacks inbetween as this breaks her NA sequence and thus disturbs her reaction damage.
+  - Readjusting her position:
+    - During her NA string of attacks, Yoimiya tends to move backward. So, you need to readjust her position after her 5-hit NA sequence. This becomes more important to prevent her from static fields that offer buffs, like Bennett's inspiration field.
+  - Using her Burst:
+    - If you want to use her burst, use it at the beginning to start the rotation, and swap to other units to take advantage of the A4 passive.
+    - Do not use it in the middle of her NA sequence. It can - however - be used as a desperate move for survivability.
+
+# Character funfacts
+char-funfacts: Fun Facts about Yoimiya
+char-funfacts-desc: These are some curated funfacts about Yoimiya
+char-funfacts-list:
+  - Queen of Summer Night Festival:
+    - Yoimiya - without a doubt - is one of the most loved and liked units in the entire game due to her cheerful and lovely nature.
+    - This love and acceptance takes another level as many people often refer to her as "The Best Girl" in the game.
+    - She and Itto are quite famous in Hanamizaka both among children and adults.
+    - Her birthday falls on June 21st - the Summer Solstice - the longest day of the year.
+  - Ms. World-Wide:
+    - Yoimiya is the first non-archon unit in the game to get their second Act - II story quest. She is followed by Cyno in v4.6
+    - Yoimiya has travelled to Sumeru and Fontaine by v4.3. She met with the Aranara, and many important people in Fontaine namely Furina, Chevreuse, Xavier etc.,
+    - Because of her innocent, pure, and child-like nature, she could see Aranara, and even the Aranara acknowledged her, affectionately calling her "Red Nara".
+  - Her Quirks:
+    - The ball that hangs on her hair is a treat box filled with candies.
+    - People often see her resting/napping on top of tree branches. Sometimes, she does fall off and get herself injured, but nothing serious happens to her.
+    - She can become visibly upset and she can't hide her sadness when something bad happens.
+    - She helped Klee publish a book during the Irodori festival in v2.6.
+    - She seems to be ambidextrous seeing how she swaps her bow between her hands during her normal attack combos.
+    - On Ayaka's request, she once set-up a firewroks show, that when viewed from Tenshukaku will show the Shogun's emblem/symbol when the fireworks exploded in unison.
+  - Other stuff:
+    - Both her parents are alive and well. We've seen her father often, but not her mother.
+    - Despite the traveller having so many contacts and friendships, Yoimiya is one of the very few people who enquired the traveller about their twin sibling and ask about their whereabouts.
+    - Contratry to some people's belief, Yoimiya does not have an artificial right leg. Rather, it is her leg armour. Archers tend to expose only a small portion of their body during combat. So, they wear minimal armour unlike most soldiers.
+    - Likewise, Yoimiya is neither injured nor covered in bandages. Her attire is based on old Japanese dresses.
+
+# Character notes references
+char-references: Character notes references
+char-references-desc: This section contains all the references and acknowledgements.
+char-references-list:
+  - Video Sources:
+    - YouTube Video - [SevyPlays](https://www.youtube.com/watch?v=RwvtBN0GFwQ)
+  - Content Curator:
+    - RBLakshya, Arun, Blanky
+  - Content Updated:
+    - April 22, 2024, Game version - v4.5

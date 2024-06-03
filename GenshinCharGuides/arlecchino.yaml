@@ -1,0 +1,293 @@
+# Character icon thumbnail image
+char-img-url: https://branchesofthewhitetree.github.io/images/Genshin/characters/thumbnails/Arlecchino.jpg
+
+# Character Banner Image image
+char-banner-img-url: https://branchesofthewhitetree.github.io/images/Genshin/characters/gacha/Arlecchino.jpg
+
+# Character Element Colour
+char-element-colour: "#FF6640"
+
+char-name: Arlecchino
+char-title-name: Dire Balemoon
+
+# Character kit's interesting features
+char-desc: This section is an introduction and key feature section of the unit.
+char-kit-points:
+  - Kit Overview 1:
+    - Arlecchino is an ATK scaling, "Tall Female Model" , on-field pyro hypercarry who wields a polearm.
+    - Her gimmick revolves around a relatively new mechanic called "Bond of Life" which prevents the character from being healed and only can be healed when the Bond of Life is "healed".
+    - However, in Arlecchino's case, she has a passive talent in which she won't be able to gain healing from her teammates outside of battle.
+  - Kit Overview 2:
+    - Playing Arlecchino becomes a soulsborne game where players have to be careful of how they play her as dodging/getting hit will result in massive damage lost and potentially death.
+    - She is a standard hypercarry, similar to hu tao, but unlike her, she does not need to spam charged attacks. Instead, her normal attack is her main source of damage. 
+    - In summary, she is a complex character as while her damage output is high, her survivability is on the other end of the spectrum. She is the definition of a glass cannon; high risk, high reward.
+    - With her release, many questions if she will powercreep hu tao. Comparing to hu tao, Arlecchino can be played in overload team, especially with chevreuse released, while hu tao, although may find usage in overload team, doesn't perform as great as Arlecchino. Both vaporize comps are really strong, so it depends on the player roster/builds to see which is better than which.
+
+# Character Normal Attack
+char-normal: Normal Attack
+char-normal-type: Single Target Attack
+char-normal-name: Invitation to a Beheading
+char-normal-desc:
+  - Key Points:
+    - She performs up to 6 consecutive spear strikes dealing physical damage
+  - Charged Attack:
+    - She consumes stamina in order to dash forward to the nearest enemy, dealing physical damage.
+    - If the player chooses to hold the charged attack, Arlecchino will sprint for up to 5 seconds, similar to wanderer and yelan's skill
+  - Plunging Attack:
+    - A regular plunge dealing AoE damage.
+  - Masque of the Red Death:
+    - Her special mechanic. When Arlecchino has a Bond of Life equal to or greater than 30% of her Max HP, she will enter the "Masque of Red Death" state. In this state, her normal, charged and plunged attacks will be infused with pyro dmg which cannot be overridden.
+    - In this state, Arlecchino's Normal Attacks will have an additional multiplier that scales of her ATK and her current Bond of Life. While doing her Normal Attacks, her Bond of Life will be consumed and her skill cooldown will be reduced.
+
+    
+# Character Skill
+char-skill: Elemental Skill
+char-skill-type: 
+char-skill-name: All is Ash
+char-skill-desc:
+  - Key Points:
+    - Upon activation, she deals AoE pyro DMG to nearby enemies and performs a dash attack to one of them, dealing AoE pyro DMG. Enemies that were hit by such an attack will have a Blood-Debt Directive applied to them.
+  - Blood-Debt Directive:
+    - This lasts 30s. Every 5 seconds after its applied, it will deal Pyro DMG to the enemy up to 2 times. This DMG will be considered an Elemental Skill DMG.
+    - When Arlecchino does a Charged Attack or Elemental Burst, she will absorb and clear any Blood-Debt Directives. Each Directive absorbed grants her a Bond of Life worth 65% of her Max HP, to a maximum of 145% within 35 seconds. Using her skill within this will restart the countdown and the limit of the value of Bond of Life gained by Blood-Debt Directives.
+    - A bunch of information was launched in front of us. To keep it simple, she applies a pyro DoT, similar to Hu Tao's Blood Blossom, which overtime will be leveled up due to her A2. She can absorb such marks and she will gain a massive amount of Bond of Life which she can used to be in her "Masque of Red Death" state. This is key to her main source of damage and should be used at the start of the rotation, let it cook, and at the end absorb it and deal massive damage.
+
+
+# Character Burst
+char-burst: Elemental Burst
+char-burst-type: AoE Attack
+char-burst-name: Balemoon Rising
+char-burst-desc:
+  - Key Points:
+    - Arlecchino will absorb and clear any Blood-Debt Directives, dealing massive AoE Pyro DMG. It also reset the cooldown of her skill and healing her based on her Bond of Life value and ATK.
+    - Standard nuke damage and also being her only source of healing. While many players would want to use her burst so as to heal and survive, the truth is using her burst every rotation will result in a massive damage loss. Also, if players want to burst every rotation, Arlecchino would need to have alot of energy recharge which will result in a lower damage output as artifacts stat rolls will be invested in energy recharge and not offensive stats. In summary, players should refrain from using her burst and only use it when necessary.
+
+
+# Character Ascensions
+char-ascension-title: Ascension abilities
+char-ascension-desc: All the Ascension abilities of Arlecchino
+
+# Character A2:
+char-a1-name: "Ascension Ability A1: Agony Alone May Be Repaid"
+char-a1-desc:
+  - Blood-Debt Directives have the following characteristics.
+  - Defeating an opponent with a Directive, Arlecchino will gain a Bond of Life worth 130% of her Max HP. 
+  - 5 seconds after a Directive is applied, it will be upgraded to a Blood-Debt Due. When absorbed, it will instead grant Arlecchino a Bond of Life worth 130%.
+  - A Bond of Life created in the aforementioned ways cannot exceed the original limit on the value of Bonds of Life obtained through All Is Ash.- This is a massive quality of life for Arlecchino as she is able to gain a huge amount of Bond of Life which will help her in her damage. However, defeating an enemy with a Directive may be hard as against bosses, such a situation may not happen.
+  - Players should use her skill at the start of the rotation, swap out to support to set them up, let the Directive upgrade to Blood-Debt Due, and lastly swapped to Arlecchino to absorb and gain the 130% Bond of Life.
+
+# Character A4:
+char-a4-name: "Ascension Ability A4: Strength Alone Can Defend"
+char-a4-desc:
+  - Arlecchino gains 1% All Elemental and Physical RES for every 100 ATK she has in excess of 1,000. The maximum RES increase she can gain this way for each is 20%.
+  - This will help Arlecchino slightly in her endurance and survivability.
+
+# Character A6:
+char-a0-name: "Ascension Ability A0: The Balemoon Alone May Know"
+char-a0-desc:
+  - While in combat, Arlecchino gains a 40% Pyro DMG Bonus and can only be healed through Balemoon Rising.
+  - An offensive passive talent which other characters don't have. Gained a respectable amount of Pyro DMG Bonus in exchange of only being healed outside of battle.
+
+# Character Ascension Stats
+# Character Talent Priority
+char-talents-title: Talent priority
+char-talents-desc: This section talks about the talent priority and ascension stats.
+char-talents-list: 
+  - Character Talent Levelling Priority:
+    - Normal Attack >> Skill = Burst
+  - Ascension Stats:
+    - Crit DMG - 38.4%
+char-talents-notes:
+  - As her normal attack is her main source of damage, it isn't a surprise for it to be the highest talent priority.
+  - While her skill and burst does not give any damage boost to her normal attack, it is good to level them up as well to get additional damage outside of her normal attack and also increasing her heals from her burst. Level 6/8 is a good stopping point.
+
+# Character Relic Stats
+char-artifacts-stats: Artifact Stats for Arlecchino
+char-artifacts-stats-desc: These are the Artifact stats for Arlecchino.
+char-artifacts-stats-list:
+  - Sands:
+    - ATK
+    - EM
+  - Goblet:
+    - Pyro DMG Bonus
+  - Circlet:
+    - Crit Rate/DMG
+  - Preferred Sub-stats:
+    - Crit Rate/DMG
+    - ATK
+  - Good-to-have substats:
+    - ER
+    - EM (higher priority if using in vaporize team)
+char-artifacts-stats-notes:
+  - Sands - ATK > EM
+  - In most cases ATK will outperform EM sands, however if player are doing vaporize comp, EM may pull ahead of ATK especially with good substats
+  - Goblet - Pyro > ATK
+  - It shouldn't be surprising that a pyro goblet is far better than an ATK goblet. However, because Arlecchino gains alot of DMG bonus, ATK goblet may pull ahead. Substats also play a vital role.
+  - Circlet - Crit Rate = Crit DMG
+  - Choose whichever balance out your Arlecchino Crit ratio. Try to achieve a 1:2 or 1:3 crit ratio, for example if you have 70 crit rate, you should aim for 140 crit dmg and so on.
+  - Energy recharge shouldn't be a big priority but good to have (100%-140%). Go for EM only if you are using her in a vaporize comp.
+
+# Character best artifacts and notes
+char-artifacts: Artifacts for Arlecchino
+char-artifacts-desc: This section explains the artifacts for Arlecchino.
+char-artifacts-list-title: This is the list of Artifacts.
+char-artifacts-list:
+ - 4pc Fragment of Harmonic Whimsy
+ - 4pc Gladiator's Finale
+ - 4pc Gilded Dream
+ - 2pc + 2pc combinations of ATK%, ATK% from another set, EM, Crimson Witch, Marechaussee Hunter
+char-artifacts-notes:
+  - Key Points:
+    - The newly released Artifact set is tailored to Arlecchino, giving her a whopping 54% increased DMG as her Bond of Life increases or decreases. 
+    - Gladiator's Finale is a close second and players should probably have a decent amount of Gladiator's Finale pieces. Gives an unconditional buff which if players have good stats may not choose to farm for the new artifact set.
+    - Gilded Dream is a good set for those who are going for a vaporize comp as it provides additional EM and ATK.
+    - A set combination of ATK, em, crimson witch, marechaussee hunter is fine as well, and can beat the 4 piece sets with good subsets.
+
+# Character Weapons:
+char-weapons: Arlecchino's Weapons
+char-weapons-desc: This section talks about Arlecchino's Polearm.
+char-weapons-list:
+  - Top 5-star weapons:
+    - Crimson Moon's Semblance
+    - Primordial Jade Winged Spear
+    - Staff of Homa
+  - Good 5-star weapons:
+    - Vortex Vanquisher
+    - Staff of Scarlet Sands
+    - Calamity Queller
+  - Top 4-star weapon:
+    - Deathmatch
+    - Missive Windspear
+    - Blackcliff Pole
+  - Good 4-star weapons:
+    - Dragonbane
+    - Ballard of the Fjords
+    - Lithic Spear
+  - Top 3-star weapon:
+    - White Tassel
+    - Halberd
+
+char-weapons-notes:
+  - 5-Star Weapons:
+    - Crimson Moon's Semblance is her signature weapon and obviously her BiS. It also transforms into a scythe when Arlecchino wields it so it gains some drip points. The sad fact is that this weapon is underwhelming if players have brought the battle pass or have other 5 star weapon.
+    - Primordial Jade Winged Spear is a close second, almost similar to her signature. Best option for those players who got PJWS from the standard banner.
+    - Other 5-star polearms are good to use as stat sticks or for reaction based comp.
+  - 4-Star Weapons:
+    - Deathmatch is one of her best 4 star weapon due to high crit rate stat and also a good passive which can be refined for better values for those who brought the battle pass for an extended period of time.
+    - Ballard of the Fjords is a new 4 star battle pass weapon that can outperform deathmatch in vape teams however underperform it outside of vape, making it questionable to use over deathmatch.
+
+  - Other Weapons:
+    - It is not recommended to spend starglitter to get blackcliff polearm when Missive Windspear exists but for those who did not play and get the weapon can go for blackcliff. 
+    - Dragonbane is great for an overload and vaporize team, although the EM substat is not the greatest.
+    - Lithic spear is actually a good option especially if players have the R5 version of it. Usable if players run arlecchino in a liyue comp (xingqiu/yelan/zhongli)
+    - Missive Windspear is a F2P option for those who played and got the R5 version of it from the event, however underwhelming compared to other weapons.
+    - White Tassel is the best F2P weapon and really the only good one. Only drops in Liyue Chests.
+
+# Character Constellations
+char-constellations: Arlecchino Constellations
+char-constellations-desc: This section talks about Arlecchino's Constellations.
+char-constellations-list:
+  - All Reprisals and Arrears Are Mine to Bear:
+    - Masque of the Red Death is further enhanced, the value of the increase is 100%. Additionally, Arlecchino's interruption resistance is increased when she performs Normal Attacks while affected by the Masque of the Red Death.
+  - All Rewards and Retribution, Mine to Bestow:
+    - Blood-Debt Directives are now already Blood-Debt Due when first applied. When Arlecchino absorbs such a Due, she unleashes Balemoon Bloodfire in front of her, dealing 900% of her ATK as AoE Pyro DMG and increasing her All Elemental RES and Physical RES by 20% for 15s. This effect can trigger once every 10s. You must first unlock the Passive Talent "Agony Alone May Be Repaid."
+  - You Shall Become a New Member of Our Family:
+    - Increases the Level of Normal Attack - Invitation to a Beheading by 3. Maximum upgrade level is 15.
+  - You Shall Love and Protect Each Other Henceforth:
+    - When Arlecchino successfully absorbs a Blood-Debt Directive, Balemoon Rising's CD will decrease by 2s and 15 Energy will be restored to her. This effect can occur once every 10s.
+  - For Alone, We Are as Good as Dead:
+    - Increases the Level of Balemoon Rising by 3. Maximum upgrade level is 15.
+  - From This Day On, We Shall Delight in New Life Together:
+    - The DMG of Balemoon Rising is increased by Arlecchino's ATK multiplied by 700% of Arlecchino's current Life Bond percentage. For 20s after Arlecchino uses All Is Ash, both her Normal Attacks and Elemental Burst gain 10% increased CRIT Rate and 70% increased CRIT DMG. This effect can be triggered up to once every 15s.
+char-constellations-pull-value: This section talks about Arlecchino's Constellation pull values.
+char-constellations-notes:
+  - General Points:
+    - It isn't a question that C1 is extremely good for Arlecchino due to its QoL increased for her, allowing her to tank any attack while being resistant to interruption.
+    - Her C2 is another power spike where now players do not need to wait 5 seconds for Arlecchino Blood-Debt Directives to upgrade into Blood-Debt Due. In addition, it gives Arlecchino another source of damage with a whopping 900% scaling. Also, the additional elemental and physical resistance on top of her passive resistance will increase her survivability significantly. This is a good stopping point for players wishing for her constellations
+    - C3 and C5 increase her Normal Attack and Burst talent respectively, with C3 being more significant to Arlecchino's damage.
+    - C4 helps with Arlecchino energy requirements, nothing major.
+    - C6 is another ridiculous increase in her damage output.
+  - General Points:
+    - Overall her constellations are really good in increasing her personal damage.
+    - Players who want to get Arlecchino's constellation can go for C1 for the most value as it makes her easier to play while C2 is another good stopping point.
+    - C3 is another good early constellation but at this point it may be overkilled for Arlecchino's damage.
+    - A problem with getting her constellation is that since Arlecchino is already pumping out so much personal damage at C0, by getting her constellations, enemies may not have enough HP to survive her onslaught before players can see the constellation values.
+
+# Character Team Supports
+char-teams: Team and Ally suggestions for Arlecchino
+char-teams-desc: This section talks about Arlecchino's synergy and anti-synergy with units.
+char-teams-notes:
+  - Pyro Units:
+    - Bennett is one of Arlecchino best support as he provide a hefty amount of ATK boost thanks to his burst, however a problem bennett faces is that Arlecchino needs to be in his ultimate's circle range to gain the ATK boost and since players may have to dodge attacks, they may be going out of Bennett's ultimate.
+    - Chevreuse is the catalyst of overload thanks to her passive. Using her with Arlecchino with other pyro and electro teammates will debuff enemies with pyro and electro resistance and at C6 provides pyro and electro DMG bonus, increasing Arlecchino's damage overall.
+    - Dehya is an interesting pick for Arlecchino as she provides the on-fielder an interruption resistance, benefitting Arlecchino heavily.
+  - Hydro Units:
+    - Xingqiu and Yelan both provide good off-field hydro damage and application which allows Arlecchino to vape consistently and also either give interruption resistance or DMG bonus.
+    - Furina is another interesting choice as although Arlecchino may suffer from Furina's hp drain, her damage bonus from her ultimate will help Arlecchino greatly. Use this duo at your own risk.
+  - Electro Units:
+    - Fischl and Yae is another great support as she has good off-field electro dmg and can be paired with Arlecchino in chevreuse overload team.
+    - Beidou provides a shield that at high constellations can greatly support Arlecchino's survivability.
+  - Other Units:
+    - Both sucrose and Kazuha can support Arlecchino's damage due to their ability to use 4 piece Viridescent Venerer reducing enemy pyro resistance.
+    - Zhongli's shield is the strongest in the game, and it's without a doubt that he can help Arlecchino in avoiding to dodge enemies hit in exchange for lower damage output.
+  - Teams:
+    - Chevreuse overload - Arlecchino/Chevreuse/Fischl/Bennett
+    - Vaporize - Arlecchino/Xingqiu/Yelan/Zhongli
+    - Vaporise but stronger - Arlecchino/Yelan/Kazuha or Sucrose/Bennett
+    - Double Geo - Arlecchino/Chiori/Zhongli/Bennett
+  
+# Character Kit Advantages
+char-pros: Advantages with Arlecchino
+char-pros-desc: These are some points in favour of having Arlecchino in any account.
+char-pros-list:
+  - High Damage output:
+    - Very strong personal damage.
+    - Self-reliant as she can deal damage and heal with her ultimate as such players can be more risky in her team comp that doesn't need a shield
+    - Very synergistic with many characters.
+    - Can deal great single and AoE damage with her normal attacks
+    - Her damage is very frontloaded that she is able to clear content like spiral abyss easily and quickly.
+
+# Character Kit Disadvantages
+char-cons: Disadvantages/Issues with Arlecchino
+char-cons-desc: These are some issues with Arlecchino's kit.
+char-cons-list:
+  - Challenging Gameplay:
+    - Complex Mechanic with Bond of Life
+    - Difficult to pilot as players need to avoid dodging where in some situation is needed to avoid taking damage
+    - Glass cannon as she cannot be healed by third-party source, increasing the risk of playing her
+    - Vulnerable to interruption at C0, may result in damage loss
+    - High skill ceiling and mechanics with great positioning needed
+    - Constellation greatly help Arlecchino, making her slightly pay to win
+    - Lacking a reliable support as Bennett's circle impact affects Arlecchino's movement to only be restricted in his ultimate
+
+# Character Gameplay tips
+char-gameplay: Gameplay tips for playing Arlecchino
+char-gameplay-desc: These are some gameplay tips for playing Arlecchino in your teams.
+char-gameplay-tips:
+  - Key Points:
+    - Do not panic if Arlecchino is at risk of dying and use her ultimate if available
+    - Start rotation with Arlecchino skill to let it cook and upgrade to Blood-Debt Due for more damage
+    - Play a shielder if players are not comfortable with her survivability
+    - Her normal attack combos is N3 Dash spam, the only reason you dash here is because her 4th and 5th normal attack are not needed to be outputted for better consistency in damage
+    - Try to understand enemies attack patterns to know when to dodge.
+
+# Character funfacts
+char-funfacts: Fun Facts about Arlecchino
+char-funfacts-desc: These are some curated funfacts about Arlecchino
+char-funfacts-list:
+  - She goes by the title "Father":
+    - Calls herself “Father” instead of “Mother” as due to a horrible experience with the previous head of the house of the hearth which forces children to fight each other to be the true “king” and successor. As such, she did not want to be like her and didn't want to be under the same title as such a person.
+    - Defeated the previous “Knave” harbinger which happens to be the previous head of the house of the hearth.
+
+# Character notes references
+char-references: Character notes references
+char-references-desc: This section contains all the references and acknowledgements.
+char-references-list:
+  - Video Sources:
+    - YouTube Video - [Braxophone](https://www.youtube.com/watch?v=wIJZPUbjv6Y)
+  - Content Curator:
+    - Blanky, Arun
+  - Other Sources:
+    - Jstern, Zajef77, Arlecchino Mains
+  - Content Updated:
+    - April 26, 2024, Game version - v4.6
