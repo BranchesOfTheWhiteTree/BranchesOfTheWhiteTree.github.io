@@ -3,7 +3,7 @@
 
 	{% include 'partials/header.html' %}
 
-<body class="d-flex flex-column min-vh-100" style="background-color: #2B3035;">
+<body class="d-flex flex-column min-vh-100 bg-dark text-light" style="background-color: #2B3035;">
 
     <!-- Back to top button -->
     <!-- 
@@ -17,14 +17,14 @@
     </button>
 
     {% include 'partials/menubar.html' %}
-    
-    {% include 'content_pages/timeline_demo.html' %}
+
+    <section class="container-md" style="margin-top:60px">
+        {{post.content}}
+    </section>
 
     {% include 'partials/footer.html' %}
 
     {% include 'partials/jsfiles.html' %}
 
-
-    
 </body>
 </html>
