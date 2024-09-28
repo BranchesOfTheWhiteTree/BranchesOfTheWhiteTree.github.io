@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="/sass/style.css" rel="stylesheet">
+    <link type="text/css" href="/sass/font-awesome.min.css" rel="stylesheet">
+
+	<title>SumeruTimelineDemo | GenshinTimelines | Branches of the White Tree</title>
+
+    <link rel="icon" type="image/x-icon" href="/images/BannerImages/Branches.png">
+
+    <!-- KaTeX CSS and JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);">
+    </script>
+    
+</head>
+
+<body class="d-flex flex-column min-vh-100" style="background-color: #2B3035;">
+
+    <!-- Back to top button -->
+    <!-- 
+        Link to FontAwesome: https://fontawesome.com/v4/icons/
+    -->
+    <button
+        type="button"
+        class="btn btn-primary btn-floating btn-sm"
+        id="Back2TopBtn">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top">
+
+    <!-- Navbar Container -->
+    <div class="container-xxl">
+
+        <!-- Navbar header -->
+        <a class="navbar-brand" href="./index.html">
+            <img src="images/BannerImages/Branches.png" alt="" width="30" class="d-inline-block align-text-top">
+            Branches of the White Tree
+        </a>
+
+        <!-- Toggle button for mobile view -->
+        <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#main-nav", aria-controls="main-nav"
+        aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+            <ul class="navbar-nav">
+                <li class="nav-item"> <a class="nav-link" href="#">Home</a> </li>
+               
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Genshin
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                      <li><a class="dropdown-item" href="#">Lore Section</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Character Builds</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      HSR
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                      <li><a class="dropdown-item" href="#">Lore Section</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Character Builds</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"> <a class="nav-link" href="#">HI3rd</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Useful Pages</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">About</a> </li>
+            </ul>
+        </div>
+
+    </div>
+    
+</nav>
+    
+    <div class="py-5">
+<section class="container-xxl">
+<pre class="mermaid">
+    flowchart TD
+    subgraph DeshretOrigin["King Deshret Origin"];
+    A00[At an unknown time in the past, King Deshret was born with the God name 'Amun'.
+    He becomes the ruler of the desert Sumeru, ruling the 'Setekh' and the 'Hypostyle Desert']
+    end
+
+    subgraph NMOrigin["Nabu Malikata Origin"];
+    A01[Something happened in Celestia and Nabu Malikata got exiled.
+    She arrives on Sumeru. She is a Seelie survivor.
+    She wandered the desert for 72 days bare foot.
+    Wherever her foot bleeded, apparently rivers flew.
+    She created a mystical elemental species called 'Jinn'.
+    The Jinn were completely devoted to Nabu Malikata and called her their 'Mistress'.]
+    end
+
+    subgraph NabuAndDeshret["Nabu Malikata and King Deshret"];
+    A02[Eventually, Nabu Malikata and King Deshret met and became close friends
+    These two together created the city 'Ay-Khanoum' with the Jinn.
+    'Ay-Khanoum' is known as the 'City of Jinn'. It was replete with purple 'Padisarah' flowers.
+    It was also technologically comparable to Deshret's kingdom.]
+    end
+
+    DeshretOrigin --> NabuAndDeshret;
+    NMOrigin --> NabuAndDeshret;
+
+    subgraph RukkhaOrigin["Rukkhadevata Origin"];
+    A03[At an unknown time in the past, Rukkhadevata was born.
+    It stands for reasonable speculation that Rukkhadevata might've been created in the same way Nahida was created.
+    Not much is known about Rukkhadevata when she was a child till she became an adult.
+    It is inferred that her consciousness is linked to the Irminsul tree right from birth.]
+    end
+
+    RukkhaOrigin --> TrioMeeting;
+    NabuAndDeshret --> TrioMeeting;
+
+    subgraph TrioMeeting["The Three Gods Meet"];
+    A04[By miracle of fate, the three gods got to know each other.
+    In due time, the three gods became great friends.]
+    A04 --> B04[<img src="./Images/Deshret_Nabu_Rukkha.jpg" width=1000px/> Image Credit: HICO, Twitter handle: BUM_HICO]
+    B04 --> C04[On one Rukkhadevata's birthday, the gods met and had a great party.Rukkhadevata sang, Deshret and others were happily tipsy, Nabu Malikata started to dance.
+    Countless beautiful purple 'Padisarah' flowers blossomed all over the land.
+    From that day onwards, Rukkhadevata's birthday was celebrated as 'Sabzeruz' festival.
+    This feat of Nabu Malikata is central to the 'Sabzeruz' festival.
+    Nabu Malikata was called 'Goddess of Flowers' for this feat and her previous feats.
+    Several years/decades later, Celestia contacts Deshret and proposes to give him a 'Gnosis'.
+    Deshret refuses the 'Gnosis' and tells Celestia that the three gods will co-rule Sumeru.]
+    end
+
+    TrioMeeting --> DeshretAndNabu;
+    TrioMeeting --> RukkhaAndNabu;
+
+    subgraph DeshretAndNabu["King Deshret and Nabu Malikata"];
+    A05[It is implied/speculated that King Deshret had a liking for Nabu Malikata
+    Along with his implied liking for Nabu Malikata, Deshret hated the Celestia's rule.
+    He openly had many discussions with Nabu Malikata to learn skills and knowledge about the truth of this world.
+    Although hesitant at first, Nabu Malikata relented and shared many 'secrets' of Celestia.
+    Nabu told about the Heavenly Principles, how Celestia rains celestial nails across the land to subdue major forbidden knowledge incidents.
+    Nabu also told about how Celestia destroys civilizations who violated its rule.
+    Nabu finally told about the Abyssal Power/Forbidden Knowledge to Deshret.
+    At his repeated request, Nabu Malikata also shared to him some methods to harness the Forbidden Knowledge.
+    Nabu Malikata knew her time is short. It is implied that she had the power to forsee future.
+    She foresaw the destruction of 'Ay-Khanoum'.
+    The city Ay-Khanoum got destroyed as she foresaw, and only Deshret and some Jinn came alive unscathed.]
+    end
+
+    subgraph RukkhaAndNabu[Rukkhadevata and Nabu Malikata];
+    A06[Nabu Malikata knew her time is short. It is implied that she had the power to forsee future.
+    She foresaw a major calamity in the distant future that will be a major challenge to Sumeru and the whole world.
+    She creates a wooden bird called 'Simurgh' and leaves it in the hands of Rukkhadevata.
+    She tells Simurgh that Rukkhadevata is a much more virtuous and better person than she can ever be.
+    Nabu Malikata died with the downfall of Ay-Khanoum.]
+    end
+
+</pre>
+</section>
+</div>
+
+    <!-- Footer -->
+<footer id="footer" class="mt-auto">
+    <div class="container-xxl text-light text-center position-relative py-3" style="background-color: #2B3035;">
+        <p>
+            A fan-made website for Hoyoverse game players. All the game assets are the property of COGNOSPHERE PTE. LTD.
+
+            <br>
+            
+            Website Owner: <a href="https://arunprasaad2711.github.io" target="_blank">Arun Prasaad Gunasekaran</a> | Website designed using: <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+        </p>
+    </div>
+</footer>
+
+    <!-- Support Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+<!-- Code to show the "go to top button" -->
+<script type="text/javascript" language="javascript">
+
+    // codeblock for back to top button
+    
+    // Get the button:
+    let mybutton = document.getElementById("Back2TopBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    mybutton.addEventListener("click", topFunction);
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    
+</script>
+
+<!-- Mermaid.js code -->
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    var config = {
+        startOnLoad: true,
+        theme: 'dark',
+        securityLevel: 'loose',
+        themeVariables: { 'fontSize': '20'}
+    };
+    mermaid.initialize(config);
+</script>
+
+
+    
+</body>
+</html>

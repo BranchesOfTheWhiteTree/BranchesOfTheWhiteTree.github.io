@@ -1,0 +1,1702 @@
+<!DOCTYPE html><html><head>
+      <title>CharacterRanking</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\arunp\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.13\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="character-builds-ranking">Character Builds Ranking </h1>
+<ul>
+<li><a href="#character-builds-ranking">Character Builds Ranking</a>
+<ul>
+<li><a href="#ranking">Ranking:</a></li>
+<li><a href="#standard-disclaimers">Standard Disclaimers:</a></li>
+<li><a href="#scoring-rules">Scoring Rules:</a>
+<ul>
+<li><a href="#important-overall-stats">Important Overall Stats</a></li>
+<li><a href="#relic-main-stats">Relic Main Stats</a></li>
+<li><a href="#relic-sets-and-lc">Relic Sets and LC</a></li>
+<li><a href="#personal-remarks">Personal Remarks</a></li>
+</ul>
+</li>
+<li><a href="#luocha">Luocha</a>
+<ul>
+<li><a href="#important-overall-stats-1">Important Overall Stats</a></li>
+<li><a href="#relic-main-stats-1">Relic Main Stats</a></li>
+<li><a href="#relic-sets-and-lc-1">Relic Sets and LC</a></li>
+<li><a href="#personal-remarks-1">Personal Remarks</a></li>
+<li><a href="#total-score">Total Score</a></li>
+</ul>
+</li>
+<li><a href="#topaz-and-numby">Topaz and Numby</a>
+<ul>
+<li><a href="#important-overall-stats-2">Important Overall Stats</a></li>
+<li><a href="#relic-main-stats-2">Relic Main Stats</a></li>
+<li><a href="#relic-sets-and-lc-2">Relic Sets and LC</a></li>
+<li><a href="#personal-remarks-2">Personal Remarks</a></li>
+<li><a href="#total-score-1">Total Score</a></li>
+</ul>
+</li>
+<li><a href="#sparkle">Sparkle</a>
+<ul>
+<li><a href="#important-overall-stats-3">Important Overall Stats</a></li>
+<li><a href="#relic-main-stats-3">Relic Main Stats</a></li>
+<li><a href="#relic-sets-and-lc-3">Relic Sets and LC</a></li>
+<li><a href="#personal-remarks-3">Personal Remarks</a></li>
+<li><a href="#total-score-2">Total Score</a></li>
+</ul>
+</li>
+<li><a href="#ruan-mei">Ruan Mei</a>
+<ul>
+<li><a href="#important-overall-stats-4">Important Overall Stats</a></li>
+<li><a href="#relic-main-stats-4">Relic Main Stats</a></li>
+<li><a href="#relic-sets-and-lc-4">Relic Sets and LC</a></li>
+<li><a href="#personal-remarks-4">Personal Remarks</a></li>
+<li><a href="#total-score-3">Total Score</a></li>
+</ul>
+</li>
+<li><a href="#clara">Clara</a>
+<ul>
+<li><a href="#important-overall-stats-5">Important Overall Stats</a></li>
+<li><a href="#relic-main-stats-5">Relic Main Stats</a></li>
+<li><a href="#relic-sets-and-lc-5">Relic Sets and LC</a></li>
+<li><a href="#personal-remarks-5">Personal Remarks</a></li>
+<li><a href="#total-score-4">Total Score</a></li>
+</ul>
+</li>
+<li><a href="#jingliu">Jingliu</a>
+<ul>
+<li><a href="#important-overall-stats-6">Important Overall Stats</a></li>
+<li><a href="#relic-main-stats-6">Relic Main Stats</a></li>
+<li><a href="#relic-sets-and-lc-6">Relic Sets and LC</a></li>
+<li><a href="#personal-remarks-6">Personal Remarks</a></li>
+<li><a href="#total-score-5">Total Score</a></li>
+</ul>
+</li>
+<li><a href="#tingyun">Tingyun</a>
+<ul>
+<li><a href="#important-overall-stats-7">Important Overall Stats</a></li>
+<li><a href="#relic-main-stats-7">Relic Main Stats</a></li>
+<li><a href="#relic-sets-and-lc-7">Relic Sets and LC</a></li>
+<li><a href="#personal-remarks-7">Personal Remarks</a></li>
+<li><a href="#total-score-6">Total Score</a></li>
+</ul>
+</li>
+<li><a href="#hanya">Hanya</a>
+<ul>
+<li><a href="#important-overall-stats-8">Important Overall Stats</a></li>
+<li><a href="#relic-main-stats-8">Relic Main Stats</a></li>
+<li><a href="#relic-sets-and-lc-8">Relic Sets and LC</a></li>
+<li><a href="#personal-remarks-8">Personal Remarks</a></li>
+<li><a href="#total-score-7">Total Score</a></li>
+</ul>
+</li>
+<li><a href="#huohuo">Huohuo</a>
+<ul>
+<li><a href="#important-overall-stats-9">Important Overall Stats</a></li>
+<li><a href="#relic-main-stats-9">Relic Main Stats</a></li>
+<li><a href="#relic-sets-and-lc-9">Relic Sets and LC</a></li>
+<li><a href="#personal-remarks-9">Personal Remarks</a></li>
+<li><a href="#total-score-8">Total Score</a></li>
+</ul>
+</li>
+<li><a href="#jing-yuan">Jing Yuan</a>
+<ul>
+<li><a href="#important-overall-stats-10">Important Overall Stats</a></li>
+<li><a href="#relic-main-stats-10">Relic Main Stats</a></li>
+<li><a href="#relic-sets-and-lc-10">Relic Sets and LC</a></li>
+<li><a href="#personal-remarks-10">Personal Remarks</a></li>
+<li><a href="#total-score-9">Total Score</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="ranking">Ranking: </h2>
+<p>This is the ranking and their scores out of 140 points.</p>
+<ol>
+<li>Ruan Mei - 134.5</li>
+<li>Sparkle - 129</li>
+<li>Clara - 128.5</li>
+<li>Huohuo - 127</li>
+<li>Topaz and Numby - 126</li>
+<li>Luocha - 126</li>
+<li>Jingliu - 125</li>
+<li>Jing Yuan - 119.5</li>
+<li>Tingyun - 119.5</li>
+<li>Hanya - 118</li>
+</ol>
+<h2 id="standard-disclaimers">Standard Disclaimers: </h2>
+<ul>
+<li>While I try to be as objective as I can, there might be some subjective preferences. So, don't take the scoring rules I put here too seriously/pedantically.</li>
+<li>To rate these units, I assume these units as "standalone" builds - meaning these units are self-sufficient and supporting allies who enable conditional builds (eg: Go for ATK Boots on ATK scaling units instead of SPD boots if you're using Sparkle) do not exist.</li>
+<li>My scoring baseline is based on Standard builds recommended for general playerbase (Stats that are achievable for F2P and low-spenders who are semi-serious to serious when it comes to combat and M.E.T.A)</li>
+<li>You get bonus points if you exceed the general playerbase builds and push towards/reach "sweaty"/potential 0-cycle builds.</li>
+<li>I treat the units at E0-S0/S1 for units. Eidolons and Superimpositions don't count</li>
+<li>If I'm objectively wrong on some accord, (not on some subjective assessments - those are always debatable) please let me know. I'll correct it.</li>
+</ul>
+<h2 id="scoring-rules">Scoring Rules: </h2>
+<h3 id="important-overall-stats">Important Overall Stats </h3>
+<ul>
+<li>+10 points if you hit the minimum requirement for each stat.</li>
+<li>Upto +5 points if the minimum requirement is met, but did not go above and beyond.</li>
+<li>+5 points if the stat goes above and beyond the recommended value.</li>
+<li>+5 points for high HP/DEF for Support/Survival units.</li>
+<li>+5 points for high Effect RES on DPS/Sub-DPS units.</li>
+<li>+5 points for some special bonus stats.</li>
+<li>Maximum Score: 60/60</li>
+</ul>
+<h3 id="relic-main-stats">Relic Main Stats </h3>
+<ul>
+<li>+10 points for the best recommended mainstat on each relic.</li>
+<li>+8 points for conditionally good mainstats.</li>
+<li>+5 points for a useable but not recommended/low-priority stat</li>
+<li>+0 points for a bad stat</li>
+<li>Maximum Score: 40/40</li>
+</ul>
+<h3 id="relic-sets-and-lc">Relic Sets and LC </h3>
+<ul>
+<li>+10 points for selecting the best recommended Relic/Ornament set</li>
+<li>+8 points if it is a 2pc + 2pc combination substitute for a 4pc set and it is very good.</li>
+<li>+5 points if it is a 2pc + 2pc combination substitute for a 4pc set and it is mediocre.</li>
+<li>+10 points for the signature LC / top-recommended 4-star LC</li>
+<li>+8 points for a decent 4-star LC</li>
+<li>+5 points for a useable 4-star LC</li>
+<li>Maximum Score: 30/30</li>
+</ul>
+<h3 id="personal-remarks">Personal Remarks </h3>
+<ul>
+<li>Niche issues the unit might face with this build (if build permits)</li>
+<li>If niche issues exist, a counteracting remedy to tackle this issue.</li>
+<li>A personal (subjective) score out of 10.</li>
+</ul>
+<hr>
+<h2 id="luocha">Luocha </h2>
+<p><img src="https://cdn.discordapp.com/attachments/1247478702523158590/1247482808436396104/Luocha_25-05-2024_17-13-17.png?ex=66603066&amp;is=665edee6&amp;hm=b3b423190efbfb16b6442b0857fd13d8baae4ce27619765db1cd8effd7b90bab&amp;" alt="Luocha"></p>
+<h3 id="important-overall-stats-1">Important Overall Stats </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>ATK</th>
+<th>SPD</th>
+<th>Effect RES</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Minimum Recommended</td>
+<td>2500+</td>
+<td>134</td>
+<td>30%+</td>
+</tr>
+<tr>
+<td>Achieved</td>
+<td>4187</td>
+<td>151.6</td>
+<td>46.2%</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>15</td>
+<td>15</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+<p>HP - 3804 (&gt; 3500) (+5)</p>
+<p>Score: 50/60</p>
+<h3 id="relic-main-stats-1">Relic Main Stats </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Body</th>
+<th>Boots</th>
+<th>Sphere</th>
+<th>Rope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recommended</td>
+<td>Healing Boost</td>
+<td>SPD</td>
+<td>ATK%</td>
+<td>ERR</td>
+</tr>
+<tr>
+<td>On unit</td>
+<td>ATK%</td>
+<td>SPD</td>
+<td>ATK%</td>
+<td>ERR</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>8</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>Score: 38/40</p>
+<h3 id="relic-sets-and-lc-1">Relic Sets and LC </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Cavern Relics</th>
+<th>Planar Ornaments</th>
+<th>LC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recommended</td>
+<td>4pc Musketeer / 2pc ATK + 2pc ATK/SPD</td>
+<td>Fleet/Keel/ATK sets/ERR sets</td>
+<td>Signature / Best Recommended 4-star LC</td>
+</tr>
+<tr>
+<td>On Unit</td>
+<td>4pc Musketeer</td>
+<td>Keel</td>
+<td>Signature</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>Score: 30/30</p>
+<h3 id="personal-remarks-1">Personal Remarks </h3>
+<ul>
+<li>There is only room for minor optimizations, which I don't think it is necessary for this unit.</li>
+<li>I did the calculations and having a Healing Boost body is actually better than ATK %.</li>
+<li>I don't see any potential/known issues.</li>
+<li>This Luocha is an S tier build in my humble opinion.</li>
+<li>Personal Score: 8/10</li>
+</ul>
+<h3 id="total-score">Total Score </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Score</th>
+<th>Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overall Stats</td>
+<td>50</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Main Stats</td>
+<td>38</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Relic/Ornament sets + LC</td>
+<td>30</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Personal Score</td>
+<td>8</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Total</td>
+<td><strong>126</strong></td>
+<td>140</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="topaz-and-numby">Topaz and Numby </h2>
+<p><img src="https://cdn.discordapp.com/attachments/1247478702523158590/1247482809208012831/Topaz__Numby_25-05-2024_17-12-19.png?ex=66603066&amp;is=665edee6&amp;hm=358854f87d1bae9382ccbd6f7e452d0867b7b9c19c8e73e95442bc8dd618ee69&amp;" alt="Topaz and Numby"></p>
+<h3 id="important-overall-stats-2">Important Overall Stats </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>ATK</th>
+<th>SPD</th>
+<th>Crit Rate/DMG %</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Minimum Recommended</td>
+<td>2000+</td>
+<td>134+</td>
+<td>75/150</td>
+</tr>
+<tr>
+<td>Achieved</td>
+<td>2286</td>
+<td>148.2</td>
+<td>72.4/202.9</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>12.5</td>
+<td>15</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+<p>Break Effect - 23.9 % (+5)</p>
+<p>Score: 47.5/60</p>
+<h3 id="relic-main-stats-2">Relic Main Stats </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Body</th>
+<th>Boots</th>
+<th>Sphere</th>
+<th>Rope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recommended</td>
+<td>Crit Rate/DMG %</td>
+<td>SPD</td>
+<td>Fire DMG Bonus %</td>
+<td>ATK %</td>
+</tr>
+<tr>
+<td>On unit</td>
+<td>Crit DMG %</td>
+<td>SPD</td>
+<td>Fire DMG Bonus %</td>
+<td>ATK %</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>Score: 40/40</p>
+<h3 id="relic-sets-and-lc-2">Relic Sets and LC </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Cavern Relics</th>
+<th>Planar Ornaments</th>
+<th>LC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recommended</td>
+<td>4pc AGC</td>
+<td>Inert</td>
+<td>Signature / Best Recommended 4-star LC</td>
+</tr>
+<tr>
+<td>On Unit</td>
+<td>4pc AGC</td>
+<td>Inert</td>
+<td>Signature</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>Score: 30/30</p>
+<h3 id="personal-remarks-2">Personal Remarks </h3>
+<ul>
+<li>The overall ATK can be a bit higher. There are a few bad substat rolls that didn't give ATK % unfortunately.</li>
+<li>There is room for some improvement, but I would not break my head over it. If you're building another unit in the future who can use 4pc AGC or 2pc Inert, then I suggest upgrading Topaz if you get lucky with better pieces.</li>
+<li>Since she has no Effect RES, she can be a sitting duck when fighting against enemies that debuff/disable units. I highly recommend you play her with units that either cleanse/prevent debuffs and CC effect.</li>
+<li>This Topaz is an S-tier build in my humble opinion.</li>
+<li>Personal Score: 8.5/10</li>
+</ul>
+<h3 id="total-score-1">Total Score </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Score</th>
+<th>Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overall Stats</td>
+<td>47.5</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Main Stats</td>
+<td>40</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Relic/Ornament sets + LC</td>
+<td>30</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Personal Score</td>
+<td>8.5</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Total</td>
+<td><strong>126</strong></td>
+<td>140</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="sparkle">Sparkle </h2>
+<p><img src="https://cdn.discordapp.com/attachments/1247478702523158590/1247482809896013834/Sparkle_25-05-2024_17-11-07.png?ex=66603066&amp;is=665edee6&amp;hm=b5b6d5a1f6d370541a8bf8beef47b5c97ef5da128bf31d343b0612b99b179725&amp;" alt="Sparkle"></p>
+<h3 id="important-overall-stats-3">Important Overall Stats </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Crit DMG</th>
+<th>SPD</th>
+<th>Effect RES</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Minimum Recommended</td>
+<td>150% +</td>
+<td>134+</td>
+<td>30% +</td>
+</tr>
+<tr>
+<td>Achieved</td>
+<td>212.9%</td>
+<td>162.2</td>
+<td>40.6%</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>15</td>
+<td>15</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+<p>HP - 4403 (&gt; 3500) (+5)</p>
+<p>Score: 50/60</p>
+<h3 id="relic-main-stats-3">Relic Main Stats </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Body</th>
+<th>Boots</th>
+<th>Sphere</th>
+<th>Rope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recommended</td>
+<td>Crit DMG%</td>
+<td>SPD</td>
+<td>HP/DEF%</td>
+<td>ERR</td>
+</tr>
+<tr>
+<td>On unit</td>
+<td>Crit DMG%</td>
+<td>SPD</td>
+<td>DEF%</td>
+<td>ERR</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>Score: 40/40</p>
+<h3 id="relic-sets-and-lc-3">Relic Sets and LC </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Cavern Relics</th>
+<th>Planar Ornaments</th>
+<th>LC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recommended</td>
+<td>4pc Messenger / 2pc SPD + 2pc Rainbow</td>
+<td>Fleet/Keel/ERR sets</td>
+<td>Signature / Best Recommended 4-star LC</td>
+</tr>
+<tr>
+<td>On Unit</td>
+<td>4pc Messenger</td>
+<td>2pc Penacony</td>
+<td>Signature</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>Score: 30/30</p>
+<h3 id="personal-remarks-3">Personal Remarks </h3>
+<ul>
+<li>There is only room for minor optimizations, which I don't think it is necessary for this unit.</li>
+<li>I don't see any potential/known issues with this unit.</li>
+<li>This Sparkle is an S+ -tier build in my humble opinion.</li>
+<li>Personal Score: 9/10</li>
+</ul>
+<h3 id="total-score-2">Total Score </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Score</th>
+<th>Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overall Stats</td>
+<td>50</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Main Stats</td>
+<td>40</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Relic/Ornament sets + LC</td>
+<td>30</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Personal Score</td>
+<td>9</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Total</td>
+<td><strong>129</strong></td>
+<td>140</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="ruan-mei">Ruan Mei </h2>
+<p><img src="https://cdn.discordapp.com/attachments/1247478702523158590/1247482810470764666/Ruan_Mei_25-05-2024_17-11-38.png?ex=66603067&amp;is=665edee7&amp;hm=b3b91f0d0868c0ab0d4b08bb838ffcdf2928c744fa18bb53dc76ffe73067f749&amp;" alt="Ruan Mei"></p>
+<h3 id="important-overall-stats-4">Important Overall Stats </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Break Effect</th>
+<th>SPD</th>
+<th>Effect RES</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Minimum Recommended</td>
+<td>*160% +</td>
+<td>134+</td>
+<td>30% +</td>
+</tr>
+<tr>
+<td>Achieved</td>
+<td>*189.1%</td>
+<td>153</td>
+<td>48.4%</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>*15</td>
+<td>15</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>You only need 160% Break Effect as her passive gives another 20% in combat to reach the 180 % requirement threshold.</li>
+<li>This build gets +5 for having 189.1% Break Effect baseline, with 209.1% Break Effect in combat - all without having a Break Effect mainstat rope and for having 239.1% Break Effect after Ultimate due to the 4pc relic set passive. (This is disgustingly good)</li>
+</ul>
+<p>HP - 5062 (&gt; 3500) (+5)</p>
+<p>Score: 55/60</p>
+<h3 id="relic-main-stats-4">Relic Main Stats </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Body</th>
+<th>Boots</th>
+<th>Sphere</th>
+<th>Rope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recommended</td>
+<td>HP/DEF%</td>
+<td>SPD</td>
+<td>HP/DEF%</td>
+<td>Break Effect / ERR</td>
+</tr>
+<tr>
+<td>On unit</td>
+<td>HP%</td>
+<td>SPD</td>
+<td>HP%</td>
+<td>ERR</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>Score: 40/40</p>
+<h3 id="relic-sets-and-lc-4">Relic Sets and LC </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Cavern Relics</th>
+<th>Planar Ornaments</th>
+<th>LC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recommended</td>
+<td>4pc Thief/Watchmaker/Messenger / 2pc Break Effect + 2pc Break Effect/SPD/Rainbow</td>
+<td>Fleet/Keel/ERR sets</td>
+<td>Signature / Best Recommended 4-star LC</td>
+</tr>
+<tr>
+<td>On Unit</td>
+<td>4pc Watchmaker</td>
+<td>Keel</td>
+<td>Signature</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>Score: 30/30</p>
+<h3 id="personal-remarks-4">Personal Remarks </h3>
+<ul>
+<li>There is only room for minor optimizations, which I don't think it is necessary for this unit.</li>
+<li>I don't see any potential/known issues with this unit.</li>
+<li>This Ruan Mei is an S+ -tier build (near perfect build) in my humble opinion.</li>
+<li>Personal Score: 9.5/10</li>
+</ul>
+<h3 id="total-score-3">Total Score </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Score</th>
+<th>Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overall Stats</td>
+<td>55</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Main Stats</td>
+<td>40</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Relic/Ornament sets + LC</td>
+<td>30</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Personal Score</td>
+<td>9.5</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Total</td>
+<td><strong>134.5</strong></td>
+<td>140</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="clara">Clara </h2>
+<p><img src="https://cdn.discordapp.com/attachments/1247478702523158590/1247482811087196170/Clara_25-05-2024_17-45-12.png?ex=66603067&amp;is=665edee7&amp;hm=2a0937444711d2111339f8a9c144daa10ed4e33199203968e0bfe0bc73713b7a&amp;" alt="Clara"></p>
+<h3 id="important-overall-stats-5">Important Overall Stats </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>ATK</th>
+<th>SPD</th>
+<th>Crit Rate/DMG %</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Minimum Recommended</td>
+<td>2500+</td>
+<td>Baseline</td>
+<td>75/150</td>
+</tr>
+<tr>
+<td>Achieved</td>
+<td>3848</td>
+<td>Baseline</td>
+<td>72.2/179.6</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>15</td>
+<td>10</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+<p>HP - 3941 ( &gt; 3500) (+5)<br>
+Bonus +5 for having insane crit ratio despite not having a crit LC.</p>
+<p>Score: 50/60</p>
+<h3 id="relic-main-stats-5">Relic Main Stats </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Body</th>
+<th>Boots</th>
+<th>Sphere</th>
+<th>Rope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recommended</td>
+<td>Crit Rate/DMG%</td>
+<td>ATK%</td>
+<td>Physical DMG Bonus%</td>
+<td>ATK%</td>
+</tr>
+<tr>
+<td>On unit</td>
+<td>Crit Rate%</td>
+<td>ATK%</td>
+<td>Physical DMG Bonus%</td>
+<td>ATK%</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>Score: 40/40</p>
+<h3 id="relic-sets-and-lc-5">Relic Sets and LC </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Cavern Relics</th>
+<th>Planar Ornaments</th>
+<th>LC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recommended</td>
+<td>4pc Boxing</td>
+<td>Inert</td>
+<td>Signature / Best Recommended 4-star LC</td>
+</tr>
+<tr>
+<td>On Unit</td>
+<td>4pc Boxing</td>
+<td>Inert</td>
+<td>Signature</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>Score: 30/30</p>
+<h3 id="personal-remarks-5">Personal Remarks </h3>
+<ul>
+<li>There is room for some improvement, but I would not break my head over it. If you're building another unit in the future who can use 4pc Boxing or 2pc Inert, then I suggest upgrading Clara if you get lucky with better pieces.</li>
+<li>Since she has low Effect RES, she can be a sitting duck when fighting against enemies that debuff/disable units. I highly recommend you play her with units that either cleanse/prevent debuffs and CC effect.</li>
+<li>This Clara is an S-tier build in my humble opinion.</li>
+<li>Personal Score: 8.5/10</li>
+</ul>
+<h3 id="total-score-4">Total Score </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Score</th>
+<th>Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overall Stats</td>
+<td>50</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Main Stats</td>
+<td>40</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Relic/Ornament sets + LC</td>
+<td>30</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Personal Score</td>
+<td>8.5</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Total</td>
+<td><strong>128.5</strong></td>
+<td>140</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="jingliu">Jingliu </h2>
+<p><img src="https://cdn.discordapp.com/attachments/1247478702523158590/1247482811821330542/Jingliu_07-05-2024_14-43-10.png?ex=66603067&amp;is=665edee7&amp;hm=dd53139dc3249297a0262d6ae5c6641fa6fd5c346dadcb1c2e72f8fe6f17f48f&amp;" alt="Jingliu"></p>
+<h3 id="important-overall-stats-6">Important Overall Stats </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>ATK</th>
+<th>SPD</th>
+<th>Crit Rate/DMG</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Minimum Recommended</td>
+<td>2000+</td>
+<td>134+</td>
+<td>25%/150%</td>
+</tr>
+<tr>
+<td>Achieved</td>
+<td>2900</td>
+<td>123.7</td>
+<td>41.8%/249.8%</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>15</td>
+<td>8</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+<p>Effect Res - 12.5% (which becomes 47.5% in her spectral transmigration state) (+5)<br>
+HP - 3846 ( &gt; 3500) (+5)</p>
+<p>Score: 48/60</p>
+<h3 id="relic-main-stats-6">Relic Main Stats </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Body</th>
+<th>Boots</th>
+<th>Sphere</th>
+<th>Rope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recommended</td>
+<td>Crit Rate/DMG%</td>
+<td>SPD</td>
+<td>Ice DMG Bonus%</td>
+<td>ATK%</td>
+</tr>
+<tr>
+<td>On unit</td>
+<td>Crit DMG%</td>
+<td>ATK%</td>
+<td>Ice DMG Bonus%</td>
+<td>ATK%</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>10</td>
+<td>8</td>
+<td>10</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>Score: 38/40</p>
+<h3 id="relic-sets-and-lc-6">Relic Sets and LC </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Cavern Relics</th>
+<th>Planar Ornaments</th>
+<th>LC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recommended</td>
+<td>4pc Hunter</td>
+<td>Rutilant Arena</td>
+<td>Signature / Best Recommended 4-star LC</td>
+</tr>
+<tr>
+<td>On Unit</td>
+<td>4pc Hunter</td>
+<td>Rutilant Arena</td>
+<td>Signature</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>Score: 30/30</p>
+<h3 id="personal-remarks-6">Personal Remarks </h3>
+<ul>
+<li>There is room for some improvement, but I would not break my head over it.</li>
+<li>I personally prefer SPD boots over ATK% boots.</li>
+<li>Bonus points for having close to Effect RES (in her transmigration state).</li>
+<li>This Jingliu is an S-tier build in my humble opinion.</li>
+<li>Personal Score: 9/10</li>
+</ul>
+<h3 id="total-score-5">Total Score </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Score</th>
+<th>Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overall Stats</td>
+<td>48</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Main Stats</td>
+<td>38</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Relic/Ornament sets + LC</td>
+<td>30</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Personal Score</td>
+<td>9</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Total</td>
+<td><strong>125</strong></td>
+<td>140</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="tingyun">Tingyun </h2>
+<p><img src="https://cdn.discordapp.com/attachments/1247478702523158590/1247482812454666330/Tingyun_07-05-2024_14-42-49.png?ex=66603067&amp;is=665edee7&amp;hm=27652538199308c78e5116300bda25613c4833b1c71085269f731de0da87ea11&amp;" alt="Tingyun"></p>
+<h3 id="important-overall-stats-7">Important Overall Stats </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>ATK</th>
+<th>SPD</th>
+<th>Effect RES</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Minimum Recommended</td>
+<td>2400 +</td>
+<td>134+</td>
+<td>30% +</td>
+</tr>
+<tr>
+<td>Achieved</td>
+<td>1970</td>
+<td>171</td>
+<td>32.8%</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>8</td>
+<td>15</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>HP - 4302 (&gt; 3500) (+5)<br>
+Bonus +5 points for doubling down on HP for survivability.</p>
+<p>Score: 43/60</p>
+<h3 id="relic-main-stats-7">Relic Main Stats </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Body</th>
+<th>Boots</th>
+<th>Sphere</th>
+<th>Rope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recommended</td>
+<td>ATK/HP/DEF%</td>
+<td>SPD</td>
+<td>ATK/HP/DEF%</td>
+<td>ERR</td>
+</tr>
+<tr>
+<td>On unit</td>
+<td>HP%</td>
+<td>SPD</td>
+<td>HP%</td>
+<td>ERR</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>8</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>Score: 38/40</p>
+<h3 id="relic-sets-and-lc-7">Relic Sets and LC </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Cavern Relics</th>
+<th>Planar Ornaments</th>
+<th>LC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recommended</td>
+<td>4pc Messenger / 2pc SPD + 2pc Rainbow</td>
+<td>Fleet/Keel/ERR sets</td>
+<td>Signature / Best Recommended 4-star LC</td>
+</tr>
+<tr>
+<td>On Unit</td>
+<td>4pc Messenger</td>
+<td>2pc Penacony</td>
+<td>DDD S4 - Top Recommended</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>Score: 30/30</p>
+<h3 id="personal-remarks-7">Personal Remarks </h3>
+<ul>
+<li>There is room for some optimizations, which I don't think it is necessary for this unit. Please keep a passive look out for better pieces in the future.</li>
+<li>I prefer either the body or the orb to be ATK% as you're losing a decent amount of ATK boost. It is better to have HP/DEF% in her relic/ornament substats.</li>
+<li>Bonus points for keeping her survival into consideration.</li>
+<li>I don't see any potential/known issues with this unit.</li>
+<li>This Tingyun is an S-tier build in my humble opinion.</li>
+<li>Personal Score: 8.5/10</li>
+</ul>
+<h3 id="total-score-6">Total Score </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Score</th>
+<th>Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overall Stats</td>
+<td>43</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Main Stats</td>
+<td>38</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Relic/Ornament sets + LC</td>
+<td>30</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Personal Score</td>
+<td>8.5</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Total</td>
+<td><strong>119.5</strong></td>
+<td>140</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="hanya">Hanya </h2>
+<p><img src="https://cdn.discordapp.com/attachments/1247478702523158590/1247482813020766228/Hanya_07-05-2024_14-42-28.png?ex=66603067&amp;is=665edee7&amp;hm=db34c2a2cce150be2aed596430ceaf5678d78e93cd009588221376baeea9f179&amp;" alt="Hanya"></p>
+<h3 id="important-overall-stats-8">Important Overall Stats </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>SPD</th>
+<th>ERR</th>
+<th>Effect RES</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Minimum Recommended</td>
+<td>134+</td>
+<td>119.4+</td>
+<td>30% +</td>
+</tr>
+<tr>
+<td>Achieved</td>
+<td>187.7</td>
+<td>100</td>
+<td>36.3%</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>15</td>
+<td>8</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>HP - 4086 (&gt; 3500) (+5)<br>
+Bonus +5 using Memories LC to get energy.</p>
+<p>Score: 43/60</p>
+<h3 id="relic-main-stats-8">Relic Main Stats </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Body</th>
+<th>Boots</th>
+<th>Sphere</th>
+<th>Rope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recommended</td>
+<td>HP/DEF%</td>
+<td>SPD</td>
+<td>HP/DEF%</td>
+<td>ERR</td>
+</tr>
+<tr>
+<td>On unit</td>
+<td>DEF%</td>
+<td>SPD</td>
+<td>DEF%</td>
+<td>HP%</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<p>Score: 38/40</p>
+<h3 id="relic-sets-and-lc-8">Relic Sets and LC </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Cavern Relics</th>
+<th>Planar Ornaments</th>
+<th>LC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recommended</td>
+<td>4pc Messenger / 2pc SPD + 2pc Rainbow</td>
+<td>Fleet/Keel/ERR sets</td>
+<td>Signature / Best Recommended 4-star LC</td>
+</tr>
+<tr>
+<td>On Unit</td>
+<td>4pc Messenger</td>
+<td>2pc Penacony</td>
+<td>Memories of Past S1 - Decent</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>10</td>
+<td>10</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<p>Score: 28/30</p>
+<h3 id="personal-remarks-8">Personal Remarks </h3>
+<ul>
+<li>There is room for some optimizations, which I don't think it is necessary for this unit. Please keep a passive look out for better pieces in the future.</li>
+<li>I genuinely prefer you have an ERR rope instead of a HP % Rope. (I do agree that for some people's playstyles, it may not be needed).</li>
+<li>Bonus points for using the "Memories of the Past" LC passive to circumvent the energy issue.</li>
+<li>I don't see any potential/known issues with this unit.</li>
+<li>This Hanya is an S-tier build in my humble opinion.</li>
+<li>Personal Score: 9/10</li>
+</ul>
+<h3 id="total-score-7">Total Score </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Score</th>
+<th>Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overall Stats</td>
+<td>43</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Main Stats</td>
+<td>38</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Relic/Ornament sets + LC</td>
+<td>28</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Personal Score</td>
+<td>8.5</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Total</td>
+<td><strong>118</strong></td>
+<td>140</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="huohuo">Huohuo </h2>
+<p><img src="https://cdn.discordapp.com/attachments/1247478702523158590/1247482813620686908/Huohuo_07-05-2024_14-42-05.png?ex=66603067&amp;is=665edee7&amp;hm=c983b506c2ad1204b0f32315dde923ee4846ce738e815411387b03a148328b06&amp;" alt="Huohuo"></p>
+<h3 id="important-overall-stats-9">Important Overall Stats </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>HP</th>
+<th>SPD</th>
+<th>Effect RES</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Minimum Recommended</td>
+<td>5000</td>
+<td>134+</td>
+<td>50% +</td>
+</tr>
+<tr>
+<td>Achieved</td>
+<td>5856</td>
+<td>152.6</td>
+<td>85.8%</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>10</td>
+<td>15</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+<p>Since you have a Healing Boost Body +5 (to compensate for the HP % loss)<br>
+ERR - 119.4% (+5 points)</p>
+<p>Score: 50/60</p>
+<h3 id="relic-main-stats-9">Relic Main Stats </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Body</th>
+<th>Boots</th>
+<th>Sphere</th>
+<th>Rope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recommended</td>
+<td>HP%/Healing Boost</td>
+<td>SPD</td>
+<td>HP%</td>
+<td>ERR</td>
+</tr>
+<tr>
+<td>On unit</td>
+<td>Healing Boost</td>
+<td>SPD</td>
+<td>HP%</td>
+<td>ERR</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>Score: 40/40</p>
+<h3 id="relic-sets-and-lc-9">Relic Sets and LC </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Cavern Relics</th>
+<th>Planar Ornaments</th>
+<th>LC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recommended</td>
+<td>2pc HP + 2pc HP/Healing Boost/Rainbow, 4pc Messenger</td>
+<td>Fleet/Keel/ERR sets</td>
+<td>Signature / Best Recommended 4-star LC</td>
+</tr>
+<tr>
+<td>On Unit</td>
+<td>4pc Messenger</td>
+<td>2pc Penacony</td>
+<td>Signature</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>8</td>
+<td>10</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>Score: 28/30</p>
+<h3 id="personal-remarks-9">Personal Remarks </h3>
+<ul>
+<li>There is room for some optimizations, which I don't think it is necessary for this unit. Please keep a passive look out for better pieces in the future.</li>
+<li>For Huohuo, I genuinely prefer 2pc + 2pc combinations of HP/SPD/Healing boost over 4pc Messenger. 4pc Messenger is alright, but I prefer a Harmony unit wear this than her.</li>
+<li>I don't see any potential/known issues with this unit.</li>
+<li>This Huohuo is an S-tier build in my humble opinion.</li>
+<li>Personal Score: 9/10</li>
+</ul>
+<h3 id="total-score-8">Total Score </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Score</th>
+<th>Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overall Stats</td>
+<td>50</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Main Stats</td>
+<td>40</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Relic/Ornament sets + LC</td>
+<td>28</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Personal Score</td>
+<td>9</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Total</td>
+<td><strong>127</strong></td>
+<td>140</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="jing-yuan">Jing Yuan </h2>
+<p><img src="https://cdn.discordapp.com/attachments/1247478702523158590/1247482814501486633/Jing_Yuan_07-05-2024_14-41-15.png?ex=66603068&amp;is=665edee8&amp;hm=5b7750a953f107f9fa70dd72d245a8d7f4b83f05848722faff77764d14b460a2&amp;" alt="Jing Yuan"></p>
+<h3 id="important-overall-stats-10">Important Overall Stats </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>ATK</th>
+<th>SPD</th>
+<th>Crit Rate/DMG</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Minimum Recommended</td>
+<td>2500+</td>
+<td>134+</td>
+<td>75 %/150 %</td>
+</tr>
+<tr>
+<td>Achieved</td>
+<td>3460</td>
+<td>104.2</td>
+<td>77.8%/226.6%</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>15</td>
+<td>8</td>
+<td>15</td>
+</tr>
+</tbody>
+</table>
+<p>Bonus +5 points this godly good crit ratio.</p>
+<p>Score: 43/60</p>
+<h3 id="relic-main-stats-10">Relic Main Stats </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Body</th>
+<th>Boots</th>
+<th>Sphere</th>
+<th>Rope</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recommended</td>
+<td>Crit Rate/DMG%</td>
+<td>SPD</td>
+<td>Lightning DMG Bonus%</td>
+<td>ATK%</td>
+</tr>
+<tr>
+<td>On unit</td>
+<td>Crit DMG%</td>
+<td>ATK%</td>
+<td>Lightning DMG Bonus%</td>
+<td>ATK%</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>10</td>
+<td>8</td>
+<td>10</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>Score: 38/40</p>
+<h3 id="relic-sets-and-lc-10">Relic Sets and LC </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Cavern Relics</th>
+<th>Planar Ornaments</th>
+<th>LC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recommended</td>
+<td>4pc AGC</td>
+<td>Inert</td>
+<td>Signature / Best Recommended 4-star LC</td>
+</tr>
+<tr>
+<td>On Unit</td>
+<td>4pc AGC</td>
+<td>Inert</td>
+<td>Signature</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>10</td>
+<td>10</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>Score: 30/30</p>
+<h3 id="personal-remarks-10">Personal Remarks </h3>
+<ul>
+<li>There is room for some improvement, but I would not break my head over it.</li>
+<li>Since he has no Effect RES, he can be a sitting duck when fighting against enemies that debuff/disable units. I highly recommend you play him with units that either cleanse/prevent debuffs and CC effect.</li>
+<li>I strongly recommend SPD Boots over ATK%.</li>
+<li>This Jing Yuan is an S-tier build in my humble opinion.</li>
+<li>Personal Score: 8.5/10</li>
+</ul>
+<h3 id="total-score-9">Total Score </h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Score</th>
+<th>Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Overall Stats</td>
+<td>43</td>
+<td>60</td>
+</tr>
+<tr>
+<td>Main Stats</td>
+<td>38</td>
+<td>40</td>
+</tr>
+<tr>
+<td>Relic/Ornament sets + LC</td>
+<td>30</td>
+<td>30</td>
+</tr>
+<tr>
+<td>Personal Score</td>
+<td>8.5</td>
+<td>10</td>
+</tr>
+<tr>
+<td>Total</td>
+<td><strong>119.5</strong></td>
+<td>140</td>
+</tr>
+</tbody>
+</table>
+<hr>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>

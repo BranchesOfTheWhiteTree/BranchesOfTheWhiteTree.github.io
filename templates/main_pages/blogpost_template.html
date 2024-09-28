@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {% include 'partials/header.html' %}
+    
+<body class="is-preload">
+
+    <!-- Back to top button -->
+    <a onclick="topFunction()" id="Back2TopBtn" class="icon alt fa-arrow-up" title="Go to top"></a>
+    
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        {% include 'partials/menubar.html' %}
+        
+        <section>
+            <div class="inner">
+
+                {{post.content}}
+                
+            </div>
+        </section>
+		
+        {% include 'partials/footer.html' %}
+        
+    </div>
+
+    {% include 'partials/blogjsfiles.html' %}
+    {% include 'partials/jsfiles.html' %}
+
+</body>
+</html>

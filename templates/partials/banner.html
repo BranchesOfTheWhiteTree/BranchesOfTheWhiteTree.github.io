@@ -1,0 +1,23 @@
+<!-- Banner Carousel -->
+<div class="bg-dark text-light" style="margin-top:60px">
+    <div id="index-carousel" class="carousel slide carousel-fade container-xxl" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#index-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#index-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#index-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner banner-carousel">
+        <div class="carousel-item active">
+            <img src="{{ post.BannerImage01 }}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item banner-carousel">
+            <img src="{{ post.BannerImage02 }}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item banner-carousel">
+            <img src="{{ post.BannerImage03 }}" class="d-block w-100" alt="...">
+        </div>
+        </div>
+    </div>
+</div>

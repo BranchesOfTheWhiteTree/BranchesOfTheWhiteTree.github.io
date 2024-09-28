@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	{% include 'partials/header.html' %}
+
+<body class="d-flex flex-column min-vh-100" style="background-color: #2B3035;">
+
+    <!-- Back to top button -->
+    <!-- 
+        Link to FontAwesome: https://fontawesome.com/v4/icons/
+    -->
+    <button
+        type="button"
+        class="btn btn-primary btn-floating btn-sm"
+        id="Back2TopBtn">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    {% include 'partials/menubar.html' %}
+
+    {% include 'partials/banner.html' %}
+
+    {% include 'content_pages/index.html' %}
+
+    {% include 'partials/footer.html' %}
+
+    {% include 'partials/jsfiles.html' %}
+
+</body>
+</html>
